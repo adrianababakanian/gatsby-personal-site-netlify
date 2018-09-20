@@ -7,9 +7,7 @@ import Helmet from 'react-helmet'
 
 import Preview from './../components/preview/Preview'
 
-import './../common.css'
-
-class DesignIndex extends React.Component {
+class PrototypingIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
@@ -17,15 +15,15 @@ class DesignIndex extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <h1>Design</h1>
+        <h1>Prototyping</h1>
         <p>
-          Product, user interface, visual, branding, & beyond.
+          When engineering and art collide.
         </p>
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <Preview key={node.id} project={node} color="cycle">
+              <Preview key={node.id} project={node} color="atomic">
                 {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
               </Preview>
             </div>
@@ -36,10 +34,10 @@ class DesignIndex extends React.Component {
   }
 }
 
-export default DesignIndex
+export default PrototypingIndex
 
 export const pageQuery = graphql`
-  query DesignQuery {
+  query PrototypingQuery {
     site {
       siteMetadata {
         title
@@ -47,7 +45,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: ["design"] } } }
+      filter: { frontmatter: { tags: { in: ["prototyping"] } } }
     ) {
       edges {
         node {
