@@ -1,0 +1,78 @@
+@import './../../common.scss';
+
+a {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.em {
+  border-bottom: 3px solid #ffffff00;
+  position: relative;
+  padding: 4px 8px;
+  transition: border-bottom 0.2s ease-in-out;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+  background: none;
+  border-bottom: none;
+  cursor: pointer;
+  border-bottom-color: transparent;
+
+  &.cycle { @include colorize(x_trans_cycle) }
+  &.matcha { @include colorize(x_trans_matcha) }
+  &.atomic { @include colorize(x_trans_atomic) }
+  &.sakura { @include colorize(x_trans_sakura) }
+
+  &:hover {
+    &.cycle { @include colorize(trans_cycle) }
+    &.matcha { @include colorize(trans_matcha) }
+    &.atomic { @include colorize(trans_atomic) }
+    &.sakura { @include colorize(trans_sakura) }
+
+  }
+
+  .content {
+    position: relative;
+    z-index: 15;
+  }
+
+  .highlight {
+    background: lightblue;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: -1%;
+    bottom: -3px;
+    transition: 0.2s ease-in-out;
+    border-bottom: none;
+    text-decoration: none;
+
+    &.cycle { @include colorize(cycle) }
+    &.matcha { @include colorize(matcha) }
+    &.atomic { @include colorize(atomic) }
+    &.sakura { @include colorize(sakura) }
+
+    &.header {
+      height: 0%;
+      width: 120%;
+      left: -10%;
+    }
+
+  }
+
+  &:hover {
+    // &.cycle { @include bottom-colorize(cycle) }
+    // &.matcha { @include bottom-colorize(matcha) }
+    // &.atomic { @include bottom-colorize(atomic) }
+    // &.sakura { @include bottom-colorize(sakura) }
+
+    .highlight {
+      height: 118%;
+      display: block;
+      &.header {
+        height: 72%;
+      }
+    }
+  }
+}

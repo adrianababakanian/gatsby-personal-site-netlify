@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import Header from '../components/header/Header'
 
 const links = [
   ["About", "sakura"],
@@ -21,6 +22,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <div>
+      <Header links={links} />
       <div className="container">
         {children()}
       </div>
