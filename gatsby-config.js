@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Adriana Babakanian',
+    author: 'Adriana Babakanian',
+    description: 'Developer, designer, & matcha enthusiast with a passion for visually informed technical logic. Feel free to browse my portfolio to get to know more about me and my work!',
+    siteUrl: 'https://adrianababakanian.github.io/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/adrianababakanian',
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
