@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header/Header'
 
+import favicon from './../assets/images/favicon.png'
+
 const links = [
   ["About", "sakura"],
   ["Prototyping", "atomic"],
@@ -19,6 +21,9 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+      { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
       ]}
     />
     <div>
