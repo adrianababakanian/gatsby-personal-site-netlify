@@ -10,7 +10,6 @@ class Header extends React.Component {
     super(props);
     this.toggleNav = this.toggleNav.bind(this);
     this.toggleNavLogo = this.toggleNavLogo.bind(this);
-    this.updateDimensions = this.updateDimensions.bind(this);
     this.state = {
       showMobileNav: false
     }
