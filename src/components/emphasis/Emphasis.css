@@ -2,8 +2,15 @@
 html {
   font-family: Lato; }
 
+.gatsby-resp-image-image {
+  border-radius: 8px; }
+
 .gatsby-resp-image-background-image {
+  border-radius: 8px;
   background-image: none; }
+
+video {
+  border-radius: 8px; }
 
 .container {
   width: 600px;
@@ -123,7 +130,7 @@ html {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 0 0 40px 0;
     position: relative;
     box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.14); }
@@ -187,8 +194,7 @@ a {
     background: #EAD2DCCC;
     background-color: #EAD2DCCC; }
   .em .content {
-    position: relative;
-    z-index: 15; }
+    position: relative; }
   .em .highlight {
     background: lightblue;
     opacity: 0.5;
