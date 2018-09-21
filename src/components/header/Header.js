@@ -57,22 +57,22 @@ class Header extends React.Component {
           </div>
         </Link>
       )),
+      mobile_header_links = (<div/>),
       mobile_header = (<div/>);
 
-    if (this.state.width < 700) {
-      header_links = links && reveresed.map(link => (
-        <Link to={`/${link[0].toLowerCase()}`}
-              key={link[0]}
-              className="mobile-header-item"
-              activeClassName={`${link[1]}`}
-              onClick={this.toggleNav}>
-          <div className={`mobile-header-item-content ${link[1]}`}>
-            {link[0]}
-          </div>
-        </Link>
-      ));
-      mobile_header = this.state.showMobileNav ? <div className="mobile_header"> {header_links} </div> : null;
-    }
+    mobile_header_links = links && reveresed.map(link => (
+      <Link to={`/${link[0].toLowerCase()}`}
+            key={link[0]}
+            className="mobile-header-item"
+            activeClassName={`${link[1]}`}
+            onClick={this.toggleNav}>
+        <div className={`mobile-header-item-content ${link[1]}`}>
+          {link[0]}
+        </div>
+      </Link>
+    ));
+    mobile_header = this.state.showMobileNav ? <div className="mobile_header"> {mobile_header_links} </div> : null;
+
 
     return (
       <div>
@@ -82,10 +82,10 @@ class Header extends React.Component {
             onClick={this.toggleNavLogo}>
             <img src={logo}/>
           </Link>
-          {this.state.width > 700 ? header_links : null}
+          {header_links}
           <div className='hamburger'
             onClick={this.toggleNav}>
-            {this.state.showMobileNav ? <div>&times;</div> : <div>&#9776;</div>}
+            {this.state.showMobileNav ? <span>&times;</span> : <div>&#9776;</div>}
           </div>
         </div>
       </div>
