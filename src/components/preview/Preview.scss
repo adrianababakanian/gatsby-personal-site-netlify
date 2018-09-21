@@ -45,9 +45,19 @@
     img {
       height: 100%;
       width: auto;
+      &.proto {
+        width: 100%;
+        height: auto;
+      }
     }
     .gatsby-image-wrapper {
       height: 285px;
+    }
+  }
+  @media (max-width: 500px) {
+    img .proto {
+      height: 100%;
+      width: auto;
     }
   }
   @media (max-width: 470px) {
@@ -60,6 +70,7 @@
       height: 205px;
     }
   }
+
 
   &:hover {
     box-shadow: 0 2px 12px 2px get(shadow);

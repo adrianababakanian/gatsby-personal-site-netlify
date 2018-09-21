@@ -26,7 +26,8 @@
     "gatsby-transformer-remark": "^1.7.40",
     "gatsby-transformer-sharp": "^1.6.22",
     "lodash": "^4.17.5",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "react-window-size": "^1.2.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

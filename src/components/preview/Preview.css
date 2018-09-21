@@ -198,8 +198,15 @@ video {
     .preview img {
       height: 100%;
       width: auto; }
+      .preview img.proto {
+        width: 100%;
+        height: auto; }
     .preview .gatsby-image-wrapper {
       height: 285px; } }
+  @media (max-width: 500px) {
+    .preview img .proto {
+      height: 100%;
+      width: auto; } }
   @media (max-width: 470px) {
     .preview {
       height: 200px; }

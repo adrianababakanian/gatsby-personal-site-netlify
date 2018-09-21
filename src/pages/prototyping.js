@@ -35,7 +35,7 @@ class PrototypingIndex extends React.Component {
           return (
             <div key={node.fields.slug}>
               <Preview key={node.id} project={node} color="atomic">
-                <img src={mapper[node.fields.slug]}/>
+                <img src={mapper[node.fields.slug]} className="proto"/>
                 {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
               </Preview>
             </div>
