@@ -41,8 +41,6 @@ class DesignIndex extends React.Component {
           return (
             <div key={node.fields.slug}>
               <Preview key={node.id} project={node} color="cycle">
-
-
                 <img src={mapper[node.fields.slug]}/>
                 {/* <img sizes={node.frontmatter.featuredImage.childImageSharp.src} /> */}
               </Preview>

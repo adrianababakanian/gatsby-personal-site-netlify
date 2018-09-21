@@ -2,8 +2,12 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
 //import Img from 'gatsby-image'
+
+import mo from './prototyping/mo/assets/mo.png'
+import full from './prototyping/pond-in-geared-motion/assets/full.png'
+import show from './prototyping/breathing-kirigami/assets/show.png'
+import final from './prototyping/drawing-machine/assets/final.png'
 
 import Preview from './../components/preview/Preview'
 
@@ -11,6 +15,13 @@ class PrototypingIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+
+    const mapper = {
+      "/prototyping/mo/": mo,
+      "/prototyping/pond-in-geared-motion/": full,
+      "/prototyping/breathing-kirigami/": show,
+      "/prototyping/drawing-machine/": final
+    }
 
     return (
       <div>
@@ -24,6 +35,7 @@ class PrototypingIndex extends React.Component {
           return (
             <div key={node.fields.slug}>
               <Preview key={node.id} project={node} color="atomic">
+                <img src={mapper[node.fields.slug]}/>
                 {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
               </Preview>
             </div>

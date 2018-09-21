@@ -2,8 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
 //import Img from 'gatsby-image'
+
+import dinestination from './code/dinestination/assets/dinestination.png'
+import map from './code/stubhub-city-pages/assets/map.png'
+import ch_site from './code/cal-hacks-permanent-site/assets/ch-site.png'
+import landing from './code/cal-hacks-5-portal/assets/landing.png'
+import innod from './design/innovative-design/assets/innod.png'
 
 import Preview from './../components/preview/Preview'
 
@@ -11,6 +16,13 @@ class CodeIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+
+    const mapper = {
+      "/code/dinestination/": dinestination,
+      "/code/stubhub-city-pages/": map,
+      "/code/cal-hacks-permanent-site/": ch_site,
+      "/code/cal-hacks-5-portal/": landing
+    }
 
     return (
       <div>
@@ -24,6 +36,7 @@ class CodeIndex extends React.Component {
           return (
             <div key={node.fields.slug}>
               <Preview key={node.id} project={node} color="matcha">
+                <img src={mapper[node.fields.slug]}/>
                 {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
               </Preview>
             </div>
