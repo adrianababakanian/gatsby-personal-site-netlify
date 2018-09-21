@@ -2,10 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
 //import Img from 'gatsby-image'
 
 import Preview from './../components/preview/Preview'
+
+import ch from './design/cal-hacks-branding/assets/scaled.png'
+import dinestination from './design/dinestination/assets/dinestination.png'
+import cal_hacks_4 from './design/cal-hacks-4/assets/cal_hacks_4.png'
+import doodles from './design/doodles/assets/doodles.png'
+import feaster from './design/feaster/assets/feaster.png'
+import innod from './design/innovative-design/assets/innod.png'
 
 import './../common.css'
 
@@ -14,9 +20,18 @@ class DesignIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
+    const mapper = {
+      "/design/cal-hacks-branding/": ch,
+      "/design/dinestination/": dinestination,
+      "/design/cal-hacks-4/": cal_hacks_4,
+      "/design/doodles/": doodles,
+      "/design/feaster/": feaster,
+      "/design/innovative-design/": innod
+    }
+
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={`Design | ${siteTitle}`} />
         <h1>Design</h1>
         <p>
           Product, user interface, visual, branding, & beyond.
@@ -26,7 +41,10 @@ class DesignIndex extends React.Component {
           return (
             <div key={node.fields.slug}>
               <Preview key={node.id} project={node} color="cycle">
-                {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
+
+
+                <img src={mapper[node.fields.slug]}/>
+                {/* <img sizes={node.frontmatter.featuredImage.childImageSharp.src} /> */}
               </Preview>
             </div>
           )

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header/Header'
+import Elsewhere from '../components/elsewhere/Elsewhere'
 
 import favicon from './../assets/images/favicon.png'
 
@@ -30,6 +31,7 @@ const Layout = ({ children, data }) => (
       <Header links={links} />
       <div className="container">
         {children()}
+        {/* <Elsewhere/> */}
       </div>
     </div>
   </div>

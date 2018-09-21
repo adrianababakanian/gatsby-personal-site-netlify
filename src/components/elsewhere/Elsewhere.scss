@@ -1,0 +1,21 @@
+.elsewhere {
+  transform: translate(-5px, 180px);
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .else {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    &:hover {
+      animation: spin 0.5s;
+    }
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

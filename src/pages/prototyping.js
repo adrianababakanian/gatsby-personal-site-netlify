@@ -14,7 +14,7 @@ class PrototypingIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={`Prototyping | ${siteTitle}`} />
         <h1>Prototyping</h1>
         <p>
           When engineering and art collide.

@@ -14,7 +14,7 @@ class CodeIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={`Code | ${siteTitle}`} />
         <h1>Code</h1>
         <p>
           The full stack.
