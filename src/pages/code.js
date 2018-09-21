@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-//import Img from 'gatsby-image'
+import LazyLoad from 'react-lazy-load'
 
 import dinestination from './code/dinestination/assets/dinestination.png'
 import map from './code/stubhub-city-pages/assets/map.png'
@@ -35,10 +35,11 @@ class CodeIndex extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <Preview key={node.id} project={node} color="matcha">
-                <img src={mapper[node.fields.slug]}/>
-                {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
-              </Preview>
+              <LazyLoad offset={300}>
+                <Preview key={node.id} project={node} color="matcha">
+                  <img src={mapper[node.fields.slug]}/>
+                </Preview>
+              </LazyLoad>
             </div>
           )
         })}

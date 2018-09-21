@@ -23,6 +23,7 @@
 
   img {
     width: 100%;
+    height: auto;
   }
 
   @media (max-width: 700px) {
@@ -32,10 +33,10 @@
       height: 305px;
     }
   }
-
   @media (max-width: 670px) {
     img {
       width: 100%;
+      height: auto;
     }
     .gatsby-image-wrapper {
       height: 285px;
@@ -55,6 +56,10 @@
     }
   }
   @media (max-width: 500px) {
+    img {
+      width: 200%;
+      height: auto;
+    }
     img .proto {
       height: 100%;
       width: auto;
@@ -62,7 +67,7 @@
   }
   @media (max-width: 470px) {
     height: 200px;
-    img {
+    img .proto {
       height: 100%;
       width: auto;
     }
@@ -70,8 +75,6 @@
       height: 205px;
     }
   }
-
-
   &:hover {
     box-shadow: 0 2px 12px 2px get(shadow);
     .preview-hover {

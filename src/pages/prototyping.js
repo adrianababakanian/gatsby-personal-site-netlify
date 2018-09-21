@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-//import Img from 'gatsby-image'
+import LazyLoad from 'react-lazy-load'
 
 import mo from './prototyping/mo/assets/mo.png'
 import full from './prototyping/pond-in-geared-motion/assets/full.png'
@@ -34,10 +34,11 @@ class PrototypingIndex extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <Preview key={node.id} project={node} color="atomic">
-                <img src={mapper[node.fields.slug]} className="proto"/>
-                {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
-              </Preview>
+              <LazyLoad offset={300}>
+                <Preview key={node.id} project={node} color="atomic">
+                  <img src={mapper[node.fields.slug]} className="proto"/>
+                </Preview>
+              </LazyLoad>
             </div>
           )
         })}

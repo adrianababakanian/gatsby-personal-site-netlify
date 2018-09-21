@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import windowSize from 'react-window-size'
-
 import './Header.css'
 import logo from './../../assets/images/logo.svg';
 
@@ -14,20 +12,9 @@ class Header extends React.Component {
     this.toggleNavLogo = this.toggleNavLogo.bind(this);
     this.updateDimensions = this.updateDimensions.bind(this);
     this.state = {
-      showMobileNav: false,
-			width: this.props.windowWidth,
-			height: this.props.windowHeight,
+      showMobileNav: false
     }
   }
-
-  updateDimensions() {
-    this.setState({
-      width: this.props.windowWidth,
-			height: this.props.windowHeight,
-    });
-  }
-
-  componentWillMount() { this.updateDimensions(); }
 
 	toggleNavLogo() {
     if (this.state.showMobileNav) {
@@ -94,4 +81,4 @@ class Header extends React.Component {
 }
 
 
-export default windowSize(Header)
+export default Header

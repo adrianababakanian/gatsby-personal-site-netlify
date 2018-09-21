@@ -182,7 +182,8 @@ video {
     background: #EAD2DC;
     background-color: #EAD2DC; }
   .preview img {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   @media (max-width: 700px) {
     .preview {
       width: calc(100% - 10px);
@@ -191,7 +192,8 @@ video {
         height: 305px; } }
   @media (max-width: 670px) {
     .preview img {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
     .preview .gatsby-image-wrapper {
       height: 285px; } }
   @media (max-width: 650px) {
@@ -204,13 +206,16 @@ video {
     .preview .gatsby-image-wrapper {
       height: 285px; } }
   @media (max-width: 500px) {
+    .preview img {
+      width: 200%;
+      height: auto; }
     .preview img .proto {
       height: 100%;
       width: auto; } }
   @media (max-width: 470px) {
     .preview {
       height: 200px; }
-      .preview img {
+      .preview img .proto {
         height: 100%;
         width: auto; }
       .preview .gatsby-image-wrapper {

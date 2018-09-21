@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-//import Img from 'gatsby-image'
+import LazyLoad from 'react-lazy-load'
 
 import Preview from './../components/preview/Preview'
 
@@ -40,10 +40,11 @@ class DesignIndex extends React.Component {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <Preview key={node.id} project={node} color="cycle">
-                <img src={mapper[node.fields.slug]}/>
-                {/* <img sizes={node.frontmatter.featuredImage.childImageSharp.src} /> */}
-              </Preview>
+              <LazyLoad offset={300}>
+                <Preview key={node.id} project={node} color="cycle">
+                  <img src={mapper[node.fields.slug]}/>
+                </Preview>
+              </LazyLoad>
             </div>
           )
         })}
