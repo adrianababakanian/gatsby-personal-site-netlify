@@ -82,10 +82,6 @@ video {
     .container a.sakura:hover {
       background: #EAD2DCCC;
       background-color: #EAD2DCCC; }
-  .container .about a {
-    background-color: #EAD2DC99; }
-    .container .about a:hover {
-      background-color: #EAD2DCCC; }
   .container h1 {
     font: 700 38px Lato;
     letter-spacing: 1px;

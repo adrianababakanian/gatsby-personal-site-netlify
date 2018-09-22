@@ -8,9 +8,9 @@
   background: transparent; }
   .elsewhere .else {
     display: block;
-    width: 30px;
-    height: 30px;
-    padding: 5px; }
+    padding: 5px;
+    width: 32px;
+    height: 32px; }
     .elsewhere .else:hover {
       animation: spin 0.5s; }
 @keyframes spin {
