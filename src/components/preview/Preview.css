@@ -207,8 +207,8 @@ video {
       height: 285px; } }
   @media (max-width: 500px) {
     .preview img {
-      width: 200%;
-      height: auto; }
+      height: 100%;
+      width: auto; }
     .preview img .proto {
       height: 100%;
       width: auto; } }

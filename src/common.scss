@@ -106,6 +106,7 @@ video {
 
   a {
     &:link, &:visited, &:active  {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       color: get(atom);
       text-decoration: none;
       transition: background-color 0.2s ease-in-out;

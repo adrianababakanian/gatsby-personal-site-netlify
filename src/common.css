@@ -45,6 +45,7 @@ video {
     padding-left: 1em;
     text-indent: -1em; }
   .container a:link, .container a:visited, .container a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     color: #253044;
     text-decoration: none;
     transition: background-color 0.2s ease-in-out;
