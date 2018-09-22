@@ -128,12 +128,15 @@ video {
     &.matcha { @include colorize(x_trans_matcha); padding: 2px 5px; &:hover { @include colorize(trans_matcha)} }
     &.atomic { @include colorize(x_trans_atomic); padding: 2px 5px; &:hover { @include colorize(trans_atomic)} }
     &.sakura { @include colorize(x_trans_sakura); padding: 2px 5px; &:hover { @include colorize(trans_sakura)} }
+    &.else {
+      background-color: rgba(0,0,0,0);
+    }
   }
 
   .about {
     a {
-      background-color: get(x_trans_sakura);
-      &:hover { background-color: get(trans_sakura); }
+      background-color: rgba(0,0,0,0);
+      background: rgba(0,0,0,0);
     }
   }
 

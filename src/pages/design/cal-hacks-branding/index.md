@@ -5,7 +5,7 @@ featuredImage: ./assets/scaled.png
 tags: ["design"]
 ---
 
-<a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization composed of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. As our team’s designer, I utilize design as a tool for progressing our team's initiatives and the causes that inspire me.
+<a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. As our team’s designer, I utilize design as a tool for progressing our initiatives and the causes that inspire me.
 
 A cohesive visual identity defines the voice of an organization. The Cal Hacks brand was previously defined by annual designs corresponding to each hackathon iteration. As we’ve matured from a startup-like environment into an established organization, our influence in the realm of technology extends beyond the space of hackathons into <a href="https://calhacks.io#initiatives" class="cycle">entrepreneurship</a>, <a href="https://calhacks.io#initiatives" class="cycle">diversity</a>, <a href="https://calhacks.io#initiatives" class="cycle">inclusivity</a>, <a href="https://calhacks.io#initiatives" class="cycle">and beyond</a> — thus rendering a cohesive branding identity crucial.
 
@@ -15,6 +15,8 @@ A cohesive visual identity defines the voice of an organization. The Cal Hacks b
 
 ## Brainstorming
 The process for this rebrand was guided by my desire to communicate illustratively the defining aspects of Cal Hacks — namely our grounding in technology as a means of empowerment and our proud roots at <a href="https://berkeley.edu" class="cycle">UC Berkeley</a>.  
+
+Inclusivity & diversity are both passions of mine, as well as fundamental to our mission at Cal Hacks, so throughout my iterations I took into account the broad range of target demographics that Cal Hacks reaches. Cal Hacks has always communicated our inclusion of all hackers regardless of skill level, demographic, area of study, and any other possible label or preconception. This afforded me experience in visually designing off of qualitative and quantitative feedback from a wide range of perspectives.
 
 I started off by taking inspiration from rather generic computer science-related topics — graph structures, text editor syntax, circuitry, and the like. My first attempts at a logo involved some rather cliche attempts at writing out Cal Hacks or the initials “CH” with these geeky hacker concepts.
 
@@ -39,7 +41,7 @@ I eventually narrowed the versions down to one circuit board.
 
 The resulting shape of this structure, however, was a bit awkward for a logo — I couldn’t see it fitting with inline elements or aligning well with text. As such, I rotated the campanile 90 degrees to stand upright and altered the illustration to make it slightly more three-dimensional.
 
-And thus we have our Hackanile — Berkeley’s beloved Campanile built out of circuitry!
+And thus we have our permanent logo!
 
 ![Hackanile](./assets/hackanile.png)
 
@@ -114,3 +116,27 @@ As such, I embarked on a long sequence of iterations that can be summarized by b
 ![Cal Hacks 5.0 dd0ski Iterations](./assets/ch_5_iterations.png)
 
 ![Cal Hacks 5.0](./assets/ddoski_5.png)
+
+## 5.0 Sponsorship Packet
+One of my first non-illustrative applications of the branding guideline was the sponsorship packet for Cal Hacks 5.0.
+
+We raise hundreds of thousands of dollars in sponsorship each year to put together our annual 2000+ person hackathon. We provide a sponsorship packet to enumerate each of our partnership options when communicating with sponsors. In the past, the packet hasn't had a lot of design reasoning put into it, so for the 5.0 packet I decided to draw upon our collective four years of corporate sponsor elations experience to address the user needs. Analyzing the user needs of partners thus related in a validated information design.
+
+Perhaps the most important result was the grid communicating the contents of each sponsorship packet. I categorized the information into relevant groups into order to optimize the visual system created by the grid, hence making it easier for potential sponsors to digest the information and analyze which options best meet their needs. The content of the blurbs and grid are lorem-ipsum'ed out (and the prices blanked) for confidentiality.
+
+![Sponsorship packet, second page](./assets/second.png)
+
+![Sponsorship packet, first page](./assets/first.png)
+
+![Sponsorship packet, third page](./assets/third.png)
+
+## Takeaways
+Creating the permanent branding identity for an influential organization in the tech and hackathon community afforded me the experience of utilizing illustration, layout, typography, color, and other graphic design principles to cohesively communicate a mission & brand. The iterative and feedback-based design process that I used strengthened my ability to use visual assets as a means of meeting user needs. The resulting brand is bold, playful, technically-inspired, and communicative of the mission Cal Hacks embraces.
+
+Since I designed assets targeting thousands of users, I learned how to make decisions resulting in effective solutions for a wide range of target demographics.
+
+Creating a cohesive and permanent brand identity required visual decisions in regards to many edge use cases, thus providing me experience in creating a wholistic system to be utilized across a wide range of media and contexts.
+
+![Sweater](./assets/sweat.png)
+
+![Sticker](./assets/camp.png)

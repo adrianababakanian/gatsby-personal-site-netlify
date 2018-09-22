@@ -10,4 +10,4 @@ is the entry point to Cal Hacks's in-house hacker application portal, sponsor in
 
 ![5.0 landing page](./assets/landing.png)
 
-5.0 is the first time in Cal Hacks' five-year history that we've had a full-fledged application portal. As such, it's a significant milestone in our history and allows for a much more robust backend system than our prior combinations of Typeforms and internal app-reading systems/
+5.0 is the first time in Cal Hacks' five-year history that we've had a full-fledged application portal. As such, it's a significant milestone in our history and allows for a much more robust backend system than our prior combinations of Typeforms and internal app-reading systems.

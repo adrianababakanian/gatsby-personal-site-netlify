@@ -4,15 +4,13 @@
   height: 40px;
   display: flex;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  background: transparent; }
   .elsewhere .else {
     display: block;
     width: 30px;
     height: 30px;
     padding: 5px; }
-    .elsewhere .else svg {
-      background: red;
-      stroke: red; }
     .elsewhere .else:hover {
       animation: spin 0.5s; }
 @keyframes spin {

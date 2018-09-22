@@ -49,11 +49,13 @@ We put in a lot of marketing effort in the months leading up to Cal Hacks, resul
 
 Designing for such a large-scale event gave me the opportunity to make design decisions affecting logistics, organization, accessibility, and more. I designed maps for venue accessibility, organized sign design & placement to optimize the hacker and sponsor check-in process, and created badge checklists to streamline snacks & meals.
 
-These design decisions affected more than just the visual branding of the hackathon &mdash; they guided the logistics of a 2000+ person event held across five stories of a collegiate football stadium. This experience tangibly exemplifies the power of good design in organization.
+These design decisions affected more than just the visual branding of the hackathon &mdash; they guided the logistics of a 2000+ person event held across five stories of a collegiate football stadium. This experience tangibly exemplifies the power of good design in organization. The hackers, sponsors, volunteers, mentors, and other attendees at Cal Hacks each have well-defined user problems that I studied and understood in order to create enjoyable physical product solutions.
 
 ## Takeaways
 
 Cal Hacks 4.0 was my first experience ideating, executing, & expanding a branding image that thousands of people interacted with. Cal Hacks is an immense part of the Berkeley CS community, so I never go a day on campus without seeing a student decked out in a 4.0 shirt or with a dd0ski sticker on their laptop. I'm very thankful to have made a lasting impact on my (and other!) university's campus through my designs.
+
+My experience at Cal Hacks has been predominantly defined by team collaboration. Although I am the sole designer responsible for making all design decisions, I take feedback from a wide range of my colleagues across different aspects of our organization and design for their needs. Sponsorship, logistics, tech, marketing, outreach, and more all require design assets &mdash; hence I have experience working closely with multiple teams and stakeholders to make selfless design decisions for the betterment of the entire organization. This well-positions me to create visual systems that drive the organization of a complex set of needs.
 
 ![Cal Hacks 4.0 Team](./assets/ch4_team.jpg)
 

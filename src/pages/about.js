@@ -1,5 +1,6 @@
 import React from 'react'
 import me from './../assets/images/me-min.jpg'
+import Elsewhere from './../components/elsewhere/Elsewhere'
 
 import './../common.css';
 
@@ -40,8 +41,7 @@ const AboutPage = () => {
         whatever it may be, onto renderings representing the
         tangible geospatial world fascinates me.
       </h3>
-
-
+      <Elsewhere/>
     </div>
   )
 }
