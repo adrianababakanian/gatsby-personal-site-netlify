@@ -6,13 +6,17 @@ tags: ["design"]
 ---
 
 <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank" class="cycle">CS 160</a>
-is UC Berkeley’s course in User Interface Design & Development. I took the course in Spring 2018 because of my passion for interaction-driven engineering. The class was divided into teams which each developed an Android application from the ground up, starting with brainstorming and then moving through the iterative design process of sketching, prototyping, UER development, user testing, and production. I enjoyed CS 160 so much that I am now a GSI on the course staff for Fall 2018!
+is UC Berkeley’s course in User Interface Design & Development. My passion for interaction-driven engineering led me to take the course in Spring 2018. The class is divided into teams which each develop an Android application from the ground up, starting with brainstorming and then moving through the iterative design process of sketching, prototyping, UER development, user testing, and production. I enjoyed CS 160 so much that I am now a GSI on the course staff for Fall 2018!
 
-My team developed an Android app called Dinestination, an application that determines the best place for a user to eat based on time constraints and target destination. Feel free to check out our <a href="https://github.com/adrianababakanian/busybears" target="_blank" class="cycle">source code</a> and <a href="https://youtu.be/id0EGZajkS4" target="_blank" class="cycle">final project video</a>!
+My team developed Dinestination, an Android application that determines the best place for a user to eat based on time constraints and target destination. Take a look at our
+<a href="https://github.com/adrianababakanian/busybears/" target="_blank" class="cycle">source code</a>
+and
+<a href="https://youtu.be/id0EGZajkS4" target="_blank" class="cycle">final project video</a>
+for a robust synthesis of each stage of the process.
 
 ![](./assets/dinestination.png)
 
-In this section I focus on detailing my design process behind the visual interface development. For technical details regarding my implementation process, please see the programming section of my site here!
+In this section I focus on detailing my design process behind the visual interface development. For technical details regarding my implementation process, please see my programming <a href="https://adrianababakanian.io/code/dinestination" target="_blank" class="cycle">documentation</a>.
 
 ## Brainstorming
 
@@ -33,11 +37,11 @@ Our solution was to create a single flow for finding a place to eat that won’t
 
 ## Contextual Inquiry
 
-One of CS 160’s primary motivations as a course is to hone the skills of design and development for defined target user groups outside of one’s own user space. That is, practicing the ability to design for a user and not for oneself. As such, we performed contextual inquiry by defining a specific target user and determining the goals they need to meet by observing them in their task-based environment. ____’s article on contextual inquiry and task analysis provides wonderful insight into the “master-apprentice” techniques that leads to meaningful user insights as opposed to artificial results that usually result from interviews conducted in a traditional setting.
+One of CS 160’s primary motivations as a course is to hone the skills of design and development for defined target user groups outside of one’s own user space. That is, practicing the ability to design for a user and not for oneself. As such, we performed contextual inquiry by defining a specific target user and determining the goals they need to meet by observing them in their task-based environment. ____’s We used the “master-apprentice” interviewing technique that leads to meaningful user insights as opposed to artificial results that usually result from interviews conducted in a traditional setting.
 
-We defined our target users as people who are on their way to a specific destination under a time constraint and need to get something to eat along the way. Check out the detailed results of our contextual inquiry and task analysis process here!
+We defined our target users as people who are on their way to a specific destination under a time constraint and need to get something to eat along the way. The detailed results of our contextual inquiry and task analysis process are provided <a href="https://paper.dropbox.com/doc/Contextual-Inquiry-Task-Analysis-Competitive-Analysis--AN4VaB8Q9A0rgKfijJLkj5NgAg-pgCTA8208BeAzDLTtF6G9" target="_blank" class="cycle">here</a>.
 
-We conducted inquiries with target users each on their way to a location and needed to grab something to eat along the way, but all in different contexts.
+We conducted inquiries with target users each on their way to a location who needed to grab something to eat along the way. However, we made the decision to choose these users from a range of different contexts. For example, we chatted with students stopping at Chipotle on their way to class, as well as groups of friends planning a place to grab dinner before the start of their movie.
 
 Based on our user inquiries, we found that the average user will likely use some combination of Yelp searching, Googling, opening navigation apps, and more to achieve their goal. This manual searching is a limiting factor in both efficiency and range of discoverable restaurants. We found that users tended to search for restaurants only around their start and end locations, thus missing out on a wide range of options along the route. This behavior is nonetheless understandable given the linear nature of the current workflow — this mental balancing act across apps requires keeping track of a lot of information in order to gather the information necessary to make a decision.
 
@@ -46,41 +50,44 @@ Based on our user inquiries, we found that the average user will likely use some
 We investigated a series of task analysis questions in order to drive the development of our interface — by considering tasks performed by the target user, we were able to optimize our interface for the user’s needs. This task-driven design methodology lead us to create the following distillation of tasks that the UI should support, parameterized by levels of complexity:
 
 #### Easy
-* &rarr; Find restaurants nearby with short wait times. If users sets destination as their current location or very close to it, the interface will provide restaurants nearby sorted in order of shortest wait time. So if a user wanted to use this app when they are already at the location they need to be at, they do not necessarily have to find restaurants along a path. This will allow them to still find restaurants and their wait times, but just in their vicinity.
-* &rarr; (See detailed description with Interface Design) Ability to filter restaurant options by dietary restrictions/preferences/price. This filtering is very simple but powerful and can be applied to many situations — suppose the user is craving a certain type of cuisine, or is going out with a group of people who need vegan options on the menu. This helps the user further narrow down restaurants easily, without having to explore each option and mentally cross them out. It also helps in not querying excess information to the user and distracting them when they are trying to quickly choose a place to eat.
+* &rarr; Find restaurants nearby with short wait times. If users sets their destination as their current location or very close to it, the interface will provide restaurants nearby sorted in order of shortest wait time. So if a user wanted to use this app when they are already at the location they need to be at, they do not necessarily have to find restaurants along a path. This will allow them to still find restaurants and their wait times, but just in their vicinity.
+* &rarr; Ability to filter restaurant options by dietary restrictions/preferences/price. This filtering is very simple but powerful and can be applied to many situations — suppose the user is craving a certain type of cuisine, or is going out with a group of people who need vegan options on the menu. This helps the user further narrow down restaurants easily, without having to explore each option and mentally cross them out. It also helps in not querying excess information from the user and distracting them when they are trying to quickly choose a place to eat.
 
 #### Moderate
-* &rarr; (See detailed description with Interface Design) Set destination you’re heading to and the time you need to be there in order to get suggestions about where to eat along the way. This task will combine the estimated wait time on top of trip time to provide a better judgment of whether or not to select a specific restaurant to dine at. This helps the user plan their time and will automatically suggest restaurants that will fit into their schedule once an arrival time is set.
+* &rarr; Set destination you’re heading to and the time you need to be there in order to get suggestions about where to eat along the way. This task will combine the estimated wait time on top of trip time to provide a better judgment of whether or not to select a specific restaurant to dine at. This helps the user plan their time and will automatically suggest restaurants that will fit into their schedule once an arrival time is set.
 * &rarr; Allowing users to set a departure time in the future to plan their schedule in advance. For example, the user is planning on going to a concert later that night and wants to start planning their day in the morning, so they can set the time they estimate they will be departing for dinner. This task will pull information about wait times based off the departure time the user specified.
 
 #### Difficult
-* &rarr; (See detailed description with Interface Design) User wants to see details of a restaurant suggested by the app via the heatmap, such as its rating, the actual wait time, etc. This task entails selecting a restaurant suggested on the heatmap and learning more about it. It will also provide users with the ability to be more informed about the restaurant other than just its name, distance, and wait time, so the user will not have to rely on another app to find more information.
+* &rarr; User wants to see details of a restaurant suggested by the app via the heatmap, such as its rating, the actual wait time, etc. This task entails selecting a restaurant suggested on the heatmap and learning more about it. It will also provide users with the ability to be more informed about the restaurant other than just its name, distance, and wait time, so the user will not have to rely on another app to find more information.
 * &rarr; Incorporating take-out orders synchronized with when you should go to pick up the food. The user will input what time they are leaving by, and the app will suggest to them when to order their food. Otherwise, the user will order food, and the app will suggest to them when they should leave by. If the user tries to order food in a not timely manner, the app will warn them.
 * &rarr; Smart calendar integration and notifications to help busy users manage their days.
 * &rarr; Crowdsource data from users regarding the accuracy of wait times to improve our algorithms.
 
 #### Extreme
-* &rarr; Integrate service with hardware, for example - coordinating your route with a Kiwi robot delivery.
+* &rarr; Integrate service with hardware. For example, coordinating your route with a Kiwi robot delivery.
 
 Ultimately, after the contextual inquiry and task analysis processes we defined the following key tasks for our interface to be required to optimally perform:
 
-* &rarr; Find restaurants based on the user’s time and destination constraints.
-* &rarr; Filtering restaurant results by user preferences.
-* &rarr; Select a restaurant to navigate to from the heatmap based on restaurant details.
+* __&rarr; Find restaurants based on the user’s time and destination constraints.__
+* __&rarr; Filtering restaurant results by user preferences.__
+* __&rarr; Select a restaurant to navigate to from the heatmap based on restaurant details.__
 
 ## Competitive Analysis
-We performed in-depth analysis of both direct and indirect competitors to inform our understanding of the target user’s needs, gain familiarity with the existing market, and determine both strengths and points of improvement for existing solutions. Take a look at the <a href="https://paper.dropbox.com/doc/Contextual-Inquiry-Task-Analysis-Competitive-Analysis--ALuXAoZ6pRhPtNdlQ5wv3jLgAg-pgCTA8208BeAzDLTtF6G9/" target="_blank" class="cycle">detailed results of our analysis</a>! We made an effort to include competitors that are not just Android applications — doing so allowed us to think outside of the box of mobile app development.  Competitors included Google Maps, Google Popular Times, Yelp, Nowait, Waitly, OpenTable, Soylent, Postmates, drive-through fast food, and Uber.
+We performed in-depth analysis of both direct and indirect competitors to inform our understanding of the target user’s needs, gain familiarity with the existing market, and determine both strengths and points of improvement for existing solutions. We made an effort to include competitors that are not just Android applications — doing so allowed us to think outside of the box of mobile app development.  Competitors included Google Maps, Google Popular Times, Yelp, Nowait, Waitly, OpenTable, Soylent, Postmates, drive-through fast food, and Uber.
 
-The aforementioned competitors have “solved” the problems of eating in a hurry, getting to a destination, and finding nearby restaurants individually, but none of them compile this information effectively.  Most of our interviewees currently use a combination of several applications to achieve this task (e.g. Google Maps, Nowait, and Yelp), and even then, they aren’t getting the added features of incorporating a destination arrival time into the equation, or coordinating take-out.
+The aforementioned competitors have “solved” the problems of eating in a hurry, getting to a destination, and finding nearby restaurants individually, but don't necessarily compile this information effectively.  Most of our interviewees currently use a combination of several applications to achieve this task (e.g. Google Maps, Nowait, and Yelp), and even then, they aren’t getting the added features of incorporating a destination arrival time into the equation, or coordinating take-out.
 
 ## Low Fidelity Prototype
 I started the low fidelity prototyping process by storyboarding task scenarios of varying levels of complexity. Each of the storyboards below is accompanied by initial mocks of the screens required to perform the tasks in the storyboard.
 
-* &rarr; Easy Task: Filtering restaurant results
+* __&rarr; Easy Task: Filtering restaurant results.__
+
 ![](./assets/easy.png)
-* &rarr; Moderate Task: Set time & destination to find restaurant
+* __&rarr; Moderate Task: Set time & destination to find restaurant.__
+
 ![](./assets/medium.png)
-* &rarr; Difficult task: Analyze restaurant details
+* __&rarr; Difficult task: Analyze restaurant details.__
+
 ![](./assets/hard.png)
 
 I then made an interactive Invision prototype, which we put together into a <a href="https://www.dropbox.com/s/20s9httalqkfodu/160Vid.mp4?dl=0" target="_blank" class="cycle">video</a> showcasing the prototype performing in its target use case.
@@ -108,16 +115,16 @@ Below is a summary of the UER results that informed the next stages of design it
 * &rarr; Unexpected behavior of defaulting to ridesharing (Uber) when selecting the “Route me” button
 
 ## High Fidelity Prototype
-My iterations from low fidelity to high fidelity prototype were informed by the results of my user experience research as detailed above. Priority was assigned to re-designs that minimized the user’s gulfs of execution and evaluation — that is, iterating upon the design in order to match the user’s expectations of how the system should respond to their interactions. You can check out the evolution points below, our
+My iterations from low fidelity to high fidelity prototype were informed by the results of my user experience research as detailed above. Priority was assigned to re-designs that minimized the user’s gulfs of execution and evaluation — that is, iterating upon the design in order to match the user’s expectations of how the system should respond to their interactions. Explore the evolution points below, our
 <a href="https://docs.google.com/presentation/d/1wGbCuoasUhY5VAoaSJaGSB7ZcSgSKTjhLn_0XNrSA-4/edit" target="_blank" class="cycle">mid-semester critique slide deck</a> and the
-<a href="https://projects.invisionapp.com/share/WJG4MRC5FN6#/screens/284576440_Main_Screen" target="_blank" class="cycle">finalized Invision prototype</a>!
+<a href="https://projects.invisionapp.com/share/WJG4MRC5FN6#/screens/284576440_Main_Screen" target="_blank" class="cycle">finalized Invision prototype</a>.
 
-The comparisons below show the low-fidelity screens on the left, and screenshots of the corresponding screens in the final implemented interface.
+The comparisons below show the low-fidelity screens on the left, and screenshots of the corresponding screens in the final implemented interface on the right.
 
 #### Key evolution points:
 
 * __&rarr; Misleading signifiers removed from interface__.
-  * &#8702; I removed the “find restaurants” button from the main screen and then display it conditionally only once the user has input their required logistics. This decision is consistent both with the aforementioned user research results and Hicks’ Law, which states that the time it takes for a user to make a decision increases with the number of options presented to said user.
+  * &#8702; I removed the “find restaurants” button from the main screen and then display it conditionally only once the user has input their required logistics. This decision is consistent both with the aforementioned user research results and <a href="https://en.wikipedia.org/wiki/Hick%27s_law" target="_blank" class="cycle">Hicks’ Law</a>, which states that the time it takes for a user to make a decision increases with the number of options presented to said user.
 
   ![](./assets/signifiers.png)
 * __&rarr; Resolved lack of clarity in how to navigate to desired restaurant once determined__.
@@ -144,4 +151,4 @@ The comparisons below show the low-fidelity screens on the left, and screenshots
   ![](./assets/navigation-options.png)
 
 ## Takeaways
-This highly informed iterative design process supported by contextual inquiry, task analysis, user experience research, and studio reviews really taught me a lot about what it takes to design a highly effective interface optimized for tasks required by the target user.
+This highly informed iterative design process supported by contextual inquiry, task analysis, user experience research, and studio reviews really taught me a lot about what it takes to design a highly effective interface optimized for tasks required by the target user. Being able to touch on all aspects of the development cycle was very empowering to me as both an engineer and a designer. The analyses I performed and designs I implemented augmented my insight into creating empowering, user-driven interfaces through both visual and interaction design. I'm excited by the results that occur when technical logic is informed by visual reasoning and cognitive research.

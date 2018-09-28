@@ -6,7 +6,7 @@ tags: ["code"]
 ---
 
 <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank" class="matcha">CS 160</a>
-is UC Berkeley’s course in User Interface Design & Development. I took the course in Spring 2018 because of my passion for interaction-driven engineering. The class divided into teams which each developed an Android application from the ground up, starting with brainstorming and then moving through the iterative design process of sketching, prototyping, UER development, user testing, and production. I enjoyed CS 160 so much that I am now a GSI on the course staff for Fall 2018!
+is UC Berkeley’s course in User Interface Design & Development. My passion for interaction-driven engineering led me to take the course in Spring 2018. The class is divided into teams which each develop an Android application from the ground up, starting with brainstorming and then moving through the iterative design process of sketching, prototyping, UER development, user testing, and production. I enjoyed CS 160 so much that I am now a GSI on the course staff for Fall 2018!
 
 My team developed Dinestination, an Android application that determines the best place for a user to eat based on time constraints and target destination. Take a look at our
 <a href="https://github.com/adrianababakanian/busybears/" target="_blank" class="matcha">source code</a>
@@ -16,7 +16,7 @@ for a robust synthesis of each stage of the process.
 
 ![Dinestination](./assets/dinestination.png)
 
-In this section I focus on detailing my technical development process behind the app's implementation. Please find details about my iterative design process, informed visual decisions, and user experience research under my [design documentation](localhost:8000/design/dinestination) for the project.
+In this section I focus on detailing my technical development process behind the app's implementation. Please find details about my iterative design process, informed visual decisions, and user experience research under my <a href="https://adrianababakanian.io/design/dinestination" target="_blank" class="matcha">design documentation</a> for the project.
 
 ## Motivation
 Dinestination aims to solve the on-the-go user's need of finding a place to eat along the way to a particular destination under a time constraint. Despite the robustness of existing mapping applications and restaurant databases, currently no single interface exists for entering a location, time to be there, and an optional set of filters to generate a route and route-optimal restaurants that get the user to their final destination on time. As such, we took on the challenge of combining an array of APIs into a single, intuitive, and flexible interface unifying the existing fragmented workflow across many apps and queries.
@@ -126,4 +126,4 @@ private void addMarkers() {
 
 ##Takeaways
 
-Implementing interfaces that I designed  is always a rewarding process for me as someone fascinated by the way in which user interaction complicates software. This project allowed me to interact with a wide range of variability, datasets, and external APIs &mdash; each of which is a complicating factor affecting the issues that the interface must take into consideration. I gained much programmatic and HCI maturity by implementing against this spectrum of external complexity to create and interface that abstracts away complexity for the user.
+Implementing interfaces that I designed  is always a rewarding process for me as someone fascinated by the way in which user interaction complicates software. This project allowed me to interact with a wide range of variability, datasets, and external APIs &mdash; each of which is a complicating factor affecting the issues that the interface must take into consideration. I gained much programmatic and HCI maturity by implementing against this spectrum of external complexity to create an interface that abstracts away complexity for the user.

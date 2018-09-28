@@ -24,9 +24,7 @@ I worked with the
 
 Since I created Mo completely from scratch, I designed, engineered, and printed all non-electronic parts of Mo in [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview?mktvar002=724861&mkwid=sOICwxb1H|pcrid|226118724187|pkw|autodesk%20fusion%20360|pmt|e|pdv|c|slid||pgrid|52893102612|ptaid|kwd-488376946792|&intent=&utm_medium=cpc&utm_source=google&utm_campaign=GGL_FUSION360_US_BR_SEM_EXACT%3EBrand&utm_term=autodesk%20fusion%20360&utm_content=sOICwxb1H|pcrid|226118724187|pkw|autodesk%20fusion%20360|pmt|e|pdv|c|slid||pgrid|52893102612|ptaid|kwd-488376946792|&gclid=EAIaIQobChMIi-bkpeu02AIVFNVkCh3JOA2pEAAYASAAEgK8bfD_BwE&dclid=CN7KiajrtNgCFUv0ZAodRJMORg) &mdash; a 3D CAD program that allows for designing, engineering, and simulating.
 
-I went through many iterations of designing in order to get the chassis of the robot just right. Factors to consider included properly designating internal space for the electronics, engineering the motor compartments and accompanying fasteners, and designing for the inclusion of magnets to solidfy the encasing structure while also allowing for easy access to the internal electronics.
-
-Below are some different views of the Fusion file I created for Mo's chassis.
+I went through many iterations of designing in order to get the chassis of the robot just right. Factors to consider included properly designating internal space for the electronics, engineering the motor compartments and accompanying fasteners, and designing for the inclusion of magnets to solidify the encasing structure while also allowing for easy access to the internal electronics.
 
 The finalized, full-poly version of the chassis and hinged door took almost 12 hours to print on the
 <a href="https://ultimaker.com/en/products/ultimaker-2-plus" target="_blank" class="atomic">Ultimaker 2+</a>, a wonderful and user-friendly 3D printer. All of my tweaking, precise measuring, and iterating paid off when I ended up with the compact and flush chassis shown below.

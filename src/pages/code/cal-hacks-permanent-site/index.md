@@ -5,7 +5,7 @@ featuredImage: ./assets/ch-site.png
 tags: ["code"]
 ---
 
-A permanent landing page for an organization establishes both consistency in visual identity and a platform for showcasing its mission. As the world's largest collegiate hackathon, <a href="https://calhacks.io" target="_blank" class="matcha">Cal Hacks</a> consistently is working to drive initiatives, partner with other teams & companies, and make an impact in the world of tech. As such, I developed a permanent site to go along with the [Cal Hacks brand]() I created.
+A permanent landing page for an organization establishes both consistency in visual identity and a platform for showcasing its mission. As the world's largest collegiate hackathon, <a href="https://calhacks.io" target="_blank" class="matcha">Cal Hacks</a> consistently is working to drive initiatives, partner with other teams & companies, and make an impact in the world of tech. As such, I developed a permanent site to go along with the <a href="https://adrianababakanian.io/design/cal-hacks-branding" target="_blank" class="matcha">Cal Hacks brand</a> I created.
 
 ![Cal Hacks Site](./assets/ch-site.png)
 
@@ -16,7 +16,7 @@ Previously, Cal Hacks released landing pages for each hackathon iteration and th
 The site is build in ReactJS, and all designs were mocked up in Sketch.
 
 ## Animations
-The [Hackanile]() logo I created for Cal Hacks is inspired by a combination of circuitry and data structure-esque graph diagram renditions. As such, I use a lot of node-inspired graphics across Cal Hacks branding assets. The placement of these monochrome nodes against a saturated background to me suggests the appearance of floating &mdash; and so I decided to animate the node assets, hence turning them into a floating network.
+The logo I created for Cal Hacks is inspired by a combination of circuitry and data structure-esque graph diagram renditions. As such, I use a lot of node-inspired graphics across Cal Hacks branding assets. The placement of these monochrome nodes against a saturated background to me suggests the appearance of floating &mdash; and so I decided to animate the node assets, hence turning them into a floating network.
 
 I included the nodes as SVGs, and hand-animated each of the vector elements. In the future it might be interesting to algorithmically generate these animations.
 
@@ -37,3 +37,6 @@ As such, I ended up at the final split-screen implementation. The left half serv
 
 ## Implementation Logic
 For each of the content pages, I separated the screen into a title and content half. This decision was primarily informed by my desire to maintain the visual design scheme established by the permanent branding while simultaneously addressing the usability results for my user testing on the color palette.
+
+## Takeaways
+Creating a visual brand and then translating it into an interaction-driven interface was a really fun experience for me. The process of doing so revealed disparities in visual and interaction logic &mdash; resolving these complexities has afforded me a strength in using visual intuitions to inform interface implementation. I'm hence well-positioned to operate at the juxtaposition of design and implementation. 
