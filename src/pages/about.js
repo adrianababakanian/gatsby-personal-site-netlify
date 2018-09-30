@@ -16,7 +16,7 @@ const AboutPage = () => {
       </h1>
       <h3>
         I'm a fourth-year Regents' Scholar at UC Berkeley
-        purusing a double major in Computer Science 🌈‍ &
+        pursuing a double major in Computer Science 🌈‍ &
         Applied Mathematics 🦄.
       </h3>
       <h3>
