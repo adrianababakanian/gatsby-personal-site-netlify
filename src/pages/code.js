@@ -7,6 +7,7 @@ import LazyLoad from 'react-lazy-load'
 import dinestination from './code/dinestination/assets/dinestination.png'
 import map from './code/stubhub-city-pages/assets/map.png'
 import ch_site from './code/cal-hacks-permanent-site/assets/ch-site.png'
+import stubhub from './code/stubhub-community/assets/stubhub.png'
 import pinterest from './code/pinterest-ring-theory/assets/pinterest.png'
 import landing from './code/cal-hacks-5-portal/assets/landing.png'
 
@@ -21,6 +22,7 @@ class CodeIndex extends React.Component {
       "/code/dinestination/": dinestination,
       "/code/stubhub-city-pages/": map,
       "/code/cal-hacks-permanent-site/": ch_site,
+      "/code/stubhub-community/": stubhub,
       "/code/pinterest-ring-theory/": pinterest,
       "/code/cal-hacks-5-portal/": landing
     }
