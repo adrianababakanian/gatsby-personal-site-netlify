@@ -1,5 +1,5 @@
 import React from 'react'
-import me from './../assets/images/me-min.jpg'
+import me from './../assets/images/me.png'
 import Elsewhere from './../components/elsewhere/Elsewhere'
 
 import './../common.css';
@@ -7,10 +7,19 @@ import './../common.css';
 const AboutPage = () => {
   return (
     <div className="about">
-      <div className="me-wrap">
+      <div className="me-wrapper">
         <img src={me} className="me"/>
         <div className="overlay"/>
       </div>
+
+      <h4> Hi, I'm Adriana. </h4>
+
+      <p> I'm a designer driven by my recognition of aesthetic
+      implications in even the most conceptual of things, informed by a deep passion for technical logic.
+      I currently study at UC Berkeley,
+      pursuing a double major in Computer Science &
+      Applied Mathematics. </p>
+
       <h1>
         Hi! ✨ I'm Adriana Babakanian.
       </h1>

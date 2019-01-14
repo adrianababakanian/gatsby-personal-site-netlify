@@ -1,0 +1,43 @@
+@import "./../../common.scss";
+
+$darks: (
+  pink: unquote('#8A466C'),
+  purple: unquote('#655186'),
+  blue: unquote('#426980'),
+  green: unquote('#406F68'),
+  orange: unquote('#986C40'),
+  red: unquote('#985551')
+);
+
+$lights: (
+  pink: unquote('#DCC8D3'),
+  purple: unquote('#D1CCDB'),
+  blue: unquote('#C7D2D9'),
+  green: unquote('#C3D3CF'),
+  orange: unquote('#E0D4C7'),
+  red: unquote('#E0CCCC')
+);
+
+@mixin color-tag($color) {
+  background: #{map-get($darks, $color)};
+  color: #{map-get($lights, $color)};
+}
+
+
+.tag {
+  height: 20px;
+  display: inline-block;
+  padding: 1px 8px;
+  margin: 8px 8px 0 0;
+  border-radius: 4px;
+  font: 400 14px Lato;
+  background: get(deep_blue);
+  color: get(light_blue);
+
+  &.Visual { @include color-tag(pink) }
+  &.UI { @include color-tag(purple) }
+  &.Branding { @include color-tag(blue) }
+  &.Web { @include color-tag(green) }
+  &.Mobile { @include color-tag(orange) }
+  &.Prototyping { @include color-tag(red) }
+}

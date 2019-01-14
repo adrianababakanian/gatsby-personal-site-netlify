@@ -2,7 +2,8 @@
 title: "Cal Hacks Branding"
 date: "2018-09-12T17:12:33.962Z"
 featuredImage: ./assets/scaled.png
-tags: ["design"]
+tags: ["design", "Visual", "Branding", "Web", "UI"]
+blurb: "Created, developed, and progressed the visual identity of the world's largest hackathon."
 ---
 
 <a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. As our team’s designer, I utilize design as a tool for progressing our initiatives and the causes that inspire me.

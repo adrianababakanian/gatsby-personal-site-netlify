@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,600,800");
 html {
-  font-family: Lato; }
+  font-family: Lato;
+  background: #2F3437; }
 
 .gatsby-resp-image-image {
   border-radius: 8px; }
@@ -17,7 +18,7 @@ video {
   height: auto;
   margin: 220px auto;
   font-family: Lato;
-  color: #253044; }
+  color: blue; }
   @media (max-width: 700px) {
     .container {
       margin: 220px 40px;
@@ -45,6 +46,7 @@ video {
     padding-left: 1em;
     text-indent: -1em; }
   .container a:link, .container a:visited, .container a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     color: #253044;
     text-decoration: none;
     transition: background-color 0.2s ease-in-out;
@@ -55,44 +57,43 @@ video {
     .container a:link:hover, .container a:visited:hover, .container a:active:hover {
       font-weight: 600; }
   .container a.cycle {
-    background: #93D9FF99;
-    background-color: #93D9FF99;
+    background-color: #426980;
     padding: 2px 5px; }
     .container a.cycle:hover {
-      background: #93D9FFCC;
-      background-color: #93D9FFCC; }
+      background-color: #426980; }
   .container a.matcha {
-    background: #B0E69599;
     background-color: #B0E69599;
     padding: 2px 5px; }
     .container a.matcha:hover {
-      background: #B0E695CC;
       background-color: #B0E695CC; }
   .container a.atomic {
-    background: #F9886C99;
     background-color: #F9886C99;
     padding: 2px 5px; }
     .container a.atomic:hover {
-      background: #F9886CCC;
       background-color: #F9886CCC; }
   .container a.sakura {
-    background: #EAD2DC99;
     background-color: #EAD2DC99;
     padding: 2px 5px; }
     .container a.sakura:hover {
-      background: #EAD2DCCC;
       background-color: #EAD2DCCC; }
+  .container a.else {
+    background-color: rgba(0, 0, 0, 0); }
+  .container .about a {
+    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0); }
   .container h1 {
     font: 700 38px Lato;
     letter-spacing: 1px;
-    max-width: 400px; }
+    max-width: 400px;
+    color: #EBEBEB; }
     @media (max-width: 500px) {
       .container h1 {
         font: 700 30px Lato; } }
   .container h2 {
     font: 600 24px Lato;
     width: 476px;
-    margin: 50px 0 20px 0; }
+    margin: 50px 0 20px 0;
+    color: #EBEBEB; }
     @media (max-width: 500px) {
       .container h2 {
         width: 100%;
@@ -100,7 +101,8 @@ video {
   .container h3 {
     font: 400 24px Lato;
     line-height: 46px;
-    width: 500px; }
+    width: 500px;
+    color: #EBEBEB; }
     @media (max-width: 700px) {
       .container h3 {
         width: 100%;
@@ -165,29 +167,33 @@ a {
   border-bottom: none;
   cursor: pointer;
   border-bottom-color: transparent; }
+  .em.blue {
+    background-color: #426980;
+    color: #C7D2D9; }
+  .em.orange {
+    background-color: #986C40;
+    color: #E0D4C7; }
+  .em.green {
+    background-color: #406F68;
+    color: #C3D3CF; }
   .em.cycle {
-    background: #93D9FF99;
-    background-color: #93D9FF99; }
+    background-color: #426980;
+    color: #C7D2D9; }
   .em.matcha {
-    background: #B0E69599;
-    background-color: #B0E69599; }
+    background-color: #B0E69599;
+    color: #B0E695; }
   .em.atomic {
-    background: #F9886C99;
-    background-color: #F9886C99; }
+    background-color: #F9886C99;
+    color: #F9886C; }
   .em.sakura {
-    background: #EAD2DC99;
     background-color: #EAD2DC99; }
   .em:hover.cycle {
-    background: #93D9FFCC;
-    background-color: #93D9FFCC; }
+    background-color: #426980; }
   .em:hover.matcha {
-    background: #B0E695CC;
     background-color: #B0E695CC; }
   .em:hover.atomic {
-    background: #F9886CCC;
     background-color: #F9886CCC; }
   .em:hover.sakura {
-    background: #EAD2DCCC;
     background-color: #EAD2DCCC; }
   .em .content {
     position: relative; }
@@ -204,16 +210,12 @@ a {
     border-bottom: none;
     text-decoration: none; }
     .em .highlight.cycle {
-      background: #93D9FF;
-      background-color: #93D9FF; }
+      background-color: #426980; }
     .em .highlight.matcha {
-      background: #B0E695;
       background-color: #B0E695; }
     .em .highlight.atomic {
-      background: #F9886C;
       background-color: #F9886C; }
     .em .highlight.sakura {
-      background: #EAD2DC;
       background-color: #EAD2DC; }
     .em .highlight.header {
       height: 0%;

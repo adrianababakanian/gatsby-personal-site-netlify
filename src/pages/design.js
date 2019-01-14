@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazy-load'
 
 import Preview from './../components/preview/Preview'
+import FilterBar from './../components/filter-bar/FilterBar'
 
 import ch from './design/cal-hacks-branding/assets/scaled.png'
 import dinestination from './design/dinestination/assets/dinestination.png'
@@ -32,16 +33,17 @@ class DesignIndex extends React.Component {
     return (
       <div>
         <Helmet title={`Design | ${siteTitle}`} />
-        <h1>Design</h1>
-        <p>
+        <FilterBar />
+        <div className="divider" />
+        {/* <p>
           Product, user interface, visual, branding, & beyond.
-        </p>
+        </p> */}
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <LazyLoad offset={300}>
-                <Preview key={node.id} project={node} color="cycle">
+                <Preview key={node.id} project={node} /*color="cycle"*/ >
                   <img src={mapper[node.fields.slug]}/>
                 </Preview>
               </LazyLoad>
@@ -73,6 +75,8 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            tags
+            blurb
             date(formatString: "DD MMMM, YYYY")
             title
             featuredImage {

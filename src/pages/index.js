@@ -10,9 +10,9 @@ const IndexPage = () => (
     <h1>Hi, I'm Adriana.</h1>
     <h3>
       I'm a
-      {<Emphasis content="software engineer" color={"cycle"}></Emphasis>},
-      {<Emphasis content="product designer" color={"atomic"}></Emphasis>}, &
-      {<Emphasis content="web developer" color={"matcha"}></Emphasis>}&nbsp;
+      {<Emphasis content="software engineer" color={"blue"}></Emphasis>},
+      {<Emphasis content="product designer" color={"orange"}></Emphasis>}, &
+      {<Emphasis content="web developer" color={"green"}></Emphasis>}&nbsp;
       studying Computer Science & Math at the University of California, Berkeley.
     </h3>
 

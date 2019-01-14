@@ -1,7 +1,8 @@
 @import "./../../common.scss";
 
 .header {
-  background: white;
+  background: #2F3437;
+  color: get(dust);
   width: 668px;
   height: auto;
   overflow-y: auto;
@@ -43,9 +44,9 @@
 
   .header-item {
     float: right;
-    font: 800 16px Lato;
+    font: 400 16px Lato;
     text-decoration: none;
-    color: get("atom");
+    color: get(dust);
     padding: 6px 8px;
     border-bottom-color: transparent;
 
