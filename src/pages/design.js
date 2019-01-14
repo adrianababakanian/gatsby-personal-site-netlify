@@ -35,15 +35,12 @@ class DesignIndex extends React.Component {
         <Helmet title={`Design | ${siteTitle}`} />
         <FilterBar />
         <div className="divider" />
-        {/* <p>
-          Product, user interface, visual, branding, & beyond.
-        </p> */}
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <LazyLoad offset={300}>
-                <Preview key={node.id} project={node} /*color="cycle"*/ >
+                <Preview key={node.id} project={node}>
                   <img src={mapper[node.fields.slug]}/>
                 </Preview>
               </LazyLoad>

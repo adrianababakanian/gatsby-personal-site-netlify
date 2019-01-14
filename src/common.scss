@@ -57,16 +57,16 @@ $deep-shadow: 0 4px 12px 4px get(deep-shadow);
 }
 
 .gatsby-resp-image-image {
-  border-radius: 8px;
+  //border-radius: 8px;
 }
 
 .gatsby-resp-image-background-image {
-  border-radius: 8px;
+  //border-radius: 8px;
   background-image: none;
 }
 
 video {
-  border-radius: 8px;
+  //border-radius: 8px;
 }
 
 .container {
@@ -87,7 +87,7 @@ video {
 
   .language-java {
     padding: 40px 20px;
-    border-radius: 8px;
+    // border-radius: 8px;
     position: relative;
     overflow: scroll;
   }
@@ -118,10 +118,10 @@ video {
       color: get(dust);
       text-decoration: none;
       transition: background-color 0.2s ease-in-out;
-      border-radius: 4px;
+      // border-radius: 4px;
       border-bottom: none;
 
-      &.preview { border-radius: 6px; }
+
 
       &:hover { font-weight: 600; }
     }
@@ -209,7 +209,6 @@ video {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 8px;
     margin: 0 0 40px 0;
     position: relative;
     box-shadow: 0 2px 12px 2px get(shadow);
@@ -226,7 +225,6 @@ video {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 8px;
     margin: 0 0 40px 0;
     position: relative;
     box-shadow: 0 2px 12px 2px get(shadow);

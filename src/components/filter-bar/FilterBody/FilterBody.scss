@@ -1,0 +1,19 @@
+.FilterBody {
+  width: 100%;
+  background: #3f4447;
+  z-index: 999;
+  cursor: pointer;
+  transition: 0.3 ease-in-out;
+  position: relative;
+  padding: 2px 4px;
+  border-radius: 0 0 3px 3px;
+
+  .tag-row {
+    padding: 2px 0;
+    padding-left: 57px;
+
+    &:hover {
+      background: #474c50;
+    }
+  }
+}

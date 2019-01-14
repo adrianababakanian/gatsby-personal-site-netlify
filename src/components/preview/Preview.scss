@@ -13,7 +13,6 @@
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  border-bottom: none;
 
   background: #3f4447;
   border: 1px solid #292c2f;
@@ -32,6 +31,7 @@
     img {
       height: 100%;
       width: auto;
+      transition: 0.3s ease-in-out;
     }
   }
 
@@ -46,9 +46,7 @@
       font-size: 20px;
     }
 
-    .tags {
-      margin: 8px 0;
-    }
+    .tags { margin: 8px 0; }
 
     .blurb {
       padding: 4px 0;
@@ -56,16 +54,6 @@
       color: get(dust);
       line-height: 20px;
     }
-  }
-
-  &.cycle { @include colorize(cycle) }
-  &.matcha { @include colorize(matcha) }
-  &.atomic { @include colorize(atomic) }
-  &.sakura { @include colorize(sakura) }
-
-  img {
-    width: 100%;
-    height: auto;
   }
 
   @media (max-width: 700px) {
@@ -120,9 +108,10 @@
   &:hover {
     box-shadow: 0 2px 12px 2px get(shadow);
     background: #474c50;
-    // .preview-hover {
-    //   opacity: 1;
-    // }
+
+    img {
+      transform: scale(1.02);
+    }
   }
 
   .preview-image {

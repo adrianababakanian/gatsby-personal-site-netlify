@@ -2,7 +2,8 @@
 
 .FilterBar {
   width: 100%;
-  height: 50px;
+  height: 30px;
+  padding: 0 0 10px 0;
 
   .filter-item {
     display: inline-block;
@@ -13,6 +14,11 @@
     &:hover {
       background: #474c50;
     }
+  }
+
+  &.showBody {
+    box-shadow: 0 2px 12px 2px get(shadow);
+    height: auto;
   }
 
 }

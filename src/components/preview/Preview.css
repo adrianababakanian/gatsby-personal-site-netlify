@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:200,400,600,800");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,800");
 html {
   font-family: Lato;
   background: #2F3437;
@@ -17,7 +17,7 @@ video {
 .container {
   width: 600px;
   height: auto;
-  margin: 220px auto;
+  margin: 180px auto;
   font-family: Lato;
   color: #EBEBEB; }
   @media (max-width: 700px) {
@@ -123,10 +123,25 @@ video {
     font: 400 16px Lato;
     width: 600px;
     line-height: 30px;
-    margin: 25px 0; }
+    margin: 25px 0;
+    color: #EBEBEB; }
     @media (max-width: 700px) {
       .container p, .container ul, .container li {
         width: 100%; } }
+  .container .me-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 0 40px 0;
+    position: relative;
+    box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.14);
+    border-radius: 2px; }
+    .container .me-wrapper .me {
+      width: 100%; }
   .container .me-wrap {
     width: 100%;
     height: auto;
@@ -171,7 +186,6 @@ video {
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  border-bottom: none;
   background: #3f4447;
   border: 1px solid #292c2f;
   border-radius: 6px; }
@@ -186,7 +200,8 @@ video {
     border-radius: 2px; }
     .preview .image img {
       height: 100%;
-      width: auto; }
+      width: auto;
+      transition: 0.3s ease-in-out; }
   .preview .description {
     flex: 40%;
     height: calc(100% - 30px);
@@ -202,17 +217,6 @@ video {
       font: 200 14px Lato;
       color: #EBEBEB;
       line-height: 20px; }
-  .preview.cycle {
-    background-color: #426980; }
-  .preview.matcha {
-    background-color: #B0E695; }
-  .preview.atomic {
-    background-color: #F9886C; }
-  .preview.sakura {
-    background-color: #EAD2DC; }
-  .preview img {
-    width: 100%;
-    height: auto; }
   @media (max-width: 700px) {
     .preview {
       width: calc(100% - 10px);
@@ -252,6 +256,8 @@ video {
   .preview:hover {
     box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.14);
     background: #474c50; }
+    .preview:hover img {
+      transform: scale(1.02); }
   .preview .preview-image {
     width: 100%;
     height: 100%;

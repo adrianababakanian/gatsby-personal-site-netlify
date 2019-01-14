@@ -160,37 +160,33 @@ html {
     float: left;
     max-width: 400px; }
 
-.tag {
-  height: 20px;
-  display: inline-flex;
-  padding: 1px 8px;
-  margin: 4px 8px 4px 0;
-  border-radius: 4px;
+.FilterHeader {
   font: 400 14px Lato;
-  background: #426980;
-  color: #C7D2D9; }
-  .tag .x {
-    font: 300 9px Lato;
-    padding: 0 0 0 6px;
-    color: rgba(255, 255, 255, 0.4);
-    line-height: 20px; }
-  .tag.Visual {
-    background: #8A466C;
-    color: #DCC8D3; }
-  .tag.UI {
-    background: #655186;
-    color: #D1CCDB; }
-  .tag.Branding {
-    background: #426980;
-    color: #C7D2D9; }
-  .tag.Web {
-    background: #406F68;
-    color: #C3D3CF; }
-  .tag.Mobile {
-    background: #986C40;
-    color: #E0D4C7; }
-  .tag.Prototyping {
-    background: #985551;
-    color: #E0CCCC; }
+  color: #EBEBEB;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 2px 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative; }
+  .FilterHeader .label {
+    padding: 0 8px;
+    margin-top: -4px; }
+  .FilterHeader:hover {
+    background: #474c50; }
+  .FilterHeader.showBody {
+    background: #3f4447;
+    border-radius: 3px 3px 0 0;
+    width: 100%; }
+  .FilterHeader .filter-close.x {
+    margin-left: auto;
+    padding-right: 8px;
+    color: rgba(255, 255, 255, 0.4); }
+  .FilterHeader input {
+    background: #3f4447;
+    border: 0 solid #3f4447; }
+    .FilterHeader input:focus {
+      outline: none; }
 
-/*# sourceMappingURL=Tag.css.map */
+/*# sourceMappingURL=FilterHeader.css.map */

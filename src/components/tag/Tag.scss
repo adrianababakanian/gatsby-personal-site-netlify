@@ -26,13 +26,20 @@ $lights: (
 
 .tag {
   height: 20px;
-  display: inline-block;
+  display: inline-flex;
   padding: 1px 8px;
-  margin: 8px 8px 0 0;
+  margin: 4px 8px 4px 0;
   border-radius: 4px;
   font: 400 14px Lato;
   background: get(deep_blue);
   color: get(light_blue);
+
+  .x {
+    font: 300 9px Lato;
+    padding: 0 0 0 6px;
+    color: rgba(white, 0.4);
+    line-height: 20px;
+  }
 
   &.Visual { @include color-tag(pink) }
   &.UI { @include color-tag(purple) }
