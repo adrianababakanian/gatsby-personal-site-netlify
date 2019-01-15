@@ -6,11 +6,46 @@ import './Tag.css'
 
 library.add(faTimes);
 
-const Tag = ({ name, editable }) => (
-  <div className={`tag ${name}`}>
-    { name }
-    {editable ? <div className="x"> <FontAwesomeIcon icon="times" /> </div> : null}
-  </div>
-)
+class Tag extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(filter) {
+    this.props.handleFilterRemove(filter);
+  }
+
+  render() {
+
+    const name = this.props.name;
+
+    return (
+      <div className={`tag ${name}`}>
+        { name }
+        { this.props.editable ?
+          <div className="x" onClick={ () => this.handleClick(name) }>
+            <FontAwesomeIcon icon="times" />
+          </div>
+          : null
+        }
+      </div>
+    )
+  }
+
+}
+
+// const Tag = ({ name, editable }) => (
+//   <div className={`tag ${name}`}>
+//     { name }
+//     {editable ?
+//       <div className="x">
+//         <FontAwesomeIcon icon="times" />
+//       </div>
+//       : null
+//     }
+//   </div>
+// )
 
 export default Tag;

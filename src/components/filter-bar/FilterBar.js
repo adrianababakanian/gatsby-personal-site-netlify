@@ -18,6 +18,7 @@ class FilterBar extends React.Component {
     this.display = this.display.bind(this);
     this.hide = this.hide.bind(this);
     this.handleFilterAdd = this.handleFilterAdd.bind(this);
+    this.handleFilterRemove = this.handleFilterRemove.bind(this);
   }
 
   /* Display FilterBody. */
@@ -34,11 +35,19 @@ class FilterBar extends React.Component {
     })
   }
 
-  /* Update state to reflect which filters are applied
-   * and/or deselected. */
-  handleFilterAdd(filterList) {
+  handleFilterAdd(filter) {
     this.setState({
-      filters: this.state.filters.concat(filterList)
+      filters: this.state.filters.concat(filter)
+    })
+  }
+
+  handleFilterRemove(filter) {
+    var filtered = this.state.filters.filter(function(value, index, arr){
+        return value != filter;
+    });
+
+    this.setState({
+      filters: filtered
     })
   }
 
@@ -53,12 +62,14 @@ class FilterBar extends React.Component {
         <FilterBody filters={this.state.filters}
                       showBody={this.state.showBody}
                       handleFilterAdd={this.handleFilterAdd}
+                      handleFilterRemove={this.handleFilterRemove}
                       hide={this.hide} />
       );
     }
 
     return (
       <div className={`FilterBar ${showBody}`}>
+
         {/* Header element displaying which filters, if any, are applied. */}
         <FilterHeader filters={this.state.filters}
                       display={this.display} />
