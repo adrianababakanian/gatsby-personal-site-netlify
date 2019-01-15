@@ -12,35 +12,33 @@ class FilterBar extends React.Component {
     super(props);
     this.state = {
       showBody: false,
-      filters: ["UI", "Branding"]
+      filters: []
     }
 
     this.display = this.display.bind(this);
     this.hide = this.hide.bind(this);
-    this.applyFilters = this.applyFilters.bind(this);
+    this.handleFilterAdd = this.handleFilterAdd.bind(this);
   }
 
   /* Display FilterBody. */
   display() {
     this.setState({
       showBody: true,
-    });
-    console.log("I am also happening dummy");
+    })
   }
 
   /* Hide FilterBody. */
   hide() {
     this.setState({
       showBody: false,
-    });
-    console.log("hiding");
+    })
   }
 
   /* Update state to reflect which filters are applied
    * and/or deselected. */
-  applyFilters(filterList) {
+  handleFilterAdd(filterList) {
     this.setState({
-      filters: filterList
+      filters: this.state.filters.concat(filterList)
     })
   }
 
@@ -54,7 +52,7 @@ class FilterBar extends React.Component {
         /* Dropdown element that allows user to select and apply filters. */
         <FilterBody filters={this.state.filters}
                       showBody={this.state.showBody}
-                      applyFilters={this.applyFilters}
+                      handleFilterAdd={this.handleFilterAdd}
                       hide={this.hide} />
       );
     }
@@ -63,7 +61,6 @@ class FilterBar extends React.Component {
       <div className={`FilterBar ${showBody}`}>
         {/* Header element displaying which filters, if any, are applied. */}
         <FilterHeader filters={this.state.filters}
-                      showBody={this.state.showBody}
                       display={this.display} />
 
         {body}

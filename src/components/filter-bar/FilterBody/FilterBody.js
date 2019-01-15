@@ -1,5 +1,6 @@
 import React from 'react'
 import Tag from './../../tag/Tag.js'
+import TagRow from './../../tag/TagRow/TagRow.js'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,33 +16,34 @@ class FilterBody extends React.Component {
   constructor(props) {
     super(props);
     this.handleClose = this.handleClose.bind(this);
+    this.applyFilter = this.applyFilter.bind(this);
   }
 
   handleClose() {
     this.props.hide();
   }
 
-  render() {
+  applyFilter(tag) {
+    // this.props.handleFilterAdd(tag);
+    console.log(tag);
+  }
 
-    const showBody = this.props.showBody;
+  render() {
 
     return (
       <div className="FilterBody">
 
         <div className="active-tags">
           { this.props.filters.map((filter) => (
-            <Tag name={filter} key={filter} editable={showBody} />
+            <Tag name={filter} key={filter} editable={true} />
           ))}
-
-          {showBody ? <div className="filter-close x" onClick={this.handleClose}> <FontAwesomeIcon icon="times" /> </div> : null}
+          <div className="filter-close x" onClick={this.handleClose}> <FontAwesomeIcon icon="times" /> </div>
         </div>
 
 
         <div className="all-tags">
           {tags.map((tag) => (
-            <div className="tag-row" key={`tag-row-${tag}`}>
-              <Tag name={tag} key={tag} />
-            </div>
+            <TagRow tag={tag} applyFilter={this.props.handleFilterAdd} />
           ))}
         </div>
 

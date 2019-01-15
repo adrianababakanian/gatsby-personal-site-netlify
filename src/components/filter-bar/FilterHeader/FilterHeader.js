@@ -21,18 +21,15 @@ class FilterHeader extends React.Component {
 
   render() {
     const label = this.props.filters.length == 0 ? "All" : "Filters:";
-    const showBody = this.props.showBody;
 
     return (
-      <div className={`FilterHeader ${showBody ? 'showBody' : ''}`} onClick={this.handleOpen}>
+      <div className="FilterHeader" onClick={this.handleOpen}>
 
         <div className="label"> { label } </div>
 
         { this.props.filters.map((filter) => (
-          <Tag name={filter} key={filter} editable={showBody} />
+          <Tag name={filter} key={filter} editable={false} />
         ))}
-
-        {showBody ? <div className="filter-close x" onClick={this.handleClose}> <FontAwesomeIcon icon="times" /> </div> : null}
 
       </div>
     )

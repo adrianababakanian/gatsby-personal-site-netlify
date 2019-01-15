@@ -185,9 +185,5 @@ html {
     cursor: pointer;
     transition: 0.3 ease-in-out;
     border-radius: 0 0 3px 3px; }
-    .FilterBody .all-tags .tag-row {
-      padding: 2px 8px; }
-      .FilterBody .all-tags .tag-row:hover {
-        background: #474c50; }
 
 /*# sourceMappingURL=FilterBody.css.map */
