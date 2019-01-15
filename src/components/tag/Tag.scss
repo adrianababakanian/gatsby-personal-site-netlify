@@ -33,6 +33,7 @@ $lights: (
   font: 400 14px Lato;
   background: get(deep_blue);
   color: get(light_blue);
+  transition: 0.3s ease-in-out;
 
   .x {
     font: 300 9px Lato;

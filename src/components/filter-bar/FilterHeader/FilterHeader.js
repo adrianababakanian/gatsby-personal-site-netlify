@@ -12,6 +12,11 @@ library.add(faTimes);
 class FilterHeader extends React.Component {
   constructor(props) {
     super(props);
+    this.handleOpen = this.handleOpen.bind(this);
+  }
+
+  handleOpen() {
+    this.props.display();
   }
 
   render() {
@@ -19,13 +24,16 @@ class FilterHeader extends React.Component {
     const showBody = this.props.showBody;
 
     return (
-      <div className={`FilterHeader ${showBody ? 'showBody' : ''}`}>
+      <div className={`FilterHeader ${showBody ? 'showBody' : ''}`} onClick={this.handleOpen}>
+
         <div className="label"> { label } </div>
+
         { this.props.filters.map((filter) => (
           <Tag name={filter} key={filter} editable={showBody} />
         ))}
-        {showBody ? <input /> : null}
-        {showBody ? <div className="filter-close x"> <FontAwesomeIcon icon="times" /> </div> : null}
+
+        {showBody ? <div className="filter-close x" onClick={this.handleClose}> <FontAwesomeIcon icon="times" /> </div> : null}
+
       </div>
     )
   }

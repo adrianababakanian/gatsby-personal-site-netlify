@@ -165,7 +165,7 @@ html {
   color: #EBEBEB;
   display: inline-flex;
   align-items: center;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 2px 4px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -175,14 +175,6 @@ html {
     margin-top: -4px; }
   .FilterHeader:hover {
     background: #474c50; }
-  .FilterHeader.showBody {
-    background: #3f4447;
-    border-radius: 3px 3px 0 0;
-    width: 100%; }
-  .FilterHeader .filter-close.x {
-    margin-left: auto;
-    padding-right: 8px;
-    color: rgba(255, 255, 255, 0.4); }
   .FilterHeader input {
     background: #3f4447;
     border: 0 solid #3f4447; }

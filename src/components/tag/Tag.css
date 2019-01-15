@@ -168,7 +168,8 @@ html {
   border-radius: 4px;
   font: 400 14px Lato;
   background: #426980;
-  color: #C7D2D9; }
+  color: #C7D2D9;
+  transition: 0.3s ease-in-out; }
   .tag .x {
     font: 300 9px Lato;
     padding: 0 0 0 6px;

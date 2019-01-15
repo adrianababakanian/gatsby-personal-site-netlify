@@ -1,19 +1,44 @@
+@import "./../../../common.scss";
+
 .FilterBody {
-  width: 100%;
-  background: #3f4447;
-  z-index: 999;
-  cursor: pointer;
-  transition: 0.3 ease-in-out;
   position: relative;
-  padding: 2px 4px;
-  border-radius: 0 0 3px 3px;
+  z-index: 999;
+  margin-top: -10%;
+  margin-left: 57px;
+  background: #3f4447;
+  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, .25);
+  border-radius: 4px;
+  padding: 4px 0;
 
-  .tag-row {
-    padding: 2px 0;
-    padding-left: 57px;
+  .active-tags {
+    display: flex;
+    padding: 2px 8px;
+    border-bottom: 1px solid #4c5153;
 
-    &:hover {
-      background: #474c50;
+    .filter-close.x {
+      margin-left: auto;
+      margin-top: 4px;
+      padding-right: 8px;
+      color: rgba(white, 0.4);
+      cursor: pointer;
+    }
+
+  }
+
+  .all-tags {
+    width: 100%;
+    background: #3f4447;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+    border-radius: 0 0 3px 3px;
+
+    .tag-row {
+      padding: 2px 8px;
+
+      &:hover {
+        background: #474c50;
+      }
     }
   }
+
 }

@@ -15,15 +15,25 @@ class FilterBar extends React.Component {
       filters: ["UI", "Branding"]
     }
 
-    this.toggleState = this.toggleState.bind(this);
+    this.display = this.display.bind(this);
+    this.hide = this.hide.bind(this);
     this.applyFilters = this.applyFilters.bind(this);
   }
 
-  /* Display or hide FilterBody. */
-  toggleState() {
+  /* Display FilterBody. */
+  display() {
     this.setState({
-      showBody: !this.state.showBody,
-    })
+      showBody: true,
+    });
+    console.log("I am also happening dummy");
+  }
+
+  /* Hide FilterBody. */
+  hide() {
+    this.setState({
+      showBody: false,
+    });
+    console.log("hiding");
   }
 
   /* Update state to reflect which filters are applied
@@ -35,18 +45,28 @@ class FilterBar extends React.Component {
   }
 
   render() {
-    return (
-      <div className={`FilterBar ${this.state.showBody ? 'showBody' : null}`} onClick={this.toggleState}>
 
+    const showBody = this.state.showBody ? 'showBody' : null;
+
+    var body = null;
+    if (this.state.showBody) {
+      body = (
+        /* Dropdown element that allows user to select and apply filters. */
+        <FilterBody filters={this.state.filters}
+                      showBody={this.state.showBody}
+                      applyFilters={this.applyFilters}
+                      hide={this.hide} />
+      );
+    }
+
+    return (
+      <div className={`FilterBar ${showBody}`}>
         {/* Header element displaying which filters, if any, are applied. */}
         <FilterHeader filters={this.state.filters}
                       showBody={this.state.showBody}
-                      toggleState={this.toggleState}/>
+                      display={this.display} />
 
-        {/*Dropdown element that allows user to select and apply filters. */}
-        <FilterBody filters={this.state.filters}
-                      showBody={this.state.showBody}
-                      applyFilters={this.applyFilters}/>
+        {body}
 
       </div>
     )
