@@ -2,15 +2,16 @@ import React from 'react'
 import Tag from './../../tag/Tag.js'
 import TagRow from './../../tag/TagRow/TagRow.js'
 
+import './FilterBody.css'
+
+/* FontAwesome React Icon imports. */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
-import './FilterBody.css'
+library.add(faTimes);
 
 const tags = ["Visual", "UI", "Branding", "Web", "Mobile"];
-
-library.add(faTimes);
 
 class FilterBody extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class FilterBody extends React.Component {
 
         <div className="all-tags">
           {tags.map((tag) => (
-            <TagRow tag={tag} applyFilter={this.props.handleFilterAdd} />
+            <TagRow tag={tag} key={`tag-row-${tag}`} applyFilter={this.props.handleFilterAdd} />
           ))}
         </div>
 

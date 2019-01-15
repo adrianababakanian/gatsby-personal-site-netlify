@@ -42,10 +42,9 @@ class FilterBar extends React.Component {
   }
 
   handleFilterRemove(filter) {
-    var filtered = this.state.filters.filter(function(value, index, arr){
+    const filtered = this.state.filters.filter(function(value, index, arr){
         return value != filter;
     });
-
     this.setState({
       filters: filtered
     })

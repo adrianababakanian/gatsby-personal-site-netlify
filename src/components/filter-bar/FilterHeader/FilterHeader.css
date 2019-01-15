@@ -169,9 +169,10 @@ html {
   padding: 2px 4px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  position: relative; }
+  position: relative;
+  min-height: 30px; }
   .FilterHeader .label {
-    padding: 0 8px;
+    padding: 4px 8px;
     margin-top: -4px; }
   .FilterHeader:hover {
     background: #474c50; }

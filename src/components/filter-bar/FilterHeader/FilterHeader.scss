@@ -10,8 +10,9 @@
   cursor: pointer;
   transition: 0.3s ease-in-out;
   position: relative;
+  min-height: 30px;
 
-  .label { padding: 0 8px; margin-top: -4px;}
+  .label { padding: 4px 8px; margin-top: -4px;}
 
   &:hover {
     background: #474c50;
