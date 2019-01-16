@@ -17,6 +17,31 @@ import innod from './design/innovative-design/assets/innod.png'
 import './../common.css'
 
 class DesignIndex extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filters: []
+    }
+
+    this.handleFilterAdd = this.handleFilterAdd.bind(this);
+    this.handleFilterRemove = this.handleFilterRemove.bind(this);
+  }
+
+  handleFilterAdd(filter) {
+    this.setState({
+      filters: this.state.filters.concat(filter)
+    })
+  }
+
+  handleFilterRemove(filter) {
+    const filtered = this.state.filters.filter(function(value, index, arr){
+        return value != filter;
+    });
+    this.setState({
+      filters: filtered
+    })
+  }
+
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
@@ -33,7 +58,7 @@ class DesignIndex extends React.Component {
     return (
       <div>
         <Helmet title={`Design | ${siteTitle}`} />
-        <FilterBar />
+        <FilterBar filters={ this.state.filters } handleFilterAdd={ this.handleFilterAdd } handleFilterRemove={ this.handleFilterRemove } />
         <div className="divider" />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug

@@ -31,19 +31,19 @@ class FilterBody extends React.Component {
         <div className="active-tags">
 
           { this.props.filters.map((filter) => (
-            <Tag name={filter}
-                 key={filter}
-                 editable={true}
-                 handleFilterRemove={this.props.handleFilterRemove} />
+            <Tag name={ filter }
+                 key={ filter }
+                 editable={ true }
+                 handleFilterRemove={ this.props.handleFilterRemove } />
           ))}
 
-          <div className="filter-close x" onClick={this.handleClose}> <FontAwesomeIcon icon="times" /> </div>
+          <div className="filter-close x" onClick={ this.handleClose }> <FontAwesomeIcon icon="times" /> </div>
 
         </div>
 
         <div className="all-tags">
           {tags.map((tag) => (
-            <TagRow tag={tag} key={`tag-row-${tag}`} applyFilter={this.props.handleFilterAdd} />
+            <TagRow tag={tag} key={`tag-row-${tag}`} applyFilter={ this.props.handleFilterAdd } />
           ))}
         </div>
 

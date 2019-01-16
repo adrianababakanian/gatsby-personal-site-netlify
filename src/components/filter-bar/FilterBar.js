@@ -11,14 +11,11 @@ class FilterBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showBody: false,
-      filters: []
+      showBody: false
     }
 
     this.display = this.display.bind(this);
     this.hide = this.hide.bind(this);
-    this.handleFilterAdd = this.handleFilterAdd.bind(this);
-    this.handleFilterRemove = this.handleFilterRemove.bind(this);
   }
 
   /* Display FilterBody. */
@@ -35,21 +32,6 @@ class FilterBar extends React.Component {
     })
   }
 
-  handleFilterAdd(filter) {
-    this.setState({
-      filters: this.state.filters.concat(filter)
-    })
-  }
-
-  handleFilterRemove(filter) {
-    const filtered = this.state.filters.filter(function(value, index, arr){
-        return value != filter;
-    });
-    this.setState({
-      filters: filtered
-    })
-  }
-
   render() {
 
     const showBody = this.state.showBody ? 'showBody' : null;
@@ -58,11 +40,11 @@ class FilterBar extends React.Component {
     if (this.state.showBody) {
       body = (
         /* Dropdown element that allows user to select and apply filters. */
-        <FilterBody filters={this.state.filters}
-                      showBody={this.state.showBody}
-                      handleFilterAdd={this.handleFilterAdd}
-                      handleFilterRemove={this.handleFilterRemove}
-                      hide={this.hide} />
+        <FilterBody filters={ this.props.filters }
+                      showBody={ this.state.showBody }
+                      handleFilterAdd={ this.props.handleFilterAdd }
+                      handleFilterRemove={ this.props.handleFilterRemove }
+                      hide={ this.hide } />
       );
     }
 
@@ -70,10 +52,10 @@ class FilterBar extends React.Component {
       <div className={`FilterBar ${showBody}`}>
 
         {/* Header element displaying which filters, if any, are applied. */}
-        <FilterHeader filters={this.state.filters}
-                      display={this.display} />
+        <FilterHeader filters={ this.props.filters }
+                      display={ this.display } />
 
-        {body}
+        { body }
 
       </div>
     )
