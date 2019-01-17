@@ -25,19 +25,29 @@ class FilterBody extends React.Component {
 
   render() {
 
+    var activeTags;
+
+    if (this.props.filters.length != 5) {
+      activeTags = (
+        this.props.filters.map((filter) => (
+          <Tag name={ filter }
+               key={ filter }
+               editable={ true }
+               handleFilterRemove={ this.props.handleFilterRemove } />
+        ))
+      )
+    }
+
     return (
       <div className="FilterBody">
 
         <div className="active-tags">
 
-          { this.props.filters.map((filter) => (
-            <Tag name={ filter }
-                 key={ filter }
-                 editable={ true }
-                 handleFilterRemove={ this.props.handleFilterRemove } />
-          ))}
+          { activeTags }
 
-          <div className="filter-close x" onClick={ this.handleClose }> <FontAwesomeIcon icon="times" /> </div>
+          <div className="filter-close x" onClick={ this.handleClose }>
+            <FontAwesomeIcon icon="times" />
+          </div>
 
         </div>
 

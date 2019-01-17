@@ -16,6 +16,15 @@ import innod from './design/innovative-design/assets/innod.png'
 
 import './../common.css'
 
+const mapper = {
+  "/design/cal-hacks-branding/": ch,
+  "/design/dinestination/": dinestination,
+  "/design/cal-hacks-4/": cal_hacks_4,
+  "/design/doodles/": doodles,
+  "/design/feaster/": feaster,
+  "/design/innovative-design/": innod
+}
+
 class DesignIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -25,6 +34,7 @@ class DesignIndex extends React.Component {
 
     this.handleFilterAdd = this.handleFilterAdd.bind(this);
     this.handleFilterRemove = this.handleFilterRemove.bind(this);
+    this.filterPosts = this.filterPosts.bind(this);
   }
 
   handleFilterAdd(filter) {
@@ -42,36 +52,50 @@ class DesignIndex extends React.Component {
     })
   }
 
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+  filterPosts(node, filters) {
+    const title = get(node, 'frontmatter.title') || node.fields.slug;
+    var preview = (
+      <div key={ node.fields.slug }>
+        <LazyLoad offset={300}>
+          <Preview key={ node.id } project={ node }>
+            <img src={ mapper[node.fields.slug] }/>
+          </Preview>
+        </LazyLoad>
+      </div>
+    );
 
-    const mapper = {
-      "/design/cal-hacks-branding/": ch,
-      "/design/dinestination/": dinestination,
-      "/design/cal-hacks-4/": cal_hacks_4,
-      "/design/doodles/": doodles,
-      "/design/feaster/": feaster,
-      "/design/innovative-design/": innod
+    var result = filters.length == 0 ? preview : null;
+
+    for (var i = 0; i < filters.length; i++) {
+      if (node.frontmatter.tags.includes(filters[i])) {
+        result = preview;
+      }
     }
+
+    return result;
+  }
+
+  render() {
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
+
+    var filteredPosts = [], filtered;
+
+    {posts.map(({ node }) => {
+      filtered = this.filterPosts(node, this.state.filters);
+      filteredPosts.push(filtered);
+    })}
 
     return (
       <div>
         <Helmet title={`Design | ${siteTitle}`} />
-        <FilterBar filters={ this.state.filters } handleFilterAdd={ this.handleFilterAdd } handleFilterRemove={ this.handleFilterRemove } />
+
+        <FilterBar filters={ this.state.filters }
+                   handleFilterAdd={ this.handleFilterAdd }
+                   handleFilterRemove={ this.handleFilterRemove } />
         <div className="divider" />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <LazyLoad offset={300}>
-                <Preview key={node.id} project={node}>
-                  <img src={mapper[node.fields.slug]}/>
-                </Preview>
-              </LazyLoad>
-            </div>
-          )
-        })}
+
+        { filteredPosts }
       </div>
     )
   }
