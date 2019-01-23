@@ -11,8 +11,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faTimes);
 
-const tags = ["Visual", "UI", "Branding", "Web", "Mobile"];
-
 class FilterBody extends React.Component {
   constructor(props) {
     super(props);
@@ -52,8 +50,10 @@ class FilterBody extends React.Component {
         </div>
 
         <div className="all-tags">
-          {tags.map((tag) => (
-            <TagRow tag={tag} key={`tag-row-${tag}`} applyFilter={ this.props.handleFilterAdd } />
+          {this.props.tags.map((tag) => (
+            <TagRow tag={tag}
+                    key={`tag-row-${tag}`}
+                    applyFilter={ this.props.handleFilterAdd } />
           ))}
         </div>
 

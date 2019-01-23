@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,800");
 html {
   font-family: Lato;
-  background: #2F3437;
+  background: white;
   color: get(dust); }
 
 .gatsby-resp-image-background-image {
   background-image: none; }
 
 .container {
-  width: 600px;
+  width: 800px;
   height: auto;
   margin: 180px auto;
   font-family: Lato;
@@ -164,7 +164,7 @@ html {
   height: 20px;
   display: inline-flex;
   padding: 1px 8px;
-  margin: 4px 8px 4px 0;
+  margin: 2px 4px 2px 0;
   border-radius: 4px;
   font: 400 14px Lato;
   background: #426980;
@@ -184,14 +184,38 @@ html {
   .tag.Branding {
     background: #426980;
     color: #C7D2D9; }
+  .tag.UX {
+    background: #87B4BD;
+    color: #D9ECE6; }
   .tag.Web {
     background: #406F68;
     color: #C3D3CF; }
   .tag.Mobile {
-    background: #986C40;
-    color: #E0D4C7; }
+    background: #6BB092;
+    color: #CBECDA; }
   .tag.Prototyping {
-    background: #985551;
-    color: #E0CCCC; }
+    background: #DE856F;
+    color: #EBD4CD; }
+  .tag.light.Visual {
+    background: #C6659B66;
+    color: #2F3437; }
+  .tag.light.UI {
+    background: #8369AE66;
+    color: #2F3437; }
+  .tag.light.Branding {
+    background: #598EAD66;
+    color: #2F3437; }
+  .tag.light.UX {
+    background: #9CCFDA66;
+    color: #2F3437; }
+  .tag.light.Web {
+    background: #5A9D9366;
+    color: #2F3437; }
+  .tag.light.Mobile {
+    background: #84D7B266;
+    color: #2F3437; }
+  .tag.light.Prototyping {
+    background: #F5957E66;
+    color: #2F3437; }
 
 /*# sourceMappingURL=Tag.css.map */

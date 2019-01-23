@@ -1,8 +1,9 @@
 import React from 'react'
-import me from './../assets/images/me.png'
+import me from './../assets/images/louvre.png'
 import Elsewhere from './../components/elsewhere/Elsewhere'
 
 import './../common.css';
+//import './../style.css';
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,21 @@ const AboutPage = () => {
         <img src={me} className="me"/>
         <div className="overlay"/>
       </div>
+
+      <h4>
+        I’m a whimsical creative at heart informed by a deep passion for technical logic.
+        Happiest reasoning at the intersection of the engineering and design, I love working with people
+        from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
+      </h4>
+
+      <h4>
+        As a believer that our idisoyncracies define us, here are some of mine in the form of:
+      </h4>
+
+      <div className="facts">
+        <h1>Eight true facts that make me, me.</h1>
+      </div>
+
 
       <h4> Hi, I'm Adriana. </h4>
 

@@ -1,0 +1,48 @@
+html {
+  background: white; }
+  html .container {
+    margin: 120px auto;
+    width: 800px;
+    color: #2F3437; }
+    html .container .intro-wrapper {
+      height: 100vh;
+      display: flex;
+      flex-flow: column; }
+      html .container .intro-wrapper .intro {
+        height: auto; }
+      html .container .intro-wrapper .bottom {
+        width: 200vw;
+        margin: 30px -40% 0;
+        background: #BCD2DE;
+        flex-grow: 1; }
+    html .container h1 {
+      font: 500 32px Lato;
+      color: #2F3437;
+      letter-spacing: initial; }
+    html .container h4 {
+      font: 400 18px Lato;
+      color: #2F3437;
+      letter-spacing: initial;
+      line-height: 34px; }
+    html .container a {
+      color: #598EAD;
+      padding: 1px 4px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: 0.3s ease-in-out; }
+      html .container a:hover {
+        color: #426980;
+        background: rgba(188, 210, 222, 0.8); }
+        html .container a:hover.preview {
+          color: initial;
+          background: initial; }
+    html .container .me-wrapper {
+      height: 400px;
+      box-shadow: none; }
+    html .container .facts {
+      width: 100%;
+      margin-left: -40px;
+      padding: 5px 40px;
+      background: #BCD2DE; }
+
+/*# sourceMappingURL=style.css.map */

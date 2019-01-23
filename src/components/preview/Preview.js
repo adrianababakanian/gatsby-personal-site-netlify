@@ -16,7 +16,7 @@ const Preview = ({ project, children }) => (
 
       <div className="tags">
         {project.frontmatter.tags.map((tag) => (
-          (tag != "design" && tag != "code") ? <Tag name={tag} key={tag} /> : null
+          (tag != "design" && tag != "code") ? <Tag name={tag} key={tag} light={true} /> : null
         ))}
       </div>
 

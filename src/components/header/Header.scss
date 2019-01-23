@@ -1,16 +1,18 @@
 @import "./../../common.scss";
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:300,400,600,800');
 
 .header {
-  background: #2F3437;
-  color: get(dust);
-  width: 668px;
+  // background: #2F3437;
+  background: white;
+  color: #2F3437;
+  width: 800px;
   height: auto;
   overflow-y: auto;
-  padding: 90px 0 10px 0;
+  padding: 40px 0 10px 0;
   position: fixed;
   top: 0;
   left: 50%;
-  margin-left: -334px;
+  margin-left: -400px;
   z-index: 10;
   overflow: hidden;
 
@@ -21,6 +23,7 @@
     padding: 90px 40px 10px 0;
     left: 0;
     background: white;
+    color: #2F3437;
   }
 
   @media (max-width: 500px) {
@@ -28,14 +31,14 @@
   }
 
   .logo {
-    width: 30px;
-    height: 31px;
+    font: 600 16px Lato;
     float: left;
     fill: get(atom);
     stroke: get(atom);
-    margin-left: 30px;
     margin-top: 4px;
-    transform: translateX(5px);
+    //transform: translateX(5px);
+    padding: 6px 0;
+    color: #2F3437;
 
     @media (max-width: 700px) {
       margin-left: 0;
@@ -44,9 +47,9 @@
 
   .header-item {
     float: right;
+    color: #2F3437;
     font: 400 16px Lato;
     text-decoration: none;
-    color: get(dust);
     padding: 6px 8px;
     border-bottom-color: transparent;
 

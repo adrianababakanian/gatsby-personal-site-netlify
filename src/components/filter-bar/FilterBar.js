@@ -41,10 +41,11 @@ class FilterBar extends React.Component {
       body = (
         /* Dropdown element that allows user to select and apply filters. */
         <FilterBody filters={ this.props.filters }
-                      showBody={ this.state.showBody }
-                      handleFilterAdd={ this.props.handleFilterAdd }
-                      handleFilterRemove={ this.props.handleFilterRemove }
-                      hide={ this.hide } />
+                    tags={ this.props.tags }
+                    showBody={ this.state.showBody }
+                    handleFilterAdd={ this.props.handleFilterAdd }
+                    handleFilterRemove={ this.props.handleFilterRemove }
+                    hide={ this.hide } />
       );
     }
 

@@ -25,6 +25,8 @@ const mapper = {
   "/design/innovative-design/": innod
 }
 
+const tags = ["Visual", "UI", "Branding", "UX", "Web", "Mobile", "Prototyping"];
+
 class DesignIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -91,6 +93,7 @@ class DesignIndex extends React.Component {
         <Helmet title={`Design | ${siteTitle}`} />
 
         <FilterBar filters={ this.state.filters }
+                   tags={ tags }
                    handleFilterAdd={ this.handleFilterAdd }
                    handleFilterRemove={ this.handleFilterRemove } />
         <div className="divider" />

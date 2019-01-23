@@ -29,7 +29,7 @@ class FilterHeader extends React.Component {
 
         { this.props.filters.map((filter) => (
           <Tag name={ filter } key={ filter } editable={ false } />
-        ))}
+        )) }
 
       </div>
     )

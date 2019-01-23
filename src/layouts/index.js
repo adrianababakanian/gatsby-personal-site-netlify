@@ -9,9 +9,11 @@ import favicon from './../assets/images/favicon.png'
 
 const links = [
   ["About", "sakura"],
-  ["Prototyping", "atomic"],
-  ["Code", "matcha"],
+  ["Travel", "cycle"],
   ["Design", "cycle"]
+  // ["Prototyping", "atomic"],
+  // ["Code", "matcha"],
+  // ["Design", "cycle"]
 ]
 
 const Layout = ({ children, data }) => (

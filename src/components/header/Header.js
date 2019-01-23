@@ -66,7 +66,7 @@ class Header extends React.Component {
         <div className="header" style={ style }>
           <Link to="/" className="logo"
             onClick={this.toggleNavLogo}>
-            <img src={logo}/>
+            Adriana Babakanian
           </Link>
           {header_links}
           <div className='hamburger'

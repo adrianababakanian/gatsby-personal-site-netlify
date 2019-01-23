@@ -1,21 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,800");
 html {
   font-family: Lato;
-  background: #2F3437;
+  background: white;
   color: get(dust); }
 
-.gatsby-resp-image-image {
-  border-radius: 8px; }
-
 .gatsby-resp-image-background-image {
-  border-radius: 8px;
   background-image: none; }
 
-video {
-  border-radius: 8px; }
-
 .container {
-  width: 600px;
+  width: 800px;
   height: auto;
   margin: 180px auto;
   font-family: Lato;
@@ -29,7 +22,6 @@ video {
       margin: 160px 40px; } }
   .container .language-java {
     padding: 40px 20px;
-    border-radius: 8px;
     position: relative;
     overflow: scroll; }
   .container code {
@@ -51,10 +43,7 @@ video {
     color: #EBEBEB;
     text-decoration: none;
     transition: background-color 0.2s ease-in-out;
-    border-radius: 4px;
     border-bottom: none; }
-    .container a:link.preview, .container a:visited.preview, .container a:active.preview {
-      border-radius: 6px; }
     .container a:link:hover, .container a:visited:hover, .container a:active:hover {
       font-weight: 600; }
   .container a.cycle {
@@ -135,7 +124,6 @@ video {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 8px;
     margin: 0 0 40px 0;
     position: relative;
     box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.14);
@@ -149,7 +137,6 @@ video {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 8px;
     margin: 0 0 40px 0;
     position: relative;
     box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.14); }
@@ -174,7 +161,7 @@ video {
     max-width: 400px; }
 
 .preview {
-  width: 100%;
+  width: 600px;
   height: 331px;
   margin: 20px 0;
   padding: 0;
@@ -186,13 +173,15 @@ video {
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  background: #3f4447;
-  border: 1px solid #292c2f;
-  border-radius: 6px; }
+  color: #2F3437;
+  background: white;
+  border: 1px solid #DEDEDE;
+  border-radius: 6px;
+  border-bottom: 1px solid #DEDEDE; }
   .preview .image {
-    flex: 60%;
-    height: calc(100% - 30px);
-    margin: 15px 20px;
+    flex: 70%;
+    height: calc(100% - 14px);
+    margin: 7px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -203,11 +192,10 @@ video {
       width: auto;
       transition: 0.3s ease-in-out; }
   .preview .description {
-    flex: 40%;
-    height: calc(100% - 30px);
-    margin: 15px 0 15px 20px; }
+    flex: 30%;
+    height: calc(100% - 14px);
+    margin: 7px; }
     .preview .description .title {
-      color: #ECEDED;
       font-weight: 400;
       font-size: 20px; }
     .preview .description .tags {
@@ -215,7 +203,6 @@ video {
     .preview .description .blurb {
       padding: 4px 0;
       font: 200 14px Lato;
-      color: #EBEBEB;
       line-height: 20px; }
   @media (max-width: 700px) {
     .preview {
@@ -254,8 +241,8 @@ video {
       .preview .gatsby-image-wrapper {
         height: 205px; } }
   .preview:hover {
-    box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.14);
-    background: #474c50; }
+    box-shadow: 0 2px 12px 2px #EFEFEF;
+    background: #EFEFEF; }
     .preview:hover img {
       transform: scale(1.02); }
   .preview .preview-image {
