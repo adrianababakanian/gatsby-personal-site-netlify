@@ -217,5 +217,7 @@ html {
   .tag.light.Prototyping {
     background: #F5957E66;
     color: #2F3437; }
+  .tag.light .x {
+    color: #2F3437; }
 
 /*# sourceMappingURL=Tag.css.map */

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,800");
 html {
   font-family: Lato;
-  background: #2F3437;
+  background: white;
   color: get(dust); }
 
 .gatsby-resp-image-background-image {
   background-image: none; }
 
 .container {
-  width: 600px;
+  width: 800px;
   height: auto;
   margin: 180px auto;
   font-family: Lato;
@@ -165,23 +165,25 @@ html {
   z-index: 999;
   margin-top: -10%;
   margin-left: 60px;
-  background: #3f4447;
+  background: white;
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   padding: 4px 0; }
   .FilterBody .active-tags {
     display: flex;
     padding: 2px 8px;
-    border-bottom: 1px solid #4c5153; }
+    border-bottom: 1px solid #DEDEDE; }
     .FilterBody .active-tags .filter-close.x {
       margin-left: auto;
       margin-top: 4px;
       padding-right: 8px;
       color: rgba(255, 255, 255, 0.4);
       cursor: pointer; }
+      .FilterBody .active-tags .filter-close.x.light {
+        color: #DEDEDE; }
   .FilterBody .all-tags {
     width: 100%;
-    background: #3f4447;
+    background: white;
     cursor: pointer;
     transition: 0.3 ease-in-out;
     border-radius: 0 0 3px 3px; }

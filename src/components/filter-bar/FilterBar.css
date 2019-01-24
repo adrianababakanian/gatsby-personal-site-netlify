@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,800");
 html {
   font-family: Lato;
-  background: #2F3437;
+  background: white;
   color: get(dust); }
 
 .gatsby-resp-image-background-image {
   background-image: none; }
 
 .container {
-  width: 600px;
+  width: 800px;
   height: auto;
   margin: 180px auto;
   font-family: Lato;
@@ -170,6 +170,6 @@ html {
     color: #EBEBEB;
     border-radius: 4px; }
     .FilterBar .filter-item:hover {
-      background: #474c50; }
+      background: #EFEFEF; }
 
 /*# sourceMappingURL=FilterBar.css.map */

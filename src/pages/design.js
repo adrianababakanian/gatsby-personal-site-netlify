@@ -14,8 +14,6 @@ import doodles from './design/doodles/assets/doodles.png'
 import feaster from './design/feaster/assets/feaster.png'
 import innod from './design/innovative-design/assets/innod.png'
 
-import './../common.css'
-
 const mapper = {
   "/design/cal-hacks-branding/": ch,
   "/design/dinestination/": dinestination,
@@ -95,7 +93,8 @@ class DesignIndex extends React.Component {
         <FilterBar filters={ this.state.filters }
                    tags={ tags }
                    handleFilterAdd={ this.handleFilterAdd }
-                   handleFilterRemove={ this.handleFilterRemove } />
+                   handleFilterRemove={ this.handleFilterRemove }
+                   light={ true } />
         <div className="divider" />
 
         { filteredPosts }

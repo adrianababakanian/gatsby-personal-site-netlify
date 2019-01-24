@@ -18,7 +18,9 @@ class TagRow extends React.Component {
 
     return (
       <div className="tag-row" key={`tag-row-${tag}`} onClick={() => this.handleClick(tag)}>
-        <Tag name={tag} key={tag} />
+        <Tag name={ tag }
+             key={ tag }
+             light={ this.props.light } />
       </div>
     )
 

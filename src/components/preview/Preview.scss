@@ -1,4 +1,4 @@
-@import "./../../common.scss";
+
 
 .preview {
   width: 600px;
@@ -21,6 +21,14 @@
   border: 1px solid #DEDEDE;
   border-radius: 6px;
   border-bottom: 1px solid #DEDEDE;
+
+  &:hover {
+    box-shadow: 0 2px 12px 2px #EFEFEF;
+    background: gray;
+    img {
+      transform: scale(1.02);
+    }
+  }
 
   .image {
     flex: 70%;
@@ -105,14 +113,6 @@
     }
     .gatsby-image-wrapper {
       height: 205px;
-    }
-  }
-  &:hover {
-    box-shadow: 0 2px 12px 2px #EFEFEF;
-    //background: #474c50;
-    background: #EFEFEF;
-    img {
-      transform: scale(1.02);
     }
   }
 

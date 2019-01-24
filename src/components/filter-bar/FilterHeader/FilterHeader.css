@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,600,800");
 html {
   font-family: Lato;
-  background: #2F3437;
+  background: white;
   color: get(dust); }
 
 .gatsby-resp-image-background-image {
   background-image: none; }
 
 .container {
-  width: 600px;
+  width: 800px;
   height: auto;
   margin: 180px auto;
   font-family: Lato;
@@ -162,7 +162,7 @@ html {
 
 .FilterHeader {
   font: 400 14px Lato;
-  color: #EBEBEB;
+  color: #2F3437;
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
@@ -175,7 +175,7 @@ html {
     padding: 4px 8px;
     margin-top: -4px; }
   .FilterHeader:hover {
-    background: #474c50; }
+    background: #EFEFEF; }
   .FilterHeader input {
     background: #3f4447;
     border: 0 solid #3f4447; }

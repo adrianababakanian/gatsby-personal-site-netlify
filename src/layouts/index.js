@@ -11,9 +11,6 @@ const links = [
   ["About", "sakura"],
   ["Travel", "cycle"],
   ["Design", "cycle"]
-  // ["Prototyping", "atomic"],
-  // ["Code", "matcha"],
-  // ["Design", "cycle"]
 ]
 
 const Layout = ({ children, data }) => (

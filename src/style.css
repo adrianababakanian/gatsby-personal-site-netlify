@@ -44,5 +44,7 @@ html {
       margin-left: -40px;
       padding: 5px 40px;
       background: #BCD2DE; }
+    html .container .divider {
+      background: #DFDFDE; }
 
 /*# sourceMappingURL=style.css.map */

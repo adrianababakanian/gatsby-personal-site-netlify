@@ -45,7 +45,8 @@ class FilterBar extends React.Component {
                     showBody={ this.state.showBody }
                     handleFilterAdd={ this.props.handleFilterAdd }
                     handleFilterRemove={ this.props.handleFilterRemove }
-                    hide={ this.hide } />
+                    hide={ this.hide }
+                    light={ this.props.light }/>
       );
     }
 
@@ -54,7 +55,8 @@ class FilterBar extends React.Component {
 
         {/* Header element displaying which filters, if any, are applied. */}
         <FilterHeader filters={ this.props.filters }
-                      display={ this.display } />
+                      display={ this.display }
+                      light={ this.props.light } />
 
         { body }
 

@@ -75,5 +75,7 @@ $highlights: (
     &.Web { @include highlight-color-tag(green) }
     &.Mobile { @include highlight-color-tag(mint) }
     &.Prototyping { @include highlight-color-tag(orange) }
+
+    .x { color: #2F3437 }
   }
 }

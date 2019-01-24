@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 
 import Emphasis from './../components/emphasis/Emphasis'
 
-import './../common.css';
 import './../style.css';
 
 const IndexPage = () => {

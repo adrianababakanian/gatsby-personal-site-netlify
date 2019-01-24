@@ -5,7 +5,8 @@
   z-index: 999;
   margin-top: -10%;
   margin-left: 60px;
-  background: #3f4447;
+  //background: #3f4447;
+  background: white;
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, .25);
   border-radius: 4px;
   padding: 4px 0;
@@ -13,7 +14,8 @@
   .active-tags {
     display: flex;
     padding: 2px 8px;
-    border-bottom: 1px solid #4c5153;
+    border-bottom: 1px solid #DEDEDE;
+    //border-bottom: 1px solid #4c5153;
 
     .filter-close.x {
       margin-left: auto;
@@ -21,13 +23,15 @@
       padding-right: 8px;
       color: rgba(white, 0.4);
       cursor: pointer;
+      &.light { color: #DEDEDE }
     }
 
   }
 
   .all-tags {
     width: 100%;
-    background: #3f4447;
+    //background: #3f4447;
+    background: white;
     cursor: pointer;
     transition: 0.3 ease-in-out;
     border-radius: 0 0 3px 3px;

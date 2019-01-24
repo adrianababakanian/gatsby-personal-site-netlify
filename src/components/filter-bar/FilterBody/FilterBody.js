@@ -31,7 +31,8 @@ class FilterBody extends React.Component {
           <Tag name={ filter }
                key={ filter }
                editable={ true }
-               handleFilterRemove={ this.props.handleFilterRemove } />
+               handleFilterRemove={ this.props.handleFilterRemove }
+                light={ this.props.light } />
         ))
       )
     }
@@ -43,7 +44,7 @@ class FilterBody extends React.Component {
 
           { activeTags }
 
-          <div className="filter-close x" onClick={ this.handleClose }>
+          <div className={`filter-close x ${this.props.light ? 'light' : ''}`} onClick={ this.handleClose }>
             <FontAwesomeIcon icon="times" />
           </div>
 
@@ -51,9 +52,10 @@ class FilterBody extends React.Component {
 
         <div className="all-tags">
           {this.props.tags.map((tag) => (
-            <TagRow tag={tag}
-                    key={`tag-row-${tag}`}
-                    applyFilter={ this.props.handleFilterAdd } />
+            <TagRow tag={ tag }
+                    key={ `tag-row-${tag}` }
+                    applyFilter={ this.props.handleFilterAdd }
+                    light={ this.props.light } />
           ))}
         </div>
 

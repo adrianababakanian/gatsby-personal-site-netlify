@@ -2,7 +2,8 @@
 
 .FilterHeader {
   font: 400 14px Lato;
-  color: get(dust);
+  color: #2F3437;
+  //color: get(dust);
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
@@ -15,7 +16,8 @@
   .label { padding: 4px 8px; margin-top: -4px;}
 
   &:hover {
-    background: #474c50;
+    background: #EFEFEF;
+    //background: #474c50;
   }
 
   input {

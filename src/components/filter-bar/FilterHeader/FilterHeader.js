@@ -28,7 +28,10 @@ class FilterHeader extends React.Component {
         <div className="label"> { label } </div>
 
         { this.props.filters.map((filter) => (
-          <Tag name={ filter } key={ filter } editable={ false } />
+          <Tag name={ filter }
+               key={ filter }
+               editable={ false }
+               light={ this.props.light } />
         )) }
 
       </div>
