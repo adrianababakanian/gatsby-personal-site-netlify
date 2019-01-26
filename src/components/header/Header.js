@@ -34,12 +34,13 @@ class Header extends React.Component {
       links = this.props.links,
       reveresed = links.slice().reverse(),
       header_links = links && links.map(link => (
-        <Link to={`/${link[0].toLowerCase()}`}
-              key={link[0]}
+        <Link exact
+              to={ `/${link[0].toLowerCase()}` }
+              key={ link[0] }
               className="header-item"
-              activeClassName={`${link[1]}`}>
-          <div className={`header-item-content ${link[1]}`}>
-            {link[0]}
+              activeClassName={ `${link[1]}` }>
+          <div className={ `header-item-content ${link[1]}` }>
+            { link[0] }
           </div>
         </Link>
       )),
@@ -47,31 +48,34 @@ class Header extends React.Component {
       mobile_header = (<div/>);
 
     mobile_header_links = links && reveresed.map(link => (
-      <Link to={`/${link[0].toLowerCase()}`}
-            key={link[0]}
+      <Link exact
+            to={ `/${link[0].toLowerCase()}` }
+            key={ link[0] }
             className="mobile-header-item"
-            activeClassName={`${link[1]}`}
-            onClick={this.toggleNav}>
-        <div className={`mobile-header-item-content ${link[1]}`}>
-          {link[0]}
+            activeClassName={ `${link[1]}` }
+            onClick={ this.toggleNav }>
+        <div className={`mobile-header-item-content ${ link[1]}` }>
+          { link[0] }
         </div>
       </Link>
     ));
-    mobile_header = this.state.showMobileNav ? <div className="mobile_header"> {mobile_header_links} </div> : null;
+    mobile_header = this.state.showMobileNav ? <div className="mobile_header"> { mobile_header_links } </div> : null;
 
 
     return (
       <div>
-        {mobile_header}
+        { mobile_header }
         <div className="header" style={ style }>
-          <Link to="/" className="logo"
-            onClick={this.toggleNavLogo}>
-            Adriana Babakanian
-          </Link>
-          {header_links}
-          <div className='hamburger'
-            onClick={this.toggleNav}>
-            {this.state.showMobileNav ? <span>&times;</span> : <div>&#9776;</div>}
+          <div className='header-center'>
+            <Link exact to="/" className="logo"
+              onClick={ this.toggleNavLogo }>
+              Adriana Babakanian
+            </Link>
+            { header_links }
+            <div className='hamburger'
+              onClick={ this.toggleNav }>
+              { this.state.showMobileNav ? <span>&times;</span> : <div>&#9776;</div> }
+            </div>
           </div>
         </div>
       </div>

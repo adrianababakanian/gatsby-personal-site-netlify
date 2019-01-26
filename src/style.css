@@ -1,50 +1,65 @@
 html {
   background: white; }
-  html .container {
-    margin: 120px auto;
-    width: 800px;
-    color: #2F3437; }
-    html .container .intro-wrapper {
-      height: 100vh;
-      display: flex;
-      flex-flow: column; }
-      html .container .intro-wrapper .intro {
-        height: auto; }
-      html .container .intro-wrapper .bottom {
-        width: 200vw;
-        margin: 30px -40% 0;
-        background: #BCD2DE;
-        flex-grow: 1; }
-    html .container h1 {
-      font: 500 32px Lato;
-      color: #2F3437;
-      letter-spacing: initial; }
-    html .container h4 {
-      font: 400 18px Lato;
-      color: #2F3437;
-      letter-spacing: initial;
-      line-height: 34px; }
-    html .container a {
+  html .content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; }
+    html .content a {
       color: #598EAD;
       padding: 1px 4px;
       cursor: pointer;
       border-radius: 2px;
       transition: 0.3s ease-in-out; }
-      html .container a:hover {
+      html .content a.preview {
+        color: #5F6468; }
+      html .content a:hover {
         color: #426980;
         background: rgba(188, 210, 222, 0.8); }
-        html .container a:hover.preview {
-          color: initial;
-          background: initial; }
-    html .container .me-wrapper {
+        html .content a:hover.preview {
+          color: #2F3437;
+          background: rgba(239, 239, 239, 0.3); }
+    html .content .container {
+      margin: 120px auto;
+      width: 800px;
+      color: #2F3437; }
+      html .content .container.filter {
+        margin-bottom: 20px; }
+    html .content .grid {
+      margin: 0 auto;
+      width: 1260px; }
+    html .content .intro-wrapper {
+      height: 100vh;
+      display: flex;
+      flex-flow: column; }
+      html .content .intro-wrapper .intro {
+        height: auto;
+        width: 800px;
+        margin: 120px auto 30px; }
+      html .content .intro-wrapper .bottom {
+        width: 100vw;
+        margin: 0 auto;
+        background: #BCD2DE;
+        flex-grow: 1; }
+    html .content h1 {
+      font: 500 32px Lato;
+      color: #2F3437;
+      letter-spacing: initial;
+      margin-top: 0; }
+    html .content h4 {
+      font: 400 18px Lato;
+      color: #2F3437;
+      letter-spacing: initial;
+      line-height: 34px; }
+    html .content .me-wrapper {
       height: 400px;
       box-shadow: none; }
-    html .container .facts {
+    html .content .facts {
       width: 100%;
       margin-left: -40px;
       padding: 5px 40px;
       background: #BCD2DE; }
-    html .container .divider {
+    html .content .divider {
       background: #DFDFDE; }
 
 /*# sourceMappingURL=style.css.map */

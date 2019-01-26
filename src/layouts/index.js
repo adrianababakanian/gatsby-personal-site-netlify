@@ -8,9 +8,9 @@ import Elsewhere from '../components/elsewhere/Elsewhere'
 import favicon from './../assets/images/favicon.png'
 
 const links = [
-  ["About", "sakura"],
-  ["Travel", "cycle"],
-  ["Design", "cycle"]
+  ["About", "active"],
+  ["Travel", "active"],
+  ["Work", "active"]
 ]
 
 const Layout = ({ children, data }) => (
@@ -27,8 +27,8 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <div>
-      <Header links={links} />
-      <div className="container">
+      <Header links={ links } />
+      <div className="content">
         {children()}
         {/* <Elsewhere/> */}
       </div>

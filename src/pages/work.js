@@ -25,7 +25,7 @@ const mapper = {
 
 const tags = ["Visual", "UI", "Branding", "UX", "Web", "Mobile", "Prototyping"];
 
-class DesignIndex extends React.Component {
+class WorkIndex extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -88,25 +88,30 @@ class DesignIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={`Design | ${siteTitle}`} />
+        <div className='container filter'>
+          <Helmet title={`Work | ${siteTitle}`} />
 
-        <FilterBar filters={ this.state.filters }
-                   tags={ tags }
-                   handleFilterAdd={ this.handleFilterAdd }
-                   handleFilterRemove={ this.handleFilterRemove }
-                   light={ true } />
-        <div className="divider" />
-
-        { filteredPosts }
+          <FilterBar filters={ this.state.filters }
+                     tags={ tags }
+                     handleFilterAdd={ this.handleFilterAdd }
+                     handleFilterRemove={ this.handleFilterRemove }
+                     light={ true } />
+          <div className="divider" />
+        </div>
+        <div className='grid'>
+          { filteredPosts }
+        </div>
       </div>
+
+
     )
   }
 }
 
-export default DesignIndex
+export default WorkIndex
 
 export const pageQuery = graphql`
-  query DesignQuery {
+  query WorkQuery {
     site {
       siteMetadata {
         title

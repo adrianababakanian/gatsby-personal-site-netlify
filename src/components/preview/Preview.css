@@ -1,7 +1,7 @@
 .preview {
   width: 600px;
   height: 331px;
-  margin: 20px 0;
+  margin: 10px 10px;
   padding: 0;
   cursor: pointer;
   transition: 0.5s;
@@ -12,6 +12,7 @@
   position: relative;
   overflow: hidden;
   color: #2F3437;
+  float: left;
   background: white;
   border: 1px solid #DEDEDE;
   border-radius: 6px;
