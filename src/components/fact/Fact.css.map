@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,uEAA+D;AAEvE,KAAM;EACJ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,MAAM;EACf,UAAU,EAAE,MAAM;EAElB,aAAU;IAAE,UAAU,EAAE,KAAK;EAE7B,QAAG;IACD,IAAI,EAAE,yBAAyB;IAC/B,KAAK,EAAE,OAAO;IACd,MAAM,EAAE,KAAK",
+"sources": ["Fact.scss"],
+"names": [],
+"file": "Fact.css"
+}

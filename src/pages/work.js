@@ -7,7 +7,7 @@ import LazyLoad from 'react-lazy-load'
 import Preview from './../components/preview/Preview'
 import FilterBar from './../components/filter-bar/FilterBar'
 
-import ch from './design/cal-hacks-branding/assets/scaled.png'
+import ch from './design/cal-hacks-branding/assets/hackanile.png'
 import dinestination from './design/dinestination/assets/dinestination.png'
 import cal_hacks_4 from './design/cal-hacks-4/assets/cal_hacks_4.png'
 import doodles from './design/doodles/assets/doodles.png'
@@ -97,10 +97,11 @@ class WorkIndex extends React.Component {
                      handleFilterRemove={ this.handleFilterRemove }
                      light={ true } />
           <div className="divider" />
-        </div>
-        <div className='grid'>
           { filteredPosts }
         </div>
+        {/* <div className='grid'>
+          { filteredPosts }
+        </div> */}
       </div>
 
 

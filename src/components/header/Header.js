@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
+
 import './Header.css'
 import logo from './../../assets/images/logo.svg';
 
@@ -65,19 +67,26 @@ class Header extends React.Component {
     return (
       <div>
         { mobile_header }
-        <div className="header" style={ style }>
-          <div className='header-center'>
-            <Link exact to="/" className="logo"
-              onClick={ this.toggleNavLogo }>
-              Adriana Babakanian
-            </Link>
-            { header_links }
-            <div className='hamburger'
-              onClick={ this.toggleNav }>
-              { this.state.showMobileNav ? <span>&times;</span> : <div>&#9776;</div> }
+        <CSSTransitionGroup
+          transitionName="header"
+          transitionEnter={false}
+          transitionLeave={false}
+          transitionAppear={true}
+          transitionAppearTimeout={400}>
+          <div className="header" style={ style }>
+            <div className='header-center'>
+              <Link exact to="/" className="logo"
+                onClick={ this.toggleNavLogo }>
+                Adriana Babakanian
+              </Link>
+              { header_links }
+              <div className='hamburger'
+                onClick={ this.toggleNav }>
+                { this.state.showMobileNav ? <span>&times;</span> : <div>&#9776;</div> }
+              </div>
             </div>
           </div>
-        </div>
+      </CSSTransitionGroup>
       </div>
     )
   }

@@ -167,9 +167,9 @@ html {
   margin: 2px 4px 2px 0;
   border-radius: 4px;
   font: 400 14px Lato;
+  transition: 0.3s ease-in-out;
   background: #426980;
-  color: #C7D2D9;
-  transition: 0.3s ease-in-out; }
+  color: #C7D2D9; }
   .tag .x {
     font: 300 9px Lato;
     padding: 0 0 0 6px;
@@ -196,28 +196,31 @@ html {
   .tag.Prototyping {
     background: #DE856F;
     color: #EBD4CD; }
-  .tag.light.Visual {
-    background: #C6659B66;
-    color: #2F3437; }
-  .tag.light.UI {
-    background: #8369AE66;
-    color: #2F3437; }
-  .tag.light.Branding {
+  .tag.light {
     background: #598EAD66;
     color: #2F3437; }
-  .tag.light.UX {
-    background: #9CCFDA66;
-    color: #2F3437; }
-  .tag.light.Web {
-    background: #5A9D9366;
-    color: #2F3437; }
-  .tag.light.Mobile {
-    background: #84D7B266;
-    color: #2F3437; }
-  .tag.light.Prototyping {
-    background: #F5957E66;
-    color: #2F3437; }
-  .tag.light .x {
-    color: #2F3437; }
+    .tag.light.Visual {
+      background: #C6659B66;
+      color: #2F3437; }
+    .tag.light.UI {
+      background: #8369AE66;
+      color: #2F3437; }
+    .tag.light.Branding {
+      background: #598EAD66;
+      color: #2F3437; }
+    .tag.light.UX {
+      background: #9CCFDA66;
+      color: #2F3437; }
+    .tag.light.Web {
+      background: #5A9D9366;
+      color: #2F3437; }
+    .tag.light.Mobile {
+      background: #84D7B266;
+      color: #2F3437; }
+    .tag.light.Prototyping {
+      background: #F5957E66;
+      color: #2F3437; }
+    .tag.light .x {
+      color: #2F3437; }
 
 /*# sourceMappingURL=Tag.css.map */

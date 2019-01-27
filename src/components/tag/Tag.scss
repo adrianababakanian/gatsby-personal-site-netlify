@@ -48,9 +48,9 @@ $highlights: (
   margin: 2px 4px 2px 0;
   border-radius: 4px;
   font: 400 14px Lato;
-  background: get(deep_blue);
-  color: get(light_blue);
   transition: 0.3s ease-in-out;
+  background: #{map-get($darks, blue)};
+  color: #{map-get($lights, blue)};
 
   .x {
     font: 300 9px Lato;
@@ -68,6 +68,8 @@ $highlights: (
   &.Prototyping { @include color-tag(orange) }
 
   &.light {
+    background: #{map-get($highlights, blue)};
+    color: #2F3437;
     &.Visual { @include highlight-color-tag(pink) }
     &.UI { @include highlight-color-tag(purple) }
     &.Branding { @include highlight-color-tag(blue) }

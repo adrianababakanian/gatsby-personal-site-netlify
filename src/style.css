@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+.example-appear {
+  opacity: 0.01;
+  transform: translateY(20px); }
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: .4s ease-in;
+  transform: initial; }
+
+.tile-appear {
+  opacity: 0.01;
+  transform: translateY(30px); }
+  .tile-appear.tile-appear-active {
+    opacity: 1;
+    transition: .5s ease-in-out;
+    transform: initial; }
+
 html {
   background: white; }
   html .content {
@@ -20,11 +38,13 @@ html {
           color: #2F3437;
           background: rgba(239, 239, 239, 0.3); }
     html .content .container {
-      margin: 120px auto;
+      margin: 100px auto;
       width: 800px;
       color: #2F3437; }
-      html .content .container.filter {
+      html .content .container.filter, html .content .container.about {
         margin-bottom: 20px; }
+      html .content .container.facts {
+        margin-top: 20px; }
     html .content .grid {
       margin: 0 auto;
       width: 1260px; }
@@ -35,7 +55,7 @@ html {
       html .content .intro-wrapper .intro {
         height: auto;
         width: 800px;
-        margin: 120px auto 30px; }
+        margin: 100px auto 40px; }
       html .content .intro-wrapper .bottom {
         width: 100vw;
         margin: 0 auto;
@@ -46,20 +66,25 @@ html {
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0; }
+    html .content h2 {
+      font: 500 32px Playfair Display;
+      color: #598EAD;
+      width: 100%; }
     html .content h4 {
       font: 400 18px Lato;
       color: #2F3437;
       letter-spacing: initial;
       line-height: 34px; }
     html .content .me-wrapper {
-      height: 400px;
       box-shadow: none; }
-    html .content .facts {
+    html .content .facts-wrapper {
       width: 100%;
-      margin-left: -40px;
-      padding: 5px 40px;
+      padding: 5px 0;
       background: #BCD2DE; }
     html .content .divider {
-      background: #DFDFDE; }
+      background: #DFDFDE;
+      margin-bottom: 10px; }
+      html .content .divider.blue {
+        background: #598EAD; }
 
 /*# sourceMappingURL=style.css.map */

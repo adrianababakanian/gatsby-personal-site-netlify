@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:300,400,600,800');
 
+.header-appear {
+  opacity: 0.01;
+  transform: translateY(-20px);
+}
+
+.header-appear.header-appear-active {
+  opacity: 1;
+  transition: .4s ease-in;
+  transform: initial;
+}
+
 .header {
   width: 100vw;
   background: white;
@@ -13,7 +24,7 @@
 
   .header-center {
     width: 800px;
-    padding: 40px 0 10px 0;
+    padding: 20px 0 10px 0;
     margin: 0 auto;
 
     @media (max-width: 700px) {
@@ -30,7 +41,7 @@
     }
 
     .logo {
-      font: 600 16px Lato;
+      font: 600 16px Playfair Display;
       float: left;
       fill: get(atom);
       stroke: get(atom);
