@@ -33,6 +33,18 @@ class City extends React.Component {
       this.images = importAll(require.context('./images/dubrovnik', false, /\.(png|jpe?g|svg)$/));
     } else if (props.city == 'London') {
       this.images = importAll(require.context('./images/london', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Paris') {
+      this.images = importAll(require.context('./images/paris', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Bergamo') {
+      this.images = importAll(require.context('./images/bergamo', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Tahoe') {
+      this.images = importAll(require.context('./images/tahoe', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'New York') {
+      this.images = importAll(require.context('./images/new york', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Split') {
+      this.images = importAll(require.context('./images/split', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Pučišća') {
+      this.images = importAll(require.context('./images/pucisca', false, /\.(png|jpe?g|svg)$/));
     } else {
       this.image = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
     }
@@ -43,7 +55,7 @@ class City extends React.Component {
 
     const images = this.images ? Object.values(this.images).map((image) =>
       <CSSTransitionGroup
-        transitionName="city-image"
+        transitionName="tile"
         transitionAppear={true}
         transitionAppearTimeout={700}
         transitionEnter={false}

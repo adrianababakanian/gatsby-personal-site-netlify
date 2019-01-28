@@ -29,15 +29,15 @@ class TravelIndex extends React.Component {
           {/* Croatia Summer 2018. */}
           <City city='Venice' country='Italy' date='August 2018' />
           <City city='Dubrovnik' country='Croatia' date='August 2018' />
-          <City city='Brač' country='Croatia' date='August 2018' />
+          <City city='Pučišća' country='Croatia' date='August 2018' />
           <City city='Split' country='Croatia' date='August 2018' />
-          
+
 
           {/* Pre-International. */}
           <City city='New York' country='New York' date='July 2018' />
-          <City city='Big Sur' country='California' date='May 2018' />
+          {/* <City city='Big Sur' country='California' date='May 2018' />
           <City city='Gualala' country='California' date='April 2018' />
-          <City city='Los Angeles' country='California' date='January 2018' />
+          <City city='Los Angeles' country='California' date='January 2018' /> */}
       </div>
     )
   }

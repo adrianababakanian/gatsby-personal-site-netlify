@@ -4,6 +4,8 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazy-load'
 
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
+
 import Preview from './../components/preview/Preview'
 import FilterBar from './../components/filter-bar/FilterBar'
 
@@ -97,11 +99,15 @@ class WorkIndex extends React.Component {
                      handleFilterRemove={ this.handleFilterRemove }
                      light={ true } />
           <div className="divider" />
-          { filteredPosts }
+          <CSSTransitionGroup
+            transitionName="tile"
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+            transitionEnter={false}
+            transitionLeave={false}>
+            { filteredPosts }
+          </CSSTransitionGroup>
         </div>
-        {/* <div className='grid'>
-          { filteredPosts }
-        </div> */}
       </div>
 
 

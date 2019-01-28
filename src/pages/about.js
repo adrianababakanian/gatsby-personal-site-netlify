@@ -3,28 +3,37 @@ import me from './../assets/images/me.png'
 import Elsewhere from './../components/elsewhere/Elsewhere'
 import Fact from './../components/fact/Fact'
 
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
+
 import './../common.css';
 
 const AboutPage = () => {
   return (
     <div className="about">
       <div className="container about">
-        <div className="about">
-          <div className="me-wrapper">
-            <img src={me} className="me"/>
-            <div className="overlay"/>
+        <CSSTransitionGroup
+          transitionName="tile"
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnter={false}
+          transitionLeave={false}>
+          <div className="about">
+            <div className="me-wrapper">
+              <img src={me} className="me"/>
+              <div className="overlay"/>
+            </div>
+
+            <h4>
+              I’m a whimsical creative at heart informed by a deep passion for technical logic.
+              Happiest reasoning at the intersection of the engineering and design, I love working with people
+              from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
+            </h4>
+
+            <h4>
+              As a believer that our idisoyncracies define us, I give you some of mine in the form of:
+            </h4>
           </div>
-
-          <h4>
-            I’m a whimsical creative at heart informed by a deep passion for technical logic.
-            Happiest reasoning at the intersection of the engineering and design, I love working with people
-            from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
-          </h4>
-
-          <h4>
-            As a believer that our idisoyncracies define us, I give you some of mine in the form of:
-          </h4>
-        </div>
+        </CSSTransitionGroup>
       </div>
       <div className="facts-wrapper">
         <div className='container facts'>

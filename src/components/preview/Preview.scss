@@ -1,4 +1,12 @@
-
+.preview-tile-appear {
+  opacity: 0.01;
+  transform: translateY(30px);
+  &.preview-tile-appear-active {
+    opacity: 1;
+    transition: .5s ease-in-out;
+    transform: initial;
+  }
+}
 
 .preview {
   //width: 600px;
@@ -15,18 +23,18 @@
   position: relative;
   overflow: hidden;
   color: #2F3437;
-  float: left;
 
   //background: #3f4447;
   background: white;
   //border: 1px solid #292c2f;
-  border: 1px solid #DEDEDE;
+  border: 1px solid rgba(#DEDEDE, 0);
   border-radius: 6px;
   border-bottom: 1px solid #DEDEDE;
 
   &:hover {
     box-shadow: 0 2px 12px 2px #EFEFEF;
     background: gray;
+    border: 1px solid #DEDEDE;
     img {
       transform: scale(1.02);
     }
