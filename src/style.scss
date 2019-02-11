@@ -52,14 +52,12 @@ html {
       &.filter, &.about { margin-bottom: 20px; }
       &.facts { margin-top: 20px; }
       @media (max-width: 840px) {
-        width: calc(100%-40px);
-        background: red;
+        width: calc(100vw - 40px);
       }
     }
     .grid {
       margin: 0 auto;
       width: 1260px;
-      //width: 800px;
     }
     .intro-wrapper {
       height: 100vh;
@@ -89,8 +87,8 @@ html {
     h2 {
       font: 500 32px Playfair Display;
       color: #598EAD;
-      width: 100%;
       text-align: center;
+      width: 100%;
     }
     h4 {
       font: 400 18px Lato;

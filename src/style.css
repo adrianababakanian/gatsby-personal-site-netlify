@@ -47,8 +47,7 @@ html {
         margin-top: 20px; }
       @media (max-width: 840px) {
         html .content .container {
-          width: calc(100%-40px);
-          background: red; } }
+          width: calc(100vw - 40px); } }
     html .content .grid {
       margin: 0 auto;
       width: 1260px; }
@@ -76,8 +75,8 @@ html {
     html .content h2 {
       font: 500 32px Playfair Display;
       color: #598EAD;
-      width: 100%;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
     html .content h4 {
       font: 400 18px Lato;
       color: #2F3437;

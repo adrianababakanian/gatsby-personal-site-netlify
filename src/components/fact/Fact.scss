@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 .fact {
-  width: 100%;
-  padding: 80px 0;
+  width: 380px;
+  padding: 30px 0;
   text-align: center;
+  margin: 0 auto;
+
+  @media (max-width: 440px) {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
 
   &.reverse { text-align: right}
 
   h5 {
     font: 400 24px Playfair Display;
     color: #598EAD;
-    margin: 4px 0;
+    margin: 12px 0;
+    line-height: 44px;
   }
 
   .fact-image {
