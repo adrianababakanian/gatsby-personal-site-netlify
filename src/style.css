@@ -45,6 +45,10 @@ html {
         margin-bottom: 20px; }
       html .content .container.facts {
         margin-top: 20px; }
+      @media (max-width: 840px) {
+        html .content .container {
+          width: calc(100%-40px);
+          background: red; } }
     html .content .grid {
       margin: 0 auto;
       width: 1260px; }
@@ -56,6 +60,9 @@ html {
         height: auto;
         width: 800px;
         margin: 100px auto 40px; }
+        @media (max-width: 840px) {
+          html .content .intro-wrapper .intro {
+            width: calc(100vw - 40px); } }
       html .content .intro-wrapper .bottom {
         width: 100vw;
         margin: 0 auto;
@@ -69,7 +76,8 @@ html {
     html .content h2 {
       font: 500 32px Playfair Display;
       color: #598EAD;
-      width: 100%; }
+      width: 100%;
+      text-align: center; }
     html .content h4 {
       font: 400 18px Lato;
       color: #2F3437;

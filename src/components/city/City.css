@@ -11,7 +11,8 @@
   padding: 10px;
   cursor: pointer;
   border-radius: 4px;
-  transition: 0.3s ease-in-out; }
+  transition: 0.3s ease-in-out;
+  margin-left: -10px; }
   .city:hover {
     background: rgba(239, 239, 239, 0.3); }
   .city .city-name {
@@ -26,5 +27,9 @@
   .city img {
     width: 100%;
     margin: 4px 0; }
+  @media (max-width: 900px) {
+    .city {
+      width: calc(100vw - 20px);
+      margin-left: initial; } }
 
 /*# sourceMappingURL=City.css.map */
