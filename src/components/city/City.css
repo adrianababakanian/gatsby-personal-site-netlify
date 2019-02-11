@@ -15,6 +15,9 @@
   margin-left: -10px; }
   .city:hover {
     background: rgba(239, 239, 239, 0.3); }
+    @media (max-width: 900px) {
+      .city:hover {
+        background: initial; } }
   .city .city-name {
     font: 400 28px Playfair Display;
     color: #598EAD;
@@ -29,7 +32,8 @@
     margin: 4px 0; }
   @media (max-width: 900px) {
     .city {
-      width: calc(100vw - 20px);
-      margin-left: initial; } }
+      width: calc(100% - 20px);
+      margin-left: initial;
+      padding: 0; } }
 
 /*# sourceMappingURL=City.css.map */
