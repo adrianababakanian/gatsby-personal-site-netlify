@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-
 .example-appear {
   opacity: 0.01;
   transform: translateY(20px);
@@ -44,6 +43,13 @@ html {
           background: rgba(#EFEFEF, 0.3);
         }
       }
+      &.gatsby-resp-image-link {
+        .gatsby-resp-image-wrapper {
+          width: 100%;
+          display: initial;
+          margin: 0;
+        }
+      }
     }
     .container {
       margin: 100px auto;
@@ -53,6 +59,46 @@ html {
       &.facts { margin-top: 20px; }
       @media (max-width: 840px) {
         width: calc(100vw - 40px);
+      }
+      .gatsby-resp-image-wrapper {
+        width: 800px;
+        .gatsby-resp-image-image {
+          border-radius: 2px;
+          width: 100%;
+          max-width: none;
+        }
+      }
+      h2 {
+        text-align: left;
+        margin-bottom: 0;
+        font: 500 24px Playfair Display;
+        &.about { text-align: center }
+      }
+      p {
+        width: 100%;
+        color: #2F3437;
+        font-weight: 400;
+        margin: 10px 0 30px 0;
+      }
+      a {
+        color: #598EAD;
+        padding: 1px 4px;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: 0.3s ease-in-out;
+        &.preview { color: #5F6468 }
+        &.cycle { background: white }
+        &:hover {
+          color: #426980;
+          background: rgba(#BCD2DE, 0.8);
+          &.preview {
+            color: #2F3437;
+            background: rgba(#EFEFEF, 0.3);
+          }
+          &.cycle {
+            font-weight: 400;
+          }
+        }
       }
     }
     .grid {
@@ -83,6 +129,8 @@ html {
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0;
+      &.blog-title {
+      }
     }
     h2 {
       font: 500 32px Playfair Display;

@@ -29,7 +29,7 @@ const Layout = ({ children, data }) => (
     <div>
       <Header links={ links } />
       <div className="content">
-        {children()}
+          {children()}
         {/* <Elsewhere/> */}
       </div>
     </div>

@@ -37,6 +37,10 @@ html {
         html .content a:hover.preview {
           color: #2F3437;
           background: rgba(239, 239, 239, 0.3); }
+      html .content a.gatsby-resp-image-link .gatsby-resp-image-wrapper {
+        width: 100%;
+        display: initial;
+        margin: 0; }
     html .content .container {
       margin: 100px auto;
       width: 800px;
@@ -48,6 +52,41 @@ html {
       @media (max-width: 840px) {
         html .content .container {
           width: calc(100vw - 40px); } }
+      html .content .container .gatsby-resp-image-wrapper {
+        width: 800px; }
+        html .content .container .gatsby-resp-image-wrapper .gatsby-resp-image-image {
+          border-radius: 2px;
+          width: 100%;
+          max-width: none; }
+      html .content .container h2 {
+        text-align: left;
+        margin-bottom: 0;
+        font: 500 24px Playfair Display; }
+        html .content .container h2.about {
+          text-align: center; }
+      html .content .container p {
+        width: 100%;
+        color: #2F3437;
+        font-weight: 400;
+        margin: 10px 0 30px 0; }
+      html .content .container a {
+        color: #598EAD;
+        padding: 1px 4px;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: 0.3s ease-in-out; }
+        html .content .container a.preview {
+          color: #5F6468; }
+        html .content .container a.cycle {
+          background: white; }
+        html .content .container a:hover {
+          color: #426980;
+          background: rgba(188, 210, 222, 0.8); }
+          html .content .container a:hover.preview {
+            color: #2F3437;
+            background: rgba(239, 239, 239, 0.3); }
+          html .content .container a:hover.cycle {
+            font-weight: 400; }
     html .content .grid {
       margin: 0 auto;
       width: 1260px; }

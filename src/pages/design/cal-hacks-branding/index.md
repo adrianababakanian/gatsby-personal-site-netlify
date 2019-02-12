@@ -3,14 +3,15 @@ title: "Cal Hacks"
 date: "2018-09-12T17:12:33.962Z"
 featuredImage: ./assets/scaled.png
 tags: ["design", "Visual", "Branding", "Web", "UI"]
-blurb: "Applied iterative experience & user research to develop a cohesive visual identity for the world's largest hackathon. &#13; Took full ownership of designing visual campaigns enabling initiatives in diversity, entrepreneurship, and sustainability."
+blurb: "Applied iterative experience & user research to develop a cohesive visual identity for the world's largest hackathon. Took full ownership of designing visual campaigns enabling initiatives in diversity, entrepreneurship, and sustainability."
 ---
 
-<a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. As our team’s designer, I utilize design as a tool for progressing our initiatives and the causes that inspire me.
+#### <a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. As our team’s designer, I utilize design as a tool for progressing our initiatives and the causes that inspire me.
 
+![Cal Hacks Logo Scaling](./assets/ch-large.png)
+
+## The Problem
 A cohesive visual identity defines the voice of an organization. The Cal Hacks brand was previously defined by annual designs corresponding to each hackathon iteration. As we’ve matured from a startup-like environment into an established organization, our influence in the realm of technology extends beyond the space of hackathons into <a href="https://calhacks.io#initiatives" class="cycle">entrepreneurship</a>, <a href="https://calhacks.io#initiatives" class="cycle">diversity</a>, <a href="https://calhacks.io#initiatives" class="cycle">inclusivity</a>, <a href="https://calhacks.io#initiatives" class="cycle">and beyond</a> — thus rendering a cohesive branding identity crucial.
-
-![Cal Hacks Logo Scaling](./assets/scaled.png)
 
 ![Cal Hacks Logo Text](./assets/title.png)
 

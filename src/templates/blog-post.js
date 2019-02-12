@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import './../common.css'
+import './../style.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,9 +14,11 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <h1>{post.frontmatter.title}</h1>
+        <div className="container">
+          <h1 className='blog-title'>{post.frontmatter.title}</h1>
 
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
 
       </div>
 
