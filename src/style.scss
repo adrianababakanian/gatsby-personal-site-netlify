@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
 .example-appear {
   opacity: 0.01;
@@ -61,7 +62,7 @@ html {
         width: calc(100vw - 40px);
       }
       .gatsby-resp-image-wrapper {
-        width: 800px;
+        //width: 800px;
         .gatsby-resp-image-image {
           border-radius: 2px;
           width: 100%;
@@ -88,9 +89,11 @@ html {
         transition: 0.3s ease-in-out;
         &.preview { color: #5F6468 }
         &.cycle { background: white }
+        &.gatsby-resp-image-link { .gastby-resp-image-image { width: 800px;} }
         &:hover {
           color: #426980;
           background: rgba(#BCD2DE, 0.8);
+          &.gatsby-resp-image-link { background: none; }
           &.preview {
             color: #2F3437;
             background: rgba(#EFEFEF, 0.3);
@@ -125,7 +128,7 @@ html {
       }
     }
     h1 {
-      font: 500 32px Lato;
+      font: 500 32px Roboto;
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0;
@@ -139,7 +142,7 @@ html {
       width: 100%;
     }
     h4 {
-      font: 400 18px Lato;
+      font: 400 18px Roboto;
       color: #2F3437;
       letter-spacing: initial;
       line-height: 34px;

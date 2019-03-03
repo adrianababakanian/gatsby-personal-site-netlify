@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
 .example-appear {
   opacity: 0.01;
   transform: translateY(20px); }
@@ -52,12 +53,10 @@ html {
       @media (max-width: 840px) {
         html .content .container {
           width: calc(100vw - 40px); } }
-      html .content .container .gatsby-resp-image-wrapper {
-        width: 800px; }
-        html .content .container .gatsby-resp-image-wrapper .gatsby-resp-image-image {
-          border-radius: 2px;
-          width: 100%;
-          max-width: none; }
+      html .content .container .gatsby-resp-image-wrapper .gatsby-resp-image-image {
+        border-radius: 2px;
+        width: 100%;
+        max-width: none; }
       html .content .container h2 {
         text-align: left;
         margin-bottom: 0;
@@ -79,9 +78,13 @@ html {
           color: #5F6468; }
         html .content .container a.cycle {
           background: white; }
+        html .content .container a.gatsby-resp-image-link .gastby-resp-image-image {
+          width: 800px; }
         html .content .container a:hover {
           color: #426980;
           background: rgba(188, 210, 222, 0.8); }
+          html .content .container a:hover.gatsby-resp-image-link {
+            background: none; }
           html .content .container a:hover.preview {
             color: #2F3437;
             background: rgba(239, 239, 239, 0.3); }
@@ -107,7 +110,7 @@ html {
         background: #BCD2DE;
         flex-grow: 1; }
     html .content h1 {
-      font: 500 32px Lato;
+      font: 500 32px Roboto;
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0; }
@@ -117,7 +120,7 @@ html {
       text-align: center;
       width: 100%; }
     html .content h4 {
-      font: 400 18px Lato;
+      font: 400 18px Roboto;
       color: #2F3437;
       letter-spacing: initial;
       line-height: 34px; }

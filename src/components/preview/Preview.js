@@ -7,7 +7,7 @@ import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import './Preview.css'
 
 /* Hardcode preview border radius. */
-const borderStyle = { borderRadius: '6px', borderBottom: '1px solid rgba(#DEDEDE, 0)' };
+const borderStyle = { borderRadius: '6px', borderBottom: '1px solid #DEDEDE' };
 
 const Preview = ({ project, children }) => (
 

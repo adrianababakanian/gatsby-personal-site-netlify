@@ -1,5 +1,5 @@
 import React from 'react'
-import me from './../assets/images/me.png'
+import me from './../assets/images/me-barcelona.png'
 import Elsewhere from './../components/elsewhere/Elsewhere'
 import Fact from './../components/fact/Fact'
 

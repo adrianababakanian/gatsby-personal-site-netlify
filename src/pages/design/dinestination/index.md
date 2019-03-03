@@ -3,6 +3,7 @@ title: "Dinestination"
 date: "2018-08-12T17:12:33.962Z"
 featuredImage: ./assets/dinestination.png
 tags: ["design", "Mobile", "UI"]
+blurb: "Lorem ipsum."
 ---
 
 <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank" class="cycle">CS 160</a>

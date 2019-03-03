@@ -9,7 +9,6 @@
 }
 
 .preview {
-  //width: 600px;
   width: calc(100% - 10px);
   height: 338px;
   margin: 10px 0;
@@ -25,15 +24,13 @@
   color: #2F3437;
 
   background: white;
-  border: 1px solid rgba(#DEDEDE, 0);
   border-radius: 6px;
-  border-bottom: 1px solid #DEDEDE;
+  border: 1px solid #DEDEDE;
 
   &:hover {
     @media (min-width: 500px) {
       box-shadow: 0 2px 12px 2px #EFEFEF;
-      background: gray;
-      border: 1px solid #DEDEDE;
+      background: lightgray;
     }
     img {
       transform: scale(1.02);
