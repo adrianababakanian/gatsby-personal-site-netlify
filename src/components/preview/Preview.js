@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby'
 import Tag from './../tag/Tag';
 
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
-import './Preview.css'
+import './Preview.scss'
 
 /* Hardcode preview border radius. */
 const borderStyle = { borderRadius: '6px', borderBottom: '1px solid #DEDEDE' };

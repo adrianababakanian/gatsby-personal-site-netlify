@@ -5,7 +5,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import Tag from './../../tag/Tag.js'
 
-import './FilterHeader.css'
+import './FilterHeader.scss'
 
 library.add(faTimes);
 

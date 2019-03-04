@@ -1,8 +1,8 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby'
 import Tag from './../tag/Tag';
 
-import './Fact.css'
+import './Fact.scss'
 import zafon from './zafon.png'
 
 const Fact = ({ number, fact, reverse }) => (

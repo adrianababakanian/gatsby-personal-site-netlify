@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
-import './Header.css'
+import './Header.scss'
 import logo from './../../assets/images/logo.svg';
 
 class Header extends React.Component {
@@ -77,7 +77,7 @@ class Header extends React.Component {
             <div className='header-center'>
               <Link exact to="/" className="logo"
                 onClick={ this.toggleNavLogo }>
-                Adriana Babakanian
+                <img classNamee='logo' src={logo}/>
               </Link>
               { header_links }
               <div className='hamburger'

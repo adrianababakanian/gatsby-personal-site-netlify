@@ -40,7 +40,8 @@
       stroke: get(atom);
       margin-top: 4px;
       color: #2F3437;
-      padding: 6px 0; }
+      padding: 6px 0;
+      width: 30px; }
       @media (max-width: 700px) {
         .header .header-center .logo {
           margin-left: 0; } }

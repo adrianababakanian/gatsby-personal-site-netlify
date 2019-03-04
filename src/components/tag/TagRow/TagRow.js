@@ -1,6 +1,6 @@
 import React from 'react'
 import Tag from './../Tag.js'
-import './TagRow.css'
+import './TagRow.scss'
 
 class TagRow extends React.Component {
   constructor(props) {

@@ -2,7 +2,7 @@ import React from 'react'
 import FilterHeader from './FilterHeader/FilterHeader.js'
 import FilterBody from './FilterBody/FilterBody.js'
 
-import './FilterBar.css'
+import './FilterBar.scss'
 
 /* A dropdown menu that applies tag-based filters
  * to the displayed project previews. */

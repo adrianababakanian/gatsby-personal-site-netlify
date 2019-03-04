@@ -2,7 +2,7 @@ import React from 'react'
 import Tag from './../../tag/Tag.js'
 import TagRow from './../../tag/TagRow/TagRow.js'
 
-import './FilterBody.css'
+import './FilterBody.scss'
 
 /* FontAwesome React Icon imports. */
 import { library } from '@fortawesome/fontawesome-svg-core'

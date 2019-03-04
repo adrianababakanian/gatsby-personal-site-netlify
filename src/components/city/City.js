@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Tag from './../tag/Tag'
 
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
-import './City.css'
+import './City.scss'
 
 class City extends React.Component {
   constructor(props) {

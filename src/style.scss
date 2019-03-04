@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=-apple-system, system-ui, Lato, Helvetica:100,300,400');
 
 .example-appear {
   opacity: 0.01;
@@ -29,6 +29,7 @@ html {
     left: 0;
     top: 0;
     width: 100%;
+    font: -apple-system, system-ui, Lato, Helvetica;
     a {
       color: #598EAD;
       padding: 1px 4px;
@@ -128,7 +129,7 @@ html {
       }
     }
     h1 {
-      font: 500 32px Roboto;
+      font: 500 32px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0;
@@ -142,7 +143,7 @@ html {
       width: 100%;
     }
     h4 {
-      font: 400 18px Roboto;
+      font: 400 18px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
       line-height: 34px;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
@@ -13,11 +14,12 @@ const links = [
   ["Work", "active"]
 ]
 
-const Layout = ({ children, data }) => (
-
+const Layout = props => {
+console.log('Layout props', props)
+return (
   <div>
     <Helmet
-      title={data.site.siteMetadata.title}
+      title={props.data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
@@ -29,25 +31,38 @@ const Layout = ({ children, data }) => (
     <div>
       <Header links={ links } />
       <div className="content">
-          {children()}
+          {props.children}
         {/* <Elsewhere/> */}
       </div>
     </div>
   </div>
 )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
 }
 
-export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
+const LayoutQuery = ({children}) => {
+  return (
+    <StaticQuery
+      query={
+        graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
+          }
+        `
       }
-    }
-  }
-`
+      render={props => {
+        console.log("LayoutQuery props", props)
+        return <Layout data={props} children={children}/>
+      }}
+    />
+  )
+}
+
+export default LayoutQuery

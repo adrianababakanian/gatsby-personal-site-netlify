@@ -1,10 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql, Link } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazy-load'
 
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
+import Layout from '../layouts'
 
 import Preview from './../components/preview/Preview'
 import FilterBar from './../components/filter-bar/FilterBar'
@@ -89,28 +90,28 @@ class WorkIndex extends React.Component {
     })}
 
     return (
-      <div>
-        <div className='container filter'>
-          <Helmet title={`Work | ${siteTitle}`} />
+      <Layout>
+        <div>
+          <div className='container filter'>
+            <Helmet title={`Work | ${siteTitle}`} />
 
-          <FilterBar filters={ this.state.filters }
-                     tags={ tags }
-                     handleFilterAdd={ this.handleFilterAdd }
-                     handleFilterRemove={ this.handleFilterRemove }
-                     light={ true } />
-          <div className="divider" />
-          <CSSTransitionGroup
-            transitionName="tile"
-            transitionAppear={true}
-            transitionAppearTimeout={500}
-            transitionEnter={false}
-            transitionLeave={false}>
-            { filteredPosts }
-          </CSSTransitionGroup>
+            <FilterBar filters={ this.state.filters }
+                       tags={ tags }
+                       handleFilterAdd={ this.handleFilterAdd }
+                       handleFilterRemove={ this.handleFilterRemove }
+                       light={ true } />
+            <div className="divider" />
+            <CSSTransitionGroup
+              transitionName="tile"
+              transitionAppear={true}
+              transitionAppearTimeout={500}
+              transitionEnter={false}
+              transitionLeave={false}>
+              { filteredPosts }
+            </CSSTransitionGroup>
+          </div>
         </div>
-      </div>
-
-
+      </Layout>
     )
   }
 }

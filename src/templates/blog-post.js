@@ -1,10 +1,11 @@
 import React from 'react'
+import { graphql, Link } from 'gatsby'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
+import Layout from '../layouts'
 
-import './../common.css'
-import './../style.css'
+//import './../common.scss'
+import './../style.scss'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -12,15 +13,17 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <div className="container">
-          <h1 className='blog-title'>{post.frontmatter.title}</h1>
+      <Layout>
+        <div>
+          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+          <div className="container">
+            <h1 className='blog-title'>{post.frontmatter.title}</h1>
 
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </div>
+
         </div>
-
-      </div>
+      </Layout>
 
     )
   }
