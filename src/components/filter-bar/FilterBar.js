@@ -34,7 +34,7 @@ class FilterBar extends React.Component {
 
   render() {
 
-    const showBody = this.state.showBody ? 'showBody' : null;
+    const showBody = this.state.showBody ? 'showBody' : "";
 
     var body = null;
     if (this.state.showBody) {

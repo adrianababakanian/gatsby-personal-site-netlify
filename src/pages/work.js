@@ -94,12 +94,14 @@ class WorkIndex extends React.Component {
         <div>
           <div className='container filter'>
             <Helmet title={`Work | ${siteTitle}`} />
-
-            <FilterBar filters={ this.state.filters }
-                       tags={ tags }
-                       handleFilterAdd={ this.handleFilterAdd }
-                       handleFilterRemove={ this.handleFilterRemove }
-                       light={ true } />
+            <div className="top">
+              <h1 style={{"display": "inline"}}> Work </h1>
+              <FilterBar filters={ this.state.filters }
+                         tags={ tags }
+                         handleFilterAdd={ this.handleFilterAdd }
+                         handleFilterRemove={ this.handleFilterRemove }
+                         light={ true } />
+            </div>
             <div className="divider" />
             <CSSTransitionGroup
               transitionName="tile"

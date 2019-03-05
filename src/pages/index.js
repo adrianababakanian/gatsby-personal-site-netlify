@@ -13,14 +13,15 @@ const IndexPage = () => {
   return (
     <Layout>
       <div className='intro-wrapper'>
-        <CSSTransitionGroup
-          transitionName="example"
-          transitionEnter={false}
-          transitionLeave={false}
-          transitionAppear={true}
-          transitionAppearTimeout={400}>
+
             <div className='intro'>
               <h1>Hi, I'm Adriana.</h1>
+              <CSSTransitionGroup
+                transitionName="example"
+                transitionEnter={false}
+                transitionLeave={false}
+                transitionAppear={true}
+                transitionAppearTimeout={400}>
               <h4>I’m a designer and software engineer currently based in Berkeley, California.
                   My approach to life and work is inspired by the power of cross-disciplinary knowledge.
                   I’m a fan of visually-informed engineering, <a>art history</a>, Gothic literature, real analysis, Barcelona, and Uji matcha.
@@ -36,8 +37,9 @@ const IndexPage = () => {
                  , alternative R&B, and a love for learning things by
                 meeting new people. Let’s get in touch!
               </h4>
+              </CSSTransitionGroup>
             </div>
-          </CSSTransitionGroup>
+
 
           <div className="bottom"></div>
 

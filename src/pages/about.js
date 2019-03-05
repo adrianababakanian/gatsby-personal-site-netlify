@@ -6,8 +6,6 @@ import Layout from '../layouts'
 
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
-import './../common.css';
-
 const AboutPage = () => {
   return (
     <Layout>

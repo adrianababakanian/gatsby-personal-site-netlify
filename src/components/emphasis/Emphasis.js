@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby'
 
-import './Emphasis.css';
+import './Emphasis.scss';
 
 const Emphasis = ({ content, color, header }) => {
   return (

@@ -20,7 +20,7 @@ class FilterHeader extends React.Component {
   }
 
   render() {
-    const label = (this.props.filters.length == 0 || this.props.filters.length == 5) ? "All" : "Filters:";
+    const label = (this.props.filters.length == 0 || this.props.filters.length == 5) ? "Add Filters" : "Filters:";
 
     return (
       <div className="FilterHeader" onClick={ this.handleOpen }>

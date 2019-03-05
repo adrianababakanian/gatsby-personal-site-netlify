@@ -3,7 +3,9 @@ title: "Cal Hacks"
 date: "2018-09-12T17:12:33.962Z"
 featuredImage: ./assets/scaled.png
 tags: ["design", "Visual", "Branding", "Web", "UI"]
-blurb: "Applied iterative experience & user research to develop a cohesive visual identity for the world's largest hackathon. Took full ownership of designing visual campaigns enabling initiatives in diversity, entrepreneurship, and sustainability."
+blurb: | 
+  Applied iterative experience & user research to develop a cohesive visual identity for the world's largest hackathon.
+  Took full ownership of designing visual campaigns enabling initiatives in diversity, entrepreneurship, and sustainability.
 ---
 
 #### <a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. I created a cohesive visual identity for Cal Hacks motivated by iterative experience & user research.

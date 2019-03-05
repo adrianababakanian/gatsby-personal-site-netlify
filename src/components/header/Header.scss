@@ -21,6 +21,7 @@
   overflow: hidden;
   top: 0;
   left: 0;
+  font-family: -apple-system, system-ui, Lato, Helvetica;
 
   .header-center {
     width: 800px;
@@ -56,8 +57,10 @@
     }
 
     .header-item {
+      font-family: inherit;
       float: right;
-      font: 400 16px Lato;
+      font-size: 16px;
+      font-weight: 400;
       text-decoration: none;
       padding: 6px 4px;
       border-bottom-color: transparent;
@@ -65,7 +68,7 @@
       &.active {
         .header-item-content {
           color: #426980;
-          font-weight: 600
+          font-weight: 500;
         }
       }
 
@@ -116,6 +119,7 @@
 }
 
 .mobile_header {
+  font-family: -apple-system, system-ui, Lato, Helvetica;
   width: 100vw;
   height: 100vh;
   z-index: 4;
@@ -133,9 +137,10 @@
     margin: 0 auto;
     display: block;
     text-align: center;
-    font: 800 16px Lato;
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
-    color: get("atom");
+    color: #2F3437;
 
     .mobile-header-item-content {
       border-radius: 3px;

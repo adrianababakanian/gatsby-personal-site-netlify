@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby'
 
-import './Elsewhere.css';
+import './Elsewhere.scss';
 
 import git from './assets/github.svg'
 import dribbble from './assets/dribbble.svg'

@@ -1,9 +1,8 @@
-@import "./../../../common.scss";
+//@import "./../../../common.scss";
 
 .FilterHeader {
   font: 400 14px Lato;
   color: #2F3437;
-  //color: get(dust);
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
@@ -12,12 +11,13 @@
   transition: 0.3s ease-in-out;
   position: relative;
   min-height: 30px;
+  float: right;
+  margin-top: 8px;
 
   .label { padding: 4px 8px; margin-top: -4px;}
 
   &:hover {
     background: #EFEFEF;
-    //background: #474c50;
   }
 
   input {

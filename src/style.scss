@@ -59,13 +59,13 @@ html {
       color: #2F3437;
       &.filter, &.about { margin-bottom: 20px; }
       &.facts { margin-top: 20px; }
+      .top { height: 50px; }
       @media (max-width: 840px) {
         width: calc(100vw - 40px);
       }
       .gatsby-resp-image-wrapper {
-        //width: 800px;
         .gatsby-resp-image-image {
-          border-radius: 2px;
+          border-radius: 6px;
           width: 100%;
           max-width: none;
         }
@@ -73,7 +73,8 @@ html {
       h2 {
         text-align: left;
         margin-bottom: 0;
-        font: 500 24px Playfair Display;
+        font-weight: 500;
+        font-size: 24px;
         &.about { text-align: center }
       }
       p {
@@ -88,7 +89,7 @@ html {
         cursor: pointer;
         border-radius: 2px;
         transition: 0.3s ease-in-out;
-        &.preview { color: #5F6468 }
+        &.preview { color: #2F3437 }
         &.cycle { background: white }
         &.gatsby-resp-image-link { .gastby-resp-image-image { width: 800px;} }
         &:hover {
@@ -137,7 +138,8 @@ html {
       }
     }
     h2 {
-      font: 500 32px Playfair Display;
+      font-size: 32px;
+      font-weight: 500;
       color: #598EAD;
       text-align: center;
       width: 100%;

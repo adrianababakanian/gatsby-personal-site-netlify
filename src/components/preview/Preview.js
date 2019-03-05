@@ -9,7 +9,11 @@ import './Preview.scss'
 /* Hardcode preview border radius. */
 const borderStyle = { borderRadius: '6px', borderBottom: '1px solid #DEDEDE' };
 
-const Preview = ({ project, children }) => (
+const Preview = ({ project, children }) => {
+
+const blurbs = project.frontmatter.blurb ? project.frontmatter.blurb.split('\n') : ['']
+
+return (
 
   <Link to={project.fields.slug} className="preview" style={ borderStyle }>
 
@@ -24,7 +28,9 @@ const Preview = ({ project, children }) => (
       </div>
 
       <div className="blurb">
-        { project.frontmatter.blurb }
+        {blurbs.map((blurb, i) => (
+          <p key={i}>{blurb}</p>
+        ))}
       </div>
 
     </div>
@@ -33,5 +39,6 @@ const Preview = ({ project, children }) => (
   </Link>
 
 )
+}
 
 export default Preview;
