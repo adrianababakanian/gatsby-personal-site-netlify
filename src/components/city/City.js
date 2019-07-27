@@ -45,6 +45,8 @@ class City extends React.Component {
       this.images = importAll(require.context('./images/split', false, /\.(png|jpe?g|svg)$/));
     } else if (props.city == 'Pučišća') {
       this.images = importAll(require.context('./images/pucisca', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Seoul') {
+      this.images = importAll(require.context('./images/seoul', false, /\.(png|jpe?g|svg)$/));
     } else {
       this.image = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
     }
@@ -73,7 +75,7 @@ class City extends React.Component {
         transitionEnter={false}
         transitionLeave={false}>
 
-      <div className='city'>
+      <div className={`city ${square ? 'square' : ''}`}>
         <h1 className='city-name'> { this.props.city } </h1>
         <div className='details'>
           <Tag name={ this.props.country }

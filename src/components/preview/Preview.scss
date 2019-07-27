@@ -41,7 +41,7 @@
   }
 
   .image {
-    flex: 70%;
+    flex: 50%;
     height: calc(100% - 16px);
     margin: 8px;
     overflow: hidden;
@@ -63,18 +63,19 @@
     margin: 8px;
 
     .title {
-      font-weight: 500;
-      font-size: 20px;
+      font-weight: 700;
+      font-size: 26px;
     }
 
     .tags { margin: 8px 0; }
 
     .blurb {
+      padding: 0 20px 0 0;
       p {
         padding: 4px 0;
         font-weight: 200;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 26px;
         margin: 0;
       }
     }

@@ -10,31 +10,112 @@
 
 .city {
   width: 100%;
-  margin-bottom: 40px;
-  padding: 10px;
+  height: 400px;
+  margin-bottom: 20px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: 0.3s ease-in-out;
   margin-left: -10px;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+
+  &.square {
+    height: 500px;
+  }
+
+  &.vertical {
+    height: 620px;
+  }
+
+  &.sub {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      top: initial;
+      left: initial;
+      transform: none;
+      position: relative;
+      &:hover {
+        width: 100%;
+        max-height: initial;
+      }
+    }
+    .city-name, .description {
+      color: #2F3437;
+    }
+    .description {
+      font-size: 20px;
+    }
+    .city-details {
+      display: none;
+    }
+  }
+
   &:hover {
     background: rgba(#EFEFEF, 0.3);
     @media (max-width: 900px) { background: initial }
+    img {
+      max-height: 105%;
+      width: auto;
+    }
+    .city-name {
+      opacity: 0.8;
+      transform: translateY(30px);
+    }
+    .city-details {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  &.sub {
+    .details-wrap {
+      background: none;
+      padding: 0;
+      position: relative;
+    }
+  }
+
+  .details-wrap {
+    width: calc(100% - 60px);
+    background: linear-gradient(to bottom, rgba(33,36,37,0) 0%,rgba(33,36,37,0.7) 50%,rgba(33,36,37,0.84) 100%);
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    padding: 160px 30px 30px 30px;
   }
   .city-name {
+    font: 800 38px -apple-system, system-ui, Lato, Helvetica;
+    color: white;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+  }
+  .city-details {
+    transition: 0.3s ease-in-out;
+  }
+  .city-name-old {
     font: 400 28px Playfair Display;
     color: #598EAD;
     margin-bottom: 4px;
   }
-  .details {
-    margin-bottom: 4px;
+  .details-wrap {
     .date {
       font: 400 14px Lato;
       display: inline-block;
+      color: white;
     }
   }
   img {
-    width: 100%;
-    margin: 4px 0;
+    max-height: 100%;
+    object-fit: fill;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.8s ease-in-out;
   }
 
   @media (max-width: 900px) {
@@ -43,4 +124,8 @@
     padding: 0;
   }
 
+}
+
+.city > * {
+  transition: 0.3s ease-in-out;
 }

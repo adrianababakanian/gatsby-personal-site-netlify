@@ -22,13 +22,13 @@ const IndexPage = () => {
                 transitionLeave={false}
                 transitionAppear={true}
                 transitionAppearTimeout={400}>
-              <h4>I’m a designer and software engineer currently based in Berkeley, California.
+              <h4>I’m a designer and software engineer currently based in San Francisco, California.
                   My approach to life and work is inspired by the power of cross-disciplinary knowledge.
                   I’m a fan of visually-informed engineering, <a>art history</a>, Gothic literature, real analysis, Barcelona, and Uji matcha.
               </h4>
               <h4>
-                I currently study at <a>UC Berkeley</a>, where I’m finishing up my double major in Computer Science & Applied Mathematics
-                with a certificate in <a>Human-Centered Design</a>. I also <a>teach</a> a UI course.
+                I recently graduated from <a>UC Berkeley</a> with a double major in Computer Science & Applied Mathematics,
+                and a certificate in <a>Human-Centered Design</a>. I also <a>taught</a> an HCI course.
               </h4>
               <h4>
                 I’m full to the brim of <a target="_blank"> book recommendations

@@ -55,27 +55,20 @@ html {
     }
     .container {
       margin: 100px auto;
-      width: 800px;
+      width: 1000px;
       color: #2F3437;
       &.filter, &.about { margin-bottom: 20px; }
       &.facts { margin-top: 20px; }
       .top { height: 50px; }
-      @media (max-width: 840px) {
+      @media (max-width: 1040px) {
         width: calc(100vw - 40px);
       }
       .gatsby-resp-image-wrapper {
         .gatsby-resp-image-image {
-          border-radius: 6px;
+          //border-radius: 6px;
           width: 100%;
           max-width: none;
         }
-      }
-      h2 {
-        text-align: left;
-        margin-bottom: 0;
-        font-weight: 500;
-        font-size: 24px;
-        &.about { text-align: center }
       }
       p {
         width: 100%;
@@ -91,7 +84,7 @@ html {
         transition: 0.3s ease-in-out;
         &.preview { color: #2F3437 }
         &.cycle { background: white }
-        &.gatsby-resp-image-link { .gastby-resp-image-image { width: 800px;} }
+        &.gatsby-resp-image-link { .gastby-resp-image-image { width: 1000px;} }
         &:hover {
           color: #426980;
           background: rgba(#BCD2DE, 0.8);
@@ -130,25 +123,27 @@ html {
       }
     }
     h1 {
-      font: 500 32px -apple-system, system-ui, Lato, Helvetica;
+      font: 800 32px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0;
+      letter-spacing: 1px;
       &.blog-title {
+        margin-bottom: 0;
       }
     }
     h2 {
-      font-size: 32px;
-      font-weight: 500;
+      font-size: 26px;
+      font-weight: 700;
       color: #598EAD;
-      text-align: center;
       width: 100%;
+      &.about { text-align: center }
     }
     h4 {
-      font: 400 18px -apple-system, system-ui, Lato, Helvetica;
+      font: 400 22px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
-      line-height: 34px;
+      line-height: 36px;
     }
 
     .me-wrapper {
@@ -165,5 +160,39 @@ html {
       margin-bottom: 10px;
       &.blue { background: #598EAD; }
     }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    .left-column {
+      width: 41%;
+      float: left;
+    }
+
+    .right-column {
+      width: 57%;
+      float: right;
+    }
   }
+
+  // FLEXBOX GRIDS
+  .flex-grid {
+    display: flex;
+    margin: 6px 0 6px -4px;
+    .col {
+      flex: 1 100%;
+    }
+  }
+
 }

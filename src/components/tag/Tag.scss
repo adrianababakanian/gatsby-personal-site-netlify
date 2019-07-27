@@ -7,7 +7,8 @@ $darks: (
   teal: unquote('#87B4BD'),
   green: unquote('#406F68'),
   mint: unquote('#6BB092'),
-  orange: unquote('#DE856F')
+  orange: unquote('#DE856F'),
+  white: unquote('#FFFFFF')
 );
 
 $lights: (
@@ -17,7 +18,8 @@ $lights: (
   teal: unquote('#D9ECE6'),
   green: unquote('#C3D3CF'),
   mint: unquote('#CBECDA'),
-  orange: unquote('#EBD4CD')
+  orange: unquote('#EBD4CD'),
+  white: unquote('#FFFFFF')
 );
 
 $highlights: (
@@ -77,6 +79,8 @@ $highlights: (
     &.Web { @include highlight-color-tag(green) }
     &.Mobile { @include highlight-color-tag(mint) }
     &.Prototyping { @include highlight-color-tag(orange) }
+
+    &.photo { color: white }
 
     .x { color: #2F3437 }
   }

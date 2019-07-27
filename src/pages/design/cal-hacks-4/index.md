@@ -2,10 +2,13 @@
 title: "Cal Hacks 4.0"
 date: "2018-07-12T17:12:33.962Z"
 featuredImage: ./assets/cal_hacks_4.png
-tags: ["design"]
+tags: ["design", "Visual", "Branding", "Web"]
+blurb: |
+  Created the branding for the fourth iteration of Cal Hacks, inspired by a California road trip theme.
+  Initiated and implemented creative decisions across a wide range of media.
 ---
 
-Cal Hacks 4.0 was the fourth iteration of Cal Hacks, the world's largest collegiate hackathon. Throughout 2017, I created the branding for <a href="https://calhacks.io#hackathon" target="_blank" class="cycle">Cal Hacks 4.0</a> under the general guidance of a California road trip theme, in celebration of the fact that advanced and beginner hackers alike come to California from all over the world to hack with us in Berkeley.
+#### Cal Hacks 4.0 was the fourth iteration of Cal Hacks, the world's largest collegiate hackathon. Throughout 2017, I created the branding for <a href="https://calhacks.io#hackathon" target="_blank" class="cycle">Cal Hacks 4.0</a> under the general guidance of a California road trip theme, in celebration of the fact that advanced and beginner hackers alike come to California from all over the world to hack with us in Berkeley.
 
 ![Cal Hacks 4.0](./assets/cal_hacks_4.png)
 

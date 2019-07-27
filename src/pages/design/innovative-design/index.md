@@ -2,7 +2,10 @@
 title: "InnoD Marketing"
 date: "2018-04-12T17:12:33.962Z"
 featuredImage: ./assets/innod.png
-tags: ["design"]
+tags: ["design", "Visual", "Branding", "Web", "UI"]
+blurb: |
+  Ideated, developed, and executed visual marketing campaigns for Berkeley's premier student-run creative agency.
+  Engaged with both on and off-campus clients to identify branding needs and design visual solutions for them.
 ---
 
 <a href="https://innovativedesign.club/" target="_blank" class="cycle">Innovative Design</a>
@@ -10,18 +13,20 @@ is Berkeley's premier student-run creative agency. We do graphic design work, ph
 
 Below are some of the assets I've made for InnoD over the past two years.  
 
-![Desk logo](./assets/desklogo.png)
-
-![Desk illustration](./assets/innod.png)
-
-![Banquet front](./assets/banquet_front.png)
-
-![Banquet back](./assets/banquet_back.png)
-
-![Light mountain](./assets/light_mountain.png)
-
-![Dark mountain](./assets/dark_mountain.png)
-
-![Banquet thank you](./assets/thankyou.png)
-
-![HEX](./assets/hex.png)
+<div class="flex-grid">
+  <div class="col"><img src="./assets/desklogo.png"></div>
+  <div class="col" style="flex: 1 0 64.2%"><img src="./assets/innod.png"></div>
+</div>
+<div class="flex-grid">
+  <div class="col"><img src="./assets/banquet_front.png"></div>
+  <div class="col"><img src="./assets/banquet_back.png"></div>
+</div>
+<div class="flex-grid">
+  <div class="col" style="flex: 1 0 56.8%"><img src="./assets/thankyou.png"></div>
+  <div class="col"><img src="./assets/hex-color.png"></div>
+</div>
+<div class="flex-grid">
+  <div class="col"><img src="./assets/dark_mountain_color.png"></div>
+  <div class="col"><img src="./assets/light_mountain_color.png"></div>
+  <div class="col"><img src="./assets/dark_mountain_color.png"></div>
+</div>
