@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Tag from './../tag/Tag'
+import PhotoEntry from './PhotoEntry/PhotoEntry.js'
 
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
@@ -17,8 +18,12 @@ class PhotoSet extends React.Component {
     }
     const route = './images/' + props.city;
     console.log(route);
-    if (props.city == 'Tokyo') {
+    if (props.city == 'Kyoto') {
+      this.images = importAll(require.context('./images/kyoto', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Tokyo') {
       this.images = importAll(require.context('./images/tokyo', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Croatia') {
+      this.images = importAll(require.context('./images/croatia', false, /\.(png|jpe?g|svg)$/));
     } else {
       this.image = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
     }
@@ -42,7 +47,7 @@ class PhotoSet extends React.Component {
 
       <div className='photo-set'>
 
-        <div className={`city square`}>
+        <div className={`city square set`}>
 
           {/* Display all the images in /images/{ this.props.city }. */}
           {images}
@@ -61,7 +66,11 @@ class PhotoSet extends React.Component {
         </div>
 
         <ul className='photo-entry-list'>
-          <li className='photo-entry'></li>
+          {this.props.entries.map(entry => (
+              <PhotoEntry parent={ this.props.city }
+                          title={ entry.name }
+                          snippet={ entry.snippet }/>
+          ))}
         </ul>
 
       </div>

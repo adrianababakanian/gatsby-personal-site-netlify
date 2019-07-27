@@ -53,6 +53,14 @@ class CityNew extends React.Component {
       this.images = importAll(require.context('./images/kamikochi', false, /\.(png|jpe?g|svg)$/));
     } else if (props.city == 'Okayama') {
       this.images = importAll(require.context('./images/okayama', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Himeji') {
+      this.images = importAll(require.context('./images/himeji', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Shirakawago') {
+      this.images = importAll(require.context('./images/shirakawago', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Osaka') {
+      this.images = importAll(require.context('./images/osaka', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Takayama') {
+      this.images = importAll(require.context('./images/takayama', false, /\.(png|jpe?g|svg)$/));
     } else {
       this.image = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
     }
@@ -81,7 +89,7 @@ class CityNew extends React.Component {
         transitionEnter={false}
         transitionLeave={false}>
 
-      <div className={`city ${this.props.square ? 'square' : ''} ${this.props.vertical ? 'vertical' : ''} ${this.props.sub ? 'sub' : ''}`}>
+      <div className={`city ${this.props.square ? 'square' : ''} ${this.props.vertical ? 'vertical' : ''} ${this.props.sub ? 'sub' : 'normal'}`}>
 
         {/* Display all the images in /images/{ this.props.city }. */}
         {images}

@@ -24,6 +24,10 @@
     height: 500px;
   }
 
+  &.set {
+    border-radius: 8px 8px 0 0;
+  }
+
   &.vertical {
     height: 620px;
   }
@@ -53,24 +57,28 @@
     }
   }
 
-  &:hover {
-    background: rgba(#EFEFEF, 0.3);
-    @media (max-width: 900px) { background: initial }
-    img {
-      max-height: 105%;
-      width: auto;
-    }
-    .city-name {
-      opacity: 0.8;
-      transform: translateY(30px);
-    }
-    .city-details {
-      opacity: 0;
-      transform: translateY(20px);
+  // Turn off text hover effect for subbed layout.
+  &.normal, &.square {
+    &:hover {
+      background: rgba(#EFEFEF, 0.3);
+      @media (max-width: 900px) { background: initial }
+      img {
+        max-height: 105%;
+        width: auto;
+      }
+      .city-name {
+        opacity: 0.8;
+        transform: translateY(30px);
+      }
+      .city-details {
+        opacity: 0;
+        transform: translateY(20px);
+      }
     }
   }
 
   &.sub {
+    height: 360px;
     .details-wrap {
       background: none;
       padding: 0;
