@@ -25,7 +25,7 @@ const AboutPage = () => {
 
               <h4>
                 I’m a whimsical creative at heart informed by a deep passion for technical logic.
-                Happiest reasoning at the intersection of the engineering and design, I love working with people
+                Happiest reasoning at the intersection of engineering and design, I love working with people
                 from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
               </h4>
 
@@ -38,14 +38,16 @@ const AboutPage = () => {
         <div className="facts-wrapper">
           <div className='container facts'>
             <h2 className='about'>Eight true facts that make me, me.</h2>
-            <Fact number="N° 1" fact="I'm proudly half-Croatian and half-Armenian." />
-            <Fact number="N° 2" fact="My favorite authors are Carlos Ruis Zafón, Jonathan Safran Foer, and the Brontë Sisters." />
-            <Fact number="N° 3" fact="I love anything Wes Anderson." />
-            <Fact number="N° 4" fact="My favorite museum is Amsterdam’s Rijksmuseum." />
-            <Fact number="N° 5" fact="I’m currently listening to CDW, BadBadNotGood, and Radiohead." />
-            <Fact number="N° 6" fact="String lights are my spirit animal." />
-            <Fact number="N° 7" fact="I *love* math." />
-            <Fact number="N° 8" fact="I’m fascinated by the inherently layered nature of mapping interfaces." />
+            <div className='facts-grid'>
+              <Fact number="N° 1" fact="I'm proudly half-Croatian and half-Armenian." />
+              <Fact number="N° 2" fact="My favorite authors are Carlos Ruis Zafón, Jonathan Safran Foer, and the Brontë Sisters." />
+              <Fact number="N° 3" fact="I love anything Wes Anderson." />
+              <Fact number="N° 4" fact="My favorite museum is Amsterdam’s Rijksmuseum." />
+              <Fact number="N° 5" fact="I’m currently listening to CDW, BadBadNotGood, and Radiohead." />
+              <Fact number="N° 6" fact="String lights are my spirit animal." />
+              <Fact number="N° 7" fact="I *love* math." />
+              <Fact number="N° 8" fact="I’m fascinated by the inherently layered nature of mapping interfaces." />
+            </div>
           </div>
         </div>
       </div>

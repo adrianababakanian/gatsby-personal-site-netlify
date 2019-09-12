@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 .fact {
-  width: 380px;
-  padding: 30px 0;
+  // width: 33%;
+  padding: 30px;
+  // text-align: center;
+  // //margin: 0 auto;
+  // flex: 1;
+  //height: 550px;
+  flex-basis: 32%;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  box-sizing: border-box;
   text-align: center;
-  margin: 0 auto;
+  justify-content: space-between;
 
   @media (max-width: 440px) {
     width: calc(100% - 40px);

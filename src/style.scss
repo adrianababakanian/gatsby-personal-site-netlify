@@ -59,6 +59,12 @@ html {
       color: #2F3437;
       &.filter, &.about { margin-bottom: 20px; }
       &.facts { margin-top: 20px; }
+      .facts-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+      }
       .top { height: 50px; }
       @media (max-width: 1040px) {
         width: calc(100vw - 40px);
