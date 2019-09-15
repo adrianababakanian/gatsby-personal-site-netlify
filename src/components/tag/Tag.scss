@@ -61,6 +61,13 @@ $highlights: (
     line-height: 20px;
   }
 
+  &.outline {
+    font-weight: bold;
+    background: #efefef;
+    border: 1px solid #dedede;
+    color: map-get($darks, blue);
+  }
+
   &.Visual { @include color-tag(pink) }
   &.UI { @include color-tag(purple) }
   &.Branding { @include color-tag(blue) }

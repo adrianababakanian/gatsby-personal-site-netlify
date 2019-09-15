@@ -7,11 +7,8 @@ import zafon from './zafon.png'
 
 const Fact = ({ number, fact, reverse }) => (
   <div className={`fact ${ reverse ? 'reverse' : '' }`}>
-    <Tag name={ number } />
+    <Tag name={ number } outline={ true } />
     <h5> { fact } </h5>
-    {/* <div className='fact-image'>
-      <img src={zafon} />
-    </div> */}
   </div>
 )
 

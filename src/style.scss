@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=-apple-system, system-ui, Lato, Helvetica:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
 .example-appear {
   opacity: 0.01;
@@ -29,7 +30,8 @@ html {
     left: 0;
     top: 0;
     width: 100%;
-    font: -apple-system, system-ui, Lato, Helvetica;
+    font: 'Hind';
+    //font: -apple-system, system-ui, Lato, Helvetica;
     a {
       color: #598EAD;
       padding: 1px 4px;
@@ -115,9 +117,9 @@ html {
       flex-flow: column;
       .intro {
         height: auto;
-        width: 800px;
+        width: 1000px;
         margin: 100px auto 40px;
-        @media (max-width: 840px) {
+        @media (max-width: 1040px) {
           width: calc(100vw - 40px);
         }
       }
@@ -137,24 +139,59 @@ html {
       &.blog-title {
         margin-bottom: 0;
       }
+      &.about {
+        margin-bottom: 0;
+      }
     }
     h2 {
-      font-size: 26px;
+      font-size: 22px;
       font-weight: 700;
       color: #598EAD;
       width: 100%;
-      &.about { text-align: center }
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      //&.about { text-align: center }
+    }
+    h3 {
+      font-size: 22px;
+      color: #96a1ad;
+      letter-spacing: initial;
+      margin: 5px 0;
     }
     h4 {
-      font: 400 22px -apple-system, system-ui, Lato, Helvetica;
+      font: 300 22px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
       line-height: 36px;
     }
+    h5 {
+      font: 300 18px -apple-system, system-ui, Lato, Helvetica;
+      color: #2F3437;
+      letter-spacing: initial;
+      line-height: 28px;
+      margin: 10px 0 0 0;
+    }
 
     .me-wrapper {
       box-shadow: none;
+      border-radius: 6px;
     }
+
+    .about {
+      .column {
+        float: left;
+        margin: 10px;
+        &.main {
+          width: calc(60% - 20px);
+          margin-left: 0
+        }
+        &.secondary {
+          width: calc(40% - 20px);
+          margin-left: 20px
+        }
+      }
+    }
+
 
     .facts-wrapper {
       width: 100%;

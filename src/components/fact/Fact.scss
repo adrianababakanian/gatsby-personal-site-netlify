@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 .fact {
-  // width: 33%;
-  padding: 30px;
-  // text-align: center;
-  // //margin: 0 auto;
-  // flex: 1;
-  //height: 550px;
-  flex-basis: 32%;
-  -ms-flex: auto;
-  width: 259px;
+  padding: 8px 10px;
+  margin: 5px;
+  min-width: calc(25% - 10px);
+  flex: 1 1 160px;
   position: relative;
   box-sizing: border-box;
-  text-align: center;
   justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid rgb(222, 222, 222);
 
   @media (max-width: 440px) {
     width: calc(100% - 40px);
@@ -22,16 +18,15 @@
 
   &.reverse { text-align: right}
 
-  h5 {
-    font: 400 24px Playfair Display;
-    color: #598EAD;
-    margin: 12px 0;
-    line-height: 44px;
-  }
-
   .fact-image {
     height: 400px;
-    margin: 40px 0;
+    margin: 10px 0;
     img { height: 100% }
+  }
+
+  &:hover {
+    box-shadow: 0 2px 12px 2px #EFEFEF;
+    background: rgba(239, 239, 239, 0.3);
+    transform: translateY(-4px);
   }
 }

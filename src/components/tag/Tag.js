@@ -21,10 +21,11 @@ class Tag extends React.Component {
 
     const name = this.props.name,
           light = this.props.light,
-          photo = this.props.photo;
+          photo = this.props.photo,
+          outline = this.props.outline;
 
     return (
-      <div className={`tag ${name} ${light ? 'light' : ''} ${photo} ${photo ? 'photo' : ''}`}>
+      <div className={`tag ${name} ${outline ? 'outline' : ''} ${light ? 'light' : ''} ${photo} ${photo ? 'photo' : ''}`}>
         { name }
         { this.props.editable ?
           <div className="x" onClick={ () => this.handleClick(name) }>
