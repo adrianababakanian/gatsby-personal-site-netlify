@@ -1,0 +1,10 @@
+.stat {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  & > * {
+    float: left;
+    height: auto;
+  }
+  .value { margin: 0 0 0 10px; }
+}

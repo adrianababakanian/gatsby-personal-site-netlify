@@ -2,6 +2,7 @@ import React from 'react'
 import me from './../assets/images/me-nara.png'
 import Elsewhere from './../components/elsewhere/Elsewhere'
 import Fact from './../components/fact/Fact'
+import Stat from './../components/stat/Stat'
 import Layout from '../layouts'
 
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
@@ -30,6 +31,12 @@ const AboutPage = () => {
                 <div className="me-wrapper">
                   <img src={me} className="me"/>
                   <div className="overlay"/>
+                </div>
+                <div className='stats'>
+                  <Stat name={ "age" } value={ "21" } />
+                  <Stat name={ "heritage" } value={ "Croatian + Armenian" } />
+                  <Stat name={ "education" } value={ "UC Berkeley" } />
+                  <Stat name={ "Myers-Briggs" } value={ "INTJ" } tag={ true } />
                 </div>
               </div>
             </div>

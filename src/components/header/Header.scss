@@ -65,6 +65,12 @@
       padding: 6px 4px;
       border-bottom-color: transparent;
 
+      &:hover {
+        .header-item-content {
+          border: 1px solid #dedede;
+        }
+      }
+
       &.active {
         .header-item-content {
           color: #426980;
@@ -81,6 +87,7 @@
         background: transparent;
         padding: 4px 7px;
         transition: background 0.2s ease-in-out;
+        border: 1px solid transparent;
         border-bottom-color: transparent;
         color: #5F6468;
 

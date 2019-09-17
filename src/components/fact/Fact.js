@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import Tag from './../tag/Tag';
 
 import './Fact.scss'
-import zafon from './zafon.png'
 
 const Fact = ({ number, fact, reverse }) => (
   <div className={`fact ${ reverse ? 'reverse' : '' }`}>

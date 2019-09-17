@@ -144,13 +144,13 @@ html {
       }
     }
     h2 {
-      font-size: 22px;
+      font-size: 16px;
       font-weight: 700;
       color: #598EAD;
-      width: 100%;
       text-transform: uppercase;
       letter-spacing: .5px;
-      //&.about { text-align: center }
+      margin: 10px 0;
+      width: auto;
     }
     h3 {
       font-size: 22px;
@@ -165,11 +165,11 @@ html {
       line-height: 36px;
     }
     h5 {
-      font: 300 18px -apple-system, system-ui, Lato, Helvetica;
+      font: 300 16px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
       line-height: 28px;
-      margin: 10px 0 0 0;
+      margin: 10px 0;
     }
 
     .me-wrapper {
