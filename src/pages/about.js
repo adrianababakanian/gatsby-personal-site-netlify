@@ -5,6 +5,8 @@ import Fact from './../components/fact/Fact'
 import Stat from './../components/stat/Stat'
 import Layout from '../layouts'
 
+import matcha from './../assets/images/matcha.png'
+
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
 const AboutPage = () => {
@@ -15,7 +17,7 @@ const AboutPage = () => {
           <div className='about'>
             <div className='wrap'>
               <div className='main column'>
-                <h1 className='about'> Hi there, I'm Adriana! </h1>
+                <div className='title'><h1 className='about'> Hi there, I'm Adriana! </h1> <img style={ { width: '38px' } } src={ matcha } /></div>
                 <h4>
                   I’m a whimsical creative at heart informed by a deep passion for technical logic.
                   Happiest reasoning at the intersection of engineering and design, I love working with people
@@ -32,7 +34,7 @@ const AboutPage = () => {
 
             <div className='wrap'>
               <div className='main column'>
-                <h4>
+                <h4 style={ { marginTop: '-10px' } }>
                   I’m full to the brim of <a target="_blank"> book recommendations
                    </a>
                    , passion for <a>travel</a>
@@ -41,7 +43,8 @@ const AboutPage = () => {
                 </h4>
               </div>
               <div className='secondary column'>
-                <h4>Stats</h4>
+                <h2 className='title'>Stats</h2>
+                <div className='hr'/>
                 <div className='stats'>
                   <Stat name={ "age" } value={ "21" } />
                   <Stat name={ "heritage" } value={ "Croatian + Armenian" } />

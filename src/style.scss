@@ -62,6 +62,7 @@ html {
         justify-content: space-between;
         flex-flow: row wrap;
         justify-content: flex-start;
+        margin-left: -5px;
       }
       .top { height: 50px; }
       @media (max-width: 1040px) {
@@ -126,12 +127,16 @@ html {
         flex-grow: 1;
       }
     }
+    .title {
+      > * {float: left;  }
+    }
     h1 {
       font: 700 32px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0;
       letter-spacing: 1px;
+      max-width: 340px;
       &.blog-title {
         margin-bottom: 0;
       }
@@ -148,9 +153,9 @@ html {
       letter-spacing: .5px;
       margin: 10px 0;
       width: auto;
-      &.about {
-        text-transform: none;
-        font: 500 22px -apple-system, system-ui, Lato, Helvetica;
+      &.title {
+        color: #4C8DC9;
+        margin-bottom: 8px;
       }
     }
     h3 {
@@ -172,6 +177,12 @@ html {
       letter-spacing: initial;
       line-height: 28px;
       margin: 10px 0;
+    }
+    .hr {
+      height: 2px;
+      background: #dedede;
+      width: 28px;
+      margin-bottom: 8px;
     }
 
     .me-wrapper {
