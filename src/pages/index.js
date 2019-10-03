@@ -41,7 +41,7 @@ const IndexPage = () => {
             </div>
 
 
-          <div className="bottom"></div>
+          {/* <div className="bottom"></div> */}
 
       </div>
     </Layout>

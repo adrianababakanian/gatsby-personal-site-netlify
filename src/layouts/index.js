@@ -10,6 +10,7 @@ import favicon from './../assets/images/favicon.png'
 
 const links = [
   ["About", "active"],
+  ["Writing", "active"],
   ["Travel", "active"],
   ["Work", "active"]
 ]

@@ -67,12 +67,6 @@ class Header extends React.Component {
     return (
       <div>
         { mobile_header }
-        {/* <CSSTransitionGroup
-          transitionName="header"
-          transitionEnter={false}
-          transitionLeave={false}
-          transitionAppear={true}
-          transitionAppearTimeout={400}> */}
           <div className="header" style={ style }>
             <div className='header-center'>
               <Link exact to="/" className="logo"
@@ -86,7 +80,6 @@ class Header extends React.Component {
               </div>
             </div>
           </div>
-      {/* </CSSTransitionGroup> */}
       </div>
     )
   }

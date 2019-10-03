@@ -49,13 +49,13 @@ $highlights: (
   padding: 1px 8px;
   margin: 2px 4px 2px 0;
   border-radius: 4px;
-  font: 400 14px Lato;
+  font: 400 14px -apple-system, system-ui, Lato, Helvetica;
   transition: 0.3s ease-in-out;
   background: #{map-get($darks, blue)};
   color: #{map-get($lights, blue)};
 
   .x {
-    font: 300 9px Lato;
+    font: 300 9px -apple-system, system-ui, Lato, Helvetica;
     padding: 0 0 0 6px;
     color: rgba(white, 0.4);
     line-height: 20px;
