@@ -51,8 +51,8 @@ $highlights: (
   border-radius: 4px;
   font: 400 14px -apple-system, system-ui, Lato, Helvetica;
   transition: 0.3s ease-in-out;
-  background: #{map-get($darks, blue)};
-  color: #{map-get($lights, blue)};
+  background: #C8DFF5;
+  color: #2774B0;
 
   .x {
     font: 300 9px -apple-system, system-ui, Lato, Helvetica;
@@ -63,9 +63,9 @@ $highlights: (
 
   &.outline {
     font-weight: bold;
-    background: #efefef;
     border: 1px solid #dedede;
-    color: map-get($darks, blue);
+    background: #C8DFF5;
+    color: #2774B0;
   }
 
   &.Visual { @include color-tag(pink) }

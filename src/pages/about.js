@@ -1,5 +1,5 @@
 import React from 'react'
-import me from './../assets/images/me-nara.png'
+import me from './../assets/images/me-nara-2.png'
 import Elsewhere from './../components/elsewhere/Elsewhere'
 import Fact from './../components/fact/Fact'
 import Stat from './../components/stat/Stat'
@@ -10,17 +10,12 @@ import { CSSTransitionGroup } from 'react-transition-group' // ES6
 const AboutPage = () => {
   return (
     <Layout>
-      <div className="about">
-        <div className="container about">
-          <CSSTransitionGroup
-            transitionName="tile"
-            transitionAppear={true}
-            transitionAppearTimeout={500}
-            transitionEnter={false}
-            transitionLeave={false}>
-            <div className="about">
+
+        <div className="container">
+          <div className='about'>
+            <div className='wrap'>
               <div className='main column'>
-                <h1 className='about'> Hi there! I'm Adriana </h1>
+                <h1 className='about'> Hi there, I'm Adriana! </h1>
                 <h4>
                   I’m a whimsical creative at heart informed by a deep passion for technical logic.
                   Happiest reasoning at the intersection of engineering and design, I love working with people
@@ -32,6 +27,21 @@ const AboutPage = () => {
                   <img src={me} className="me"/>
                   <div className="overlay"/>
                 </div>
+              </div>
+            </div>
+
+            <div className='wrap'>
+              <div className='main column'>
+                <h4>
+                  I’m full to the brim of <a target="_blank"> book recommendations
+                   </a>
+                   , passion for <a>travel</a>
+                   , alternative R&B, and a love for learning things by
+                  meeting new people. Let’s get in touch!
+                </h4>
+              </div>
+              <div className='secondary column'>
+                <h4>Stats</h4>
                 <div className='stats'>
                   <Stat name={ "age" } value={ "21" } />
                   <Stat name={ "heritage" } value={ "Croatian + Armenian" } />
@@ -40,21 +50,25 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
-          </CSSTransitionGroup>
 
-          <h2 className='about'>Miscellaneous trivia</h2>
-          <div className='facts-grid'>
-            <Fact number="N° 1" fact="Cycling is always my preferred method of transportation." />
-            <Fact number="N° 2" fact="My favorite authors are Carlos Ruis Zafón & Jonathan Safran Foer." />
-            <Fact number="N° 3" fact="I love every Wes Anderson film, especially The Grand Budapest Hotel." />
-            <Fact number="N° 4" fact="I listen to Charolette Day Wilson, BadBadNotGood, & Radiohead." />
-            <Fact number="N° 5" fact="Amsterdam’s Rijksmuseum is my favorite museum in the world." />
-            <Fact number="N° 6" fact="I have the entire Pulp Fiction soundtrack memorized." />
-            <Fact number="N° 7" fact="I'm a huge math geek. Don't get me started on complex analysis!" />
-            <Fact number="N° 8" fact="The layered complexity of mapping interfaces fascinates me." />
-          </div>
+            <div className='wrap'>
+              <h2 className='about'>Miscellaneous trivia</h2>
+              <div className='facts-grid'>
+                <Fact number="N° 1" fact="Cycling is always my preferred method of transportation." />
+                <Fact number="N° 2" fact="My favorite authors are Carlos Ruis Zafón & Jonathan Safran Foer." />
+                <Fact number="N° 3" fact="I love every Wes Anderson film, especially The Grand Budapest Hotel." />
+                <Fact number="N° 4" fact="I listen to Charolette Day Wilson, BadBadNotGood, & Radiohead." />
+                <Fact number="N° 5" fact="Amsterdam’s Rijksmuseum is my favorite museum in the world." />
+                <Fact number="N° 6" fact="I have the entire Pulp Fiction soundtrack memorized." />
+                <Fact number="N° 7" fact="I'm a huge math geek. Don't get me started on complex analysis!" />
+                <Fact number="N° 8" fact="The layered complexity of mapping interfaces fascinates me." />
+              </div>
+            </div>
+
         </div>
+
       </div>
+
     </Layout>
   )
 }

@@ -31,22 +31,17 @@ html {
     left: 0;
     top: 0;
     width: 100%;
-    font: 'Hind';
-    //font: -apple-system, system-ui, Lato, Helvetica;
     a {
-      color: #598EAD;
+      color: #4C8DC9;
       padding: 1px 4px;
       cursor: pointer;
-      border-radius: 2px;
+      border-radius: 4px;
       transition: 0.3s ease-in-out;
-      &.preview { color: #5F6468 }
+      text-decoration: underline;
+      text-decoration-color: #C8DFF5;
       &:hover {
-        color: #426980;
-        background: rgba(#BCD2DE, 0.8);
-        &.preview {
-          color: #2F3437;
-          background: rgba(#EFEFEF, 0.3);
-        }
+        color: #2774B0;
+        background: #C8DFF5;
       }
       &.gatsby-resp-image-link {
         .gatsby-resp-image-wrapper {
@@ -119,7 +114,7 @@ html {
       .intro {
         height: auto;
         width: 1000px;
-        margin: 100px auto 40px;
+        margin: 100px auto 30px;
         @media (max-width: 1040px) {
           width: calc(100vw - 40px);
         }
@@ -142,16 +137,21 @@ html {
       }
       &.about {
         margin-bottom: 0;
+        width: 100%;
       }
     }
     h2 {
       font-size: 16px;
       font-weight: 700;
-      color: #598EAD;
+      color: #2f3437;
       text-transform: uppercase;
       letter-spacing: .5px;
       margin: 10px 0;
       width: auto;
+      &.about {
+        text-transform: none;
+        font: 500 22px -apple-system, system-ui, Lato, Helvetica;
+      }
     }
     h3 {
       font-size: 22px;
@@ -164,6 +164,7 @@ html {
       color: #2F3437;
       letter-spacing: initial;
       line-height: 36px;
+      margin: 15px 0;
     }
     h5 {
       font: 300 16px -apple-system, system-ui, Lato, Helvetica;
@@ -179,16 +180,21 @@ html {
     }
 
     .about {
+      .wrap {
+        width: 100%;
+        overflow: auto;
+        :first-child {
+          margin-top: 0;
+        }
+      }
       .column {
         float: left;
-        margin: 10px;
         &.main {
-          width: calc(60% - 20px);
-          margin-left: 0
+          width: calc(60% - 10px);
+          margin-right: 10px;
         }
         &.secondary {
-          width: calc(40% - 20px);
-          margin-left: 20px
+          width: calc(40%);
         }
       }
     }
