@@ -48,7 +48,7 @@ const AboutPage = () => {
                 <div className='stats'>
                   <Stat name={ "age" } value={ "21" } />
                   <Stat name={ "heritage" } value={ "Croatian + Armenian" } />
-                  <Stat name={ "education" } value={ "UC Berkeley" } />
+                  <Stat name={ "education" } value={ "UC Berkeley, B.A. Computer Science & B.A. Applied Mathematics" } />
                   <Stat name={ "Myers-Briggs" } value={ "INTJ" } tag={ true } />
                 </div>
               </div>
