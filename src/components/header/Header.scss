@@ -74,7 +74,7 @@
       &.active {
         .header-item-content {
           color: #4C8DC9;
-          font-weight: 500;
+          text-shadow: 0.5px 0 0 #4C8DC9;
         }
       }
 
@@ -94,7 +94,7 @@
         &:hover {
           background: #C8DFF5;
           color: #2774B0;
-          font-weight: 500;
+          text-shadow: 0.5px 0 0 #2774B0;
         }
       }
 

@@ -19,7 +19,7 @@
   transform: translateY(30px);
   &.tile-appear-active {
     opacity: 1;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
     transform: initial;
   }
 }
@@ -212,8 +212,8 @@ html {
       .column {
         float: left;
         &.main {
-          width: calc(60% - 10px);
-          margin-right: 10px;
+          width: calc(60% - 45px);
+          margin-right: 45px;
         }
         &.secondary {
           width: calc(40%);

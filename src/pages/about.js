@@ -23,6 +23,10 @@ const AboutPage = () => {
                   Happiest reasoning at the intersection of engineering and design, I love working with people
                   from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
                 </h4>
+                <h4>
+                  I recently graduated from <a>UC Berkeley</a> with a double major in Computer Science & Applied Mathematics,
+                  and a certificate in <a>Human-Centered Design</a>. I also <a>taught</a> an HCI course.
+                </h4>
               </div>
               <div className='secondary column'>
                 <div className="me-wrapper">
@@ -31,6 +35,8 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
+
+            <div className='divider' style={ { marginBottom: '40px' } }></div>
 
             <div className='wrap'>
               <div className='main column'>
