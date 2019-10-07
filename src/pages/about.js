@@ -38,7 +38,7 @@ const AboutPage = () => {
 
             <div className='divider' style={ { marginBottom: '40px' } }></div>
 
-            <div className='wrap'>
+            {/* <div className='wrap'>
               <div className='main column'>
                 <h4 style={ { marginTop: '-10px' } }>
                   I’m full to the brim of <a target="_blank"> book recommendations
@@ -49,7 +49,7 @@ const AboutPage = () => {
                 </h4>
               </div>
               <div className='secondary column'>
-                <h2 className='title'>Stats</h2>
+                <h6 className='title'>Stats</h6>
                 <div className='hr'/>
                 <div className='stats'>
                   <Stat name={ "age" } value={ "21" } />
@@ -58,10 +58,11 @@ const AboutPage = () => {
                   <Stat name={ "Myers-Briggs" } value={ "INTJ" } tag={ true } />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className='wrap'>
-              <h2 className='about'>Miscellaneous trivia</h2>
+              <h6 className='title'>Miscellaneous trivia</h6>
+              <div className='hr'/>
               <div className='facts-grid'>
                 <Fact number="N° 1" fact="Cycling is always my preferred method of transportation." />
                 <Fact number="N° 2" fact="My favorite authors are Carlos Ruis Zafón & Jonathan Safran Foer." />

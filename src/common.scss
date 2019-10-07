@@ -120,15 +120,37 @@ video {
       transition: background-color 0.2s ease-in-out;
       // border-radius: 4px;
       border-bottom: none;
-
-
-
-      &:hover { font-weight: 600; }
     }
   }
 
   a {
-    &.cycle { @include colorize(x_trans_cycle); padding: 2px 5px; &:hover { @include colorize(trans_cycle)} }
+    &.cycle {
+      color: #4C8DC9;
+      padding: 1px 4px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: 0.3s ease-in-out;
+      text-decoration: underline;
+      text-decoration-color: #C8DFF5;
+      &.preview { color: #2F3437 }
+      &:hover {
+        color: #2774B0;
+        background: #C8DFF5;
+        &.gatsby-resp-image-link { background: none; }
+        &.preview {
+          color: #2F3437;
+          background: rgba(#EFEFEF, 0.3);
+        }
+      }
+      &.gatsby-resp-image-link {
+        .gatsby-resp-image-wrapper {
+          width: 100%;
+          display: initial;
+          margin: 0;
+        }
+      }
+    }
+    //&.cycle { @include colorize(x_trans_cycle); padding: 2px 5px; &:hover { @include colorize(trans_cycle)} }
     &.matcha { @include colorize(x_trans_matcha); padding: 2px 5px; &:hover { @include colorize(trans_matcha)} }
     &.atomic { @include colorize(x_trans_atomic); padding: 2px 5px; &:hover { @include colorize(trans_atomic)} }
     &.sakura { @include colorize(x_trans_sakura); padding: 2px 5px; &:hover { @include colorize(trans_sakura)} }

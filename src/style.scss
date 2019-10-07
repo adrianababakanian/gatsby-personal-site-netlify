@@ -39,9 +39,15 @@ html {
       transition: 0.3s ease-in-out;
       text-decoration: underline;
       text-decoration-color: #C8DFF5;
+      &.preview { color: #2F3437 }
       &:hover {
         color: #2774B0;
         background: #C8DFF5;
+        &.gatsby-resp-image-link { background: none; }
+        &.preview {
+          color: #2F3437;
+          background: rgba(#EFEFEF, 0.3);
+        }
       }
       &.gatsby-resp-image-link {
         .gatsby-resp-image-wrapper {
@@ -77,32 +83,34 @@ html {
       }
       p {
         width: 100%;
-        color: #2F3437;
-        font-weight: 400;
+        color: #2a2f35;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 36px;
         margin: 10px 0 30px 0;
       }
-      a {
-        color: #598EAD;
-        padding: 1px 4px;
-        cursor: pointer;
-        border-radius: 2px;
-        transition: 0.3s ease-in-out;
-        &.preview { color: #2F3437 }
-        &.cycle { background: white }
-        &.gatsby-resp-image-link { .gastby-resp-image-image { width: 1000px;} }
-        &:hover {
-          color: #426980;
-          background: rgba(#BCD2DE, 0.8);
-          &.gatsby-resp-image-link { background: none; }
-          &.preview {
-            color: #2F3437;
-            background: rgba(#EFEFEF, 0.3);
-          }
-          &.cycle {
-            font-weight: 400;
-          }
-        }
-      }
+      // a {
+      //   color: #598EAD;
+      //   padding: 1px 4px;
+      //   cursor: pointer;
+      //   border-radius: 2px;
+      //   transition: 0.3s ease-in-out;
+      //   &.preview { color: #2F3437 }
+      //   &.cycle { background: white }
+      //   &.gatsby-resp-image-link { .gastby-resp-image-image { width: 1000px;} }
+      //   &:hover {
+      //     color: #426980;
+      //     background: rgba(#BCD2DE, 0.8);
+      //     &.gatsby-resp-image-link { background: none; }
+      //     &.preview {
+      //       color: #2F3437;
+      //       background: rgba(#EFEFEF, 0.3);
+      //     }
+      //     &.cycle {
+      //       font-weight: 400;
+      //     }
+      //   }
+      // }
     }
     .grid {
       margin: 0 auto;
@@ -128,8 +136,9 @@ html {
       }
     }
     .title {
-      > * {float: left;  }
+      > * { float: left; }
     }
+
     h1 {
       font: 700 32px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
@@ -138,6 +147,7 @@ html {
       letter-spacing: 1px;
       max-width: 340px;
       &.blog-title {
+        font-size: 48px;
         margin-bottom: 0;
       }
       &.about {
@@ -145,7 +155,51 @@ html {
         width: 100%;
       }
     }
+
     h2 {
+      font: 700 32px -apple-system, system-ui, Lato, Helvetica;
+      color: #2F3437;
+      letter-spacing: initial;
+      line-height: 36px;
+      margin: 25px 0 0 0;
+    }
+
+    .h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #2f3437;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin: 10px 0;
+      width: auto;
+      margin-right: 8px;
+      line-height: 10px;
+    }
+
+    h3 {
+      font-size: 22px;
+      color: #96a1ad;
+      letter-spacing: initial;
+      margin: 5px 0;
+    }
+
+    h4 {
+      font: 300 22px -apple-system, system-ui, Lato, Helvetica;
+      color: #2F3437;
+      letter-spacing: initial;
+      line-height: 38px;
+      margin: 15px 0;
+    }
+
+    h5 {
+      font: 300 16px -apple-system, system-ui, Lato, Helvetica;
+      color: #2F3437;
+      letter-spacing: initial;
+      line-height: 28px;
+      margin: 10px 0;
+    }
+
+    h6 {
       font-size: 16px;
       font-weight: 700;
       color: #2f3437;
@@ -158,42 +212,12 @@ html {
         margin-bottom: 8px;
       }
     }
-    .h2 {
-      font-size: 16px;
-      font-weight: 700;
-      color: #2f3437;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      margin: 10px 0;
-      width: auto;
-      margin-right: 8px;
-      line-height: 10px;
-    }
-    h3 {
-      font-size: 22px;
-      color: #96a1ad;
-      letter-spacing: initial;
-      margin: 5px 0;
-    }
-    h4 {
-      font: 300 22px -apple-system, system-ui, Lato, Helvetica;
-      color: #2F3437;
-      letter-spacing: initial;
-      line-height: 36px;
-      margin: 15px 0;
-    }
-    h5 {
-      font: 300 16px -apple-system, system-ui, Lato, Helvetica;
-      color: #2F3437;
-      letter-spacing: initial;
-      line-height: 28px;
-      margin: 10px 0;
-    }
+
     .hr {
       height: 2px;
       background: #dedede;
       width: 28px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
     .me-wrapper {
@@ -214,9 +238,15 @@ html {
         &.main {
           width: calc(60% - 45px);
           margin-right: 45px;
+          @media (max-width: 800px) {
+            width: 100%;
+          }
         }
         &.secondary {
           width: calc(40%);
+          @media (max-width: 800px) {
+            width: 100%;
+          }
         }
       }
     }
