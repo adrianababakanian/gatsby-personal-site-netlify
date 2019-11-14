@@ -17,15 +17,15 @@ const AboutPage = () => {
           <div className='about'>
             <div className='wrap'>
               <div className='main column'>
-                <div className='title'><h1 className='about'> Hi there, I'm Adriana! </h1> <img style={ { width: '38px' } } src={ matcha } /></div>
+                <div className='title'><h1 className='about'> Hi there, I'm Adriana! </h1></div>
                 <h4>
                   I’m a whimsical creative at heart informed by a deep passion for technical logic.
                   Happiest reasoning at the intersection of engineering and design, I love working with people
                   from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
                 </h4>
                 <h4>
-                  I recently graduated from <a>UC Berkeley</a> with a double major in Computer Science & Applied Mathematics,
-                  and a certificate in <a>Human-Centered Design</a>. I also <a>taught</a> an HCI course.
+                  Currently, I'm having fun tinkering with graphics libraries, mathematical projections, pixels,
+                  and other geographic tid-bits at <a> Mapbox</a>!
                 </h4>
               </div>
               <div className='secondary column'>
@@ -61,17 +61,16 @@ const AboutPage = () => {
             </div> */}
 
             <div className='wrap'>
-              <h6 className='title'>Miscellaneous trivia</h6>
-              <div className='hr'/>
+              <h2>Miscellaneous trivia</h2>
               <div className='facts-grid'>
-                <Fact number="N° 1" fact="Cycling is always my preferred method of transportation." />
-                <Fact number="N° 2" fact="My favorite authors are Carlos Ruis Zafón & Jonathan Safran Foer." />
-                <Fact number="N° 3" fact="I love every Wes Anderson film, especially The Grand Budapest Hotel." />
-                <Fact number="N° 4" fact="I listen to Charolette Day Wilson, BadBadNotGood, & Radiohead." />
-                <Fact number="N° 5" fact="Amsterdam’s Rijksmuseum is my favorite museum in the world." />
-                <Fact number="N° 6" fact="I have the entire Pulp Fiction soundtrack memorized." />
-                <Fact number="N° 7" fact="I'm a huge math geek. Don't get me started on complex analysis!" />
-                <Fact number="N° 8" fact="The layered complexity of mapping interfaces fascinates me." />
+                <Fact number="N° 1" fact={<div> <a>Cycling</a> is always my preferred method of transportation. </div>} />
+                <Fact number="N° 2" fact={<div> My favorite authors are <a href='https://www.carlosruizzafon.co.uk/landing-page/carlos-ruiz-zafon/carlos-ruiz-zafon-random-things-that-cheer-me-up/' target='_blank'>Carlos Ruis Zafón</a> & <a href='https://www.nytimes.com/topic/person/jonathan-safran-foer' target='_blank'>Jonathan Safran Foer</a>. </div>} />
+                <Fact number="N° 3" fact={<div> I love every <a href='http://wesanderson.tv/' target='_blank'>Wes Anderson</a> film, especially <i>The Grand Budapest Hotel</i>. </div>} />
+                <Fact number="N° 4" fact={<div> I <a href='https://open.spotify.com/track/2um4ISitgBDdMSZaiPyaIb?si=Mkzzar_bS0mGtMg7oNMIFg' target='_blank'>listen</a> to Charolette Day Wilson, BadBadNotGood, & Radiohead. </div>} />
+                <Fact number="N° 5" fact={<div> Amsterdam’s <a href='https://www.rijksmuseum.nl/en' target='_blank'>Rijksmuseum</a> is my favorite museum in the world. </div>} />
+                <Fact number="N° 6" fact={<div> I have the entire <i>Pulp Fiction</i> <a href='https://open.spotify.com/album/2Rosrqy5gnHaKLrh2ctnVq?si=xHqsQQ6TS7OaB_NARCsBvw' target='_blank'>soundtrack</a> memorized. </div>} />
+                <Fact number="N° 7" fact={<div> I'm a huge <a href='reddit.com/r/math' target='_blank'> math geek</a>. Don't get me started on <a href='http://mathfaculty.fullerton.edu/mathews/c2003/JuliaMandelbrotMod.html' target='_blank'>complex analysis</a>! </div>} />
+                <Fact number="N° 8" fact={<div> The algorithmic complexity of <a href='https://observablehq.com/@mourner/martin-real-time-rtin-terrain-mesh' target='_blank'>map rendering</a> fascinates me. </div>} />
               </div>
             </div>
 

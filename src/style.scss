@@ -25,12 +25,13 @@
 }
 
 html {
-  background: white;
+  background: #fffaf9;
   .content {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    background: #fffaf9;
     a {
       color: #4C8DC9;
       padding: 1px 4px;
@@ -47,6 +48,17 @@ html {
         &.preview {
           color: #2F3437;
           background: rgba(#EFEFEF, 0.3);
+        }
+      }
+      a {
+        &:link, &:visited, &:active  {
+          color: #4C8DC9;
+          padding: 1px 4px;
+          cursor: pointer;
+          border-radius: 4px;
+          transition: 0.3s ease-in-out;
+          text-decoration: underline;
+          text-decoration-color: #C8DFF5;
         }
       }
       &.gatsby-resp-image-link {
@@ -69,6 +81,7 @@ html {
         flex-flow: row wrap;
         justify-content: flex-start;
         margin-left: -5px;
+        margin-top: 14px;
       }
       .top { height: 50px; }
       @media (max-width: 1040px) {
@@ -127,6 +140,14 @@ html {
         @media (max-width: 1040px) {
           width: calc(100vw - 40px);
         }
+        h4 {
+          font-size: 28px;
+          line-height: 44px;
+          &.more {
+            font-size: 34px;
+            text-decoration: underline;
+          }
+        }
       }
       .bottom {
         width: 100vw;
@@ -140,12 +161,12 @@ html {
     }
 
     h1 {
-      font: 700 32px -apple-system, system-ui, Lato, Helvetica;
+      font: 700 48px -apple-system, system-ui, Lato, Helvetica;
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0;
       letter-spacing: 1px;
-      max-width: 340px;
+      max-width: 580px;
       &.blog-title {
         font-size: 48px;
         margin-bottom: 0;

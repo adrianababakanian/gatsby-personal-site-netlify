@@ -112,16 +112,16 @@ video {
     text-indent: -1em;
   }
 
-  a {
-    &:link, &:visited, &:active  {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      color: get(dust);
-      text-decoration: none;
-      transition: background-color 0.2s ease-in-out;
-      // border-radius: 4px;
-      border-bottom: none;
-    }
-  }
+  // a {
+  //   &:link, &:visited, &:active  {
+  //     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  //     color: #2F3437;
+  //     text-decoration: underline;
+  //     transition: background-color 0.2s ease-in-out;
+  //     // border-radius: 4px;
+  //     border-bottom: none;
+  //   }
+  // }
 
   a {
     &.cycle {

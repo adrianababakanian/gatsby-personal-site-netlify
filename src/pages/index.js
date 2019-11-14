@@ -22,21 +22,23 @@ const IndexPage = () => {
                 transitionLeave={false}
                 transitionAppear={true}
                 transitionAppearTimeout={400}>
-              <h4>I’m a designer and software engineer currently based in San Francisco, California.
-                  My approach to life and work is inspired by the power of cross-disciplinary knowledge.
-                  I’m a fan of visually-informed engineering, <a>art history</a>, Gothic literature, real analysis, Barcelona, and Uji matcha.
+              <h4>I’m a software engineer, designer, & pseudo-mathematician whose approach to life and work is inspired by the power of cross-disciplinary knowledge.
+                  I’m a fan of visually-informed engineering, <a>art history</a>, Gothic literature, real analysis, <a>cycling</a>, and Uji matcha.
               </h4>
               <h4>
                 I recently graduated from <a>UC Berkeley</a> with a double major in Computer Science & Applied Mathematics,
                 and a certificate in <a>Human-Centered Design</a>. I also <a>taught</a> an HCI course.
               </h4>
-              <h4>
+              <h4 className='more'>
+                More about me →
+              </h4>
+              {/* <h4>
                 I’m full to the brim of <a target="_blank"> book recommendations
                  </a>
                  , passion for <a>travel</a>
                  , alternative R&B, and a love for learning things by
                 meeting new people. Let’s get in touch!
-              </h4>
+              </h4> */}
               </CSSTransitionGroup>
             </div>
 

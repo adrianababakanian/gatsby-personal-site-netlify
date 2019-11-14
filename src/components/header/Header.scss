@@ -13,7 +13,7 @@
 
 .header {
   width: 100vw;
-  background: white;
+  background: #fffaf9;
   height: auto;
   overflow-y: auto;
   position: fixed;
@@ -32,7 +32,7 @@
       margin: 0 20px;
       width: calc(100vw - 40px);
       left: 0;
-      background: white;
+      background: #fffaf9;
     }
 
     @media (max-width: 500px) {
@@ -131,7 +131,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 4;
-  background: white;
+  background: #fffaf9;
   position: fixed;
   top: 0;
   padding: 180px 0;
