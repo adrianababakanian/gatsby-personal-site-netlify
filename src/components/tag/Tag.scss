@@ -23,13 +23,12 @@ $lights: (
 );
 
 $highlights: (
-  pink: unquote('#C6659B66'),
-  purple: unquote('#8369AE66'),
-  blue: unquote('#598EAD66'),
+  pink: unquote('#F3BAC8B3'),
+  purple: unquote('#DAC5FFB3'),
+  blue: unquote('#6394FF66'),
   teal: unquote('#9CCFDA66'),
-  green: unquote('#5A9D9366'),
-  mint: unquote('#84D7B266'),
-  orange: unquote('#F5957E66')
+  orange: unquote('#ED693F66'),
+  mint: unquote('#BEE7D4B3')
 );
 
 @mixin color-tag($color) {
@@ -63,16 +62,16 @@ $highlights: (
 
   &.outline {
     font-weight: bold;
-    border: 1px solid #A3C4E3;
-    background: #C8DFF5;
-    color: #2774B0;
+    background: #F3BAC8B3;
+    color: #562B36;
+    border: 1px solid #562B36;
   }
 
   &.Visual { @include color-tag(pink) }
   &.UI { @include color-tag(purple) }
   &.Branding { @include color-tag(blue) }
   &.UX { @include color-tag(teal) }
-  &.Web { @include color-tag(green) }
+  &.Web { @include color-tag(orange) }
   &.Mobile { @include color-tag(mint) }
   &.Prototyping { @include color-tag(orange) }
 
@@ -83,7 +82,7 @@ $highlights: (
     &.UI { @include highlight-color-tag(purple) }
     &.Branding { @include highlight-color-tag(blue) }
     &.UX { @include highlight-color-tag(teal) }
-    &.Web { @include highlight-color-tag(green) }
+    &.Web { @include highlight-color-tag(orange) }
     &.Mobile { @include highlight-color-tag(mint) }
     &.Prototyping { @include highlight-color-tag(orange) }
 

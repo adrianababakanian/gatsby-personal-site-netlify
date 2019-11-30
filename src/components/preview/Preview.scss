@@ -23,16 +23,16 @@
   color: #2F3437;
   font-family: -apple-system, system-ui, Lato, Helvetica;
 
-  a { color: #2F3437; }
+  a { color: #2F3437; text-decoration: none; }
 
-  background: #fffaf9;
+  background: #F7F4ED;
   border-radius: 6px;
-  border: 1px solid #DEDEDE;
+  border: 1.5px solid #D4D2D0;
 
   &:hover {
     @media (min-width: 500px) {
-      box-shadow: 0 2px 12px 2px #EFEFEF;
-      background: lightgray;
+      box-shadow: 0 3px 30px rgba(0,0,0,0.15);
+      background: #F7F4ED;
       transform: translateY(-4px);
     }
     img {
@@ -73,7 +73,7 @@
       padding: 0 20px 0 0;
       p {
         padding: 4px 0;
-        font-weight: 200;
+        font-weight: 300;
         font-size: 16px;
         line-height: 26px;
         margin: 0;

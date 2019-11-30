@@ -19,12 +19,12 @@ const AboutPage = () => {
               <div className='main column'>
                 <div className='title'><h1 className='about'> Hi there, I'm Adriana! </h1></div>
                 <h4>
-                  I’m a whimsical creative at heart informed by a deep passion for technical logic.
-                  Happiest reasoning at the intersection of engineering and design, I love working with people
+                  I’m a &nbsp;whimsical creative&nbsp; at heart informed by a deep passion for technical logic.
+                  Happiest reasoning at the intersection of &nbsp;engineering&nbsp; and &nbsp;design&nbsp;, I love working with people
                   from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
                 </h4>
                 <h4>
-                  Currently, I'm having fun tinkering with graphics libraries, mathematical projections, pixels,
+                  Currently, I'm having fun &nbsp;tinkering&nbsp; with graphics libraries, mathematical projections, pixels,
                   and other geographic tid-bits at <a> Mapbox</a>!
                 </h4>
               </div>

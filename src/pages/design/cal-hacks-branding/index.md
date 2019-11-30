@@ -8,7 +8,7 @@ blurb: |
   Took full ownership of designing visual campaigns enabling initiatives in diversity, entrepreneurship, and sustainability.
 ---
 
-#### <a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. I created a cohesive visual identity for Cal Hacks motivated by iterative experience & user research.
+#### <a href="https://calhacks.io" >Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. I created a cohesive visual identity for Cal Hacks motivated by iterative experience & user research.
 
 <div class="flex-grid">
   <div class="col" style="flex: 1 0 54.6%"><img src="./assets/ch-large.png"></div>
@@ -26,10 +26,10 @@ blurb: |
 </div>
 
 ## The Problem
-A cohesive visual identity defines the voice of an organization. The Cal Hacks brand was previously defined by annual designs corresponding to each hackathon iteration. As we’ve matured from a startup-like environment into an established organization, our influence in the realm of technology extends beyond the space of hackathons into <a href="https://calhacks.io#initiatives" class="cycle">entrepreneurship</a>, <a href="https://calhacks.io#initiatives" class="cycle">diversity</a>, <a href="https://calhacks.io#initiatives" class="cycle">inclusivity</a>, <a href="https://calhacks.io#initiatives" class="cycle">and beyond</a> — thus rendering a cohesive branding identity crucial.
+A cohesive visual identity defines the voice of an organization. The Cal Hacks brand was previously defined by annual designs corresponding to each hackathon iteration. As we’ve matured from a startup-like environment into an established organization, our influence in the realm of technology extends beyond the space of hackathons into <a href="https://calhacks.io#initiatives" >entrepreneurship</a>, <a href="https://calhacks.io#initiatives"  >diversity</a>, <a href="https://calhacks.io#initiatives"  >inclusivity</a>, <a href="https://calhacks.io#initiatives"  >and beyond</a> — thus rendering a cohesive branding identity crucial.
 
 ## Brainstorming
-The process for this rebrand was guided by my desire to communicate illustratively the defining aspects of Cal Hacks — namely our grounding in technology as a means of empowerment and our proud roots at <a href="https://berkeley.edu" class="cycle">UC Berkeley</a>.  
+The process for this rebrand was guided by my desire to communicate illustratively the defining aspects of Cal Hacks — namely our grounding in technology as a means of empowerment and our proud roots at <a href="https://berkeley.edu"  >UC Berkeley</a>.  
 
 Inclusivity & diversity are both passions of mine, as well as fundamental to our mission at Cal Hacks, so throughout my iterations I took into account the broad range of target demographics that Cal Hacks reaches. Cal Hacks has always communicated our inclusion of all hackers regardless of skill level, demographic, area of study, and any other possible label or preconception. This afforded me experience in visually designing off of qualitative and quantitative feedback from a wide range of perspectives.
 
@@ -38,15 +38,15 @@ I started off by taking inspiration from rather generic computer science-related
 ![Logos with initials](./assets/ch_initials.png)
 
 After these first attempts, I was unsatisfied with the lackluster two-dimensionality of the results. These flat designs visually read to me as favicons more than the dynamic logo we needed. As such, I began playing with more with illustrative concepts to lend a bit more personality than generic programmatic idioms. I mainly wanted to incorporate a Berkeley-esque element into the logo, but without convoluting the permanent logo with our iterating annual dd0ski. As such, I decided to stay away from incorporating a bear. This left me to explore arguably the most iconic architectural element of our campus — the
-<a href="https://campanile.berkeley.edu/" target="_blank" class="cycle">Campanile</a>.
+<a href="https://campanile.berkeley.edu/" target="_blank" >Campanile</a>.
 
 I toyed with the idea of creating outlines of the Campanile using nodes suggestive of both circuitry and tree-based data structures. These results still read as far too visually flat for my liking, however.
 
 ![Logos with nodes](./assets/ch_nodes.png)
 
-The Campanile has the added bonus of naturally lending itself to an isometric design — a great way of adding some dimensionality while still maintaining the flexible integrity of a flatter logo. At the time that I was mocking up some logo ideas, we were discussing many ways to integrate more hardware into Cal Hacks. We partner with <a href="https://mlh.io" target="_blank" class="cycle">MLH</a> to lend a wide range of hardware during the hackathon, and it is one of our goals to make this hardware more accessible to the heavily software-oriented crowd at Cal Hacks.
+The Campanile has the added bonus of naturally lending itself to an isometric design — a great way of adding some dimensionality while still maintaining the flexible integrity of a flatter logo. At the time that I was mocking up some logo ideas, we were discussing many ways to integrate more hardware into Cal Hacks. We partner with <a href="https://mlh.io" target="_blank" >MLH</a> to lend a wide range of hardware during the hackathon, and it is one of our goals to make this hardware more accessible to the heavily software-oriented crowd at Cal Hacks.
 
-I drew much inspiration from <a href="https://dribbble.com/shots/2267138-Hackathon" target="_blank" class="cycle">this great Arduino-esque logo</a>, especially since I personally have a <a href="https://github.com/adrianababakanian/mo_code" target="_blank" class="cycle">good deal of experience</a> with Arduino microcontrollers and IDEs (check out my robot Mo!). My first iterations based off this logo as inspiration attempted to morph the Campanile with a flat circuit board.
+I drew much inspiration from <a href="https://dribbble.com/shots/2267138-Hackathon" target="_blank" >this great Arduino-esque logo</a>, especially since I personally have a <a href="https://github.com/adrianababakanian/mo_code" target="_blank" >good deal of experience</a> with Arduino microcontrollers and IDEs (check out my robot Mo!). My first iterations based off this logo as inspiration attempted to morph the Campanile with a flat circuit board.
 
 ![Flat Hacaknile logo iteations](./assets/ch_flat.png)
 
@@ -67,7 +67,7 @@ This decision to use a monochrome palette is consistent with my motivation to re
 
 ![Cal Hacks Monochrome Color Palette](./assets/colors.png)
 
-As much as I love the unified-yet-poppy identity given by the monochrome blues, I also recognize the need to have access to more than one color in certain contexts. (<a href="https://brand.berkeley.edu/colors/" target="_blank" class="cycle">Berkeley's branding color guideline</a> does an excellent job of this, in fact.) I thus made a palette of accent colors and defined some basic combinations to inform future color palette decisions.
+As much as I love the unified-yet-poppy identity given by the monochrome blues, I also recognize the need to have access to more than one color in certain contexts. (<a href="https://brand.berkeley.edu/colors/" target="_blank" >Berkeley's branding color guideline</a> does an excellent job of this, in fact.) I thus made a palette of accent colors and defined some basic combinations to inform future color palette decisions.
 
 ![Cal Hacks Extended Color Palette](./assets/full_colors.png)
 
@@ -77,9 +77,9 @@ Since this logo is permanent, I wanted to ensure that there is no context in whi
 ![Cal Hacks Logo Sizing](./assets/sizes.png)
 
 ## Typography
-My choice of typefaces was informed by the logo itself. I chose <a href="https://docs.microsoft.com/en-us/typography/font-list/abadi-mt-condensed#abadi-mt-condensed-extra-boldo" target="_blank" class="cycle">Abadi MT Condensed Extra Bold</a> in all-caps as our main textual logo component, as well as for headers. It’s a blocky but slender typeface that marries well with the circuited-yet-sleek build of the Hackanile, mimicking the logo’s simultaneous visual slenderness and inherent hardware.
+My choice of typefaces was informed by the logo itself. I chose <a href="https://docs.microsoft.com/en-us/typography/font-list/abadi-mt-condensed#abadi-mt-condensed-extra-boldo" target="_blank" >Abadi MT Condensed Extra Bold</a> in all-caps as our main textual logo component, as well as for headers. It’s a blocky but slender typeface that marries well with the circuited-yet-sleek build of the Hackanile, mimicking the logo’s simultaneous visual slenderness and inherent hardware.
 
-Avenir is my personal favorite typeface (I have a soft spot for Humanist sans-serifs), but has certain limitations in web usage that makes it hard for us to utilizes as a large-scale organization. Although I use Avenir in my graphic assets, I use a combination of <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank" class="cycle">Nunito Sans</a> and <a href="https://fonts.google.com/specimen/Muli" target="_blank" class="cycle">Muli</a> for web. Nunito Sans serves as headers and subheaders, while Muli as all the body texts.
+Avenir is my personal favorite typeface (I have a soft spot for Humanist sans-serifs), but has certain limitations in web usage that makes it hard for us to utilizes as a large-scale organization. Although I use Avenir in my graphic assets, I use a combination of <a href="https://fonts.google.com/specimen/Nunito+Sans" target="_blank" >Nunito Sans</a> and <a href="https://fonts.google.com/specimen/Muli" target="_blank" >Muli</a> for web. Nunito Sans serves as headers and subheaders, while Muli as all the body texts.
 
 Nunito Sans is a display typeface available in a full set of weights, with a well-balanced distribution that anchors its endpoints to the baseline well. It's for this reason that I like using it as a bolded header in a monochrome context — it maintains its integrity even in low-contrast contexts.
 
@@ -90,7 +90,7 @@ Muli is an almost delicate, rounded, and minimalist sans serif that contrasts we
 ## Standardization & UI Kit
 To ensure that this brand is used as it is intended — universally and permanently! — across Cal Hacks, I developed a UI Kit for future designers and a Sass file to be used by our tech team.
 
-I used both of these assets myself when I made the <a href="https://calhacks.io" target="_blank" class="cycle">permanent Cal Hacks site</a> and <a href="https://calhacks.io" target="_blank" class="cycle">landing page for Cal Hacks 5.0</a>, both of which you can learn more about <a href="https://calhacks.io" target="_blank" class="cycle">here</a> and <a href="https://calhacks.io" target="_blank" class="cycle">here</a>!
+I used both of these assets myself when I made the <a href="https://calhacks.io" target="_blank" >permanent Cal Hacks site</a> and <a href="https://calhacks.io" target="_blank" >landing page for Cal Hacks 5.0</a>, both of which you can learn more about <a href="https://calhacks.io" target="_blank" >here</a> and <a href="https://calhacks.io" target="_blank" >here</a>!
 
 ## Brand Extensions
 The standardization of our visual image extended to my branding campaigns across our Cal Hacks initiatives. The purpose of the branding campaign is to add cohesion to our visual identity, and as such I built on the established style to create sub-logos integrated with the branding guidelines.
@@ -105,7 +105,7 @@ We rolled out our new initiative for entrepreneurial hackers, the [Cal Hacks Fel
 My reasons for choosing a rocket were twofold — the launching of a rocket perfectly captures the spirit of ideational acceleration and incubation embraced by our fellowship, and it’s also the favorite emoji of Aakash, our fellowship program lead! I thus iterated on the rocket idea until resulting in the final version, a circuit-inspired rocketship matching in visual style with the Hackanile yet still able to serve as a logo on its own.
 
 #### CubStart
-<a href="https://calhacks.io#initiatives" target="_blank" class="cycle">CubStart</a> is a beginner hacker program that helps make hackathons less intimidating and more accessible for everyone. We provide a mentorship program for team building, ideation, basic hackathon skills, and technical workshops for those with little or no CS experience to try out hackathons and coding.
+<a href="https://calhacks.io#initiatives" target="_blank" >CubStart</a> is a beginner hacker program that helps make hackathons less intimidating and more accessible for everyone. We provide a mentorship program for team building, ideation, basic hackathon skills, and technical workshops for those with little or no CS experience to try out hackathons and coding.
 
 Seeing that CubStart encourages growth and development, I wanted to integrate an organic element into the program's logo. The final product is a plant sprouting from a circuited building block.
 

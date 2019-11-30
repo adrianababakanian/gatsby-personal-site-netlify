@@ -96,11 +96,11 @@ class WorkIndex extends React.Component {
             <Helmet title={`Work | ${siteTitle}`} />
             <div className="top">
               <h1 style={{"display": "inline"}}> Work </h1>
-              <FilterBar filters={ this.state.filters }
+              {/* <FilterBar filters={ this.state.filters }
                          tags={ tags }
                          handleFilterAdd={ this.handleFilterAdd }
                          handleFilterRemove={ this.handleFilterRemove }
-                         light={ true } />
+                         light={ true } /> */}
             </div>
             <div className="divider" />
             <CSSTransitionGroup

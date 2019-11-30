@@ -13,7 +13,7 @@
 
 .header {
   width: 100vw;
-  background: #fffaf9;
+  background: #F4F1EB;
   height: auto;
   overflow-y: auto;
   position: fixed;
@@ -32,7 +32,7 @@
       margin: 0 20px;
       width: calc(100vw - 40px);
       left: 0;
-      background: #fffaf9;
+      background: #f5efe4;
     }
 
     @media (max-width: 500px) {
@@ -44,8 +44,8 @@
     .logo {
       font: 600 16px Playfair Display;
       float: left;
-      fill: get(atom);
-      stroke: get(atom);
+      fill: #2F3437;
+      stroke: #2F3437;
       margin-top: 4px;
       color: #2F3437;
       padding: 6px 0;
@@ -67,7 +67,7 @@
 
       &:hover {
         .header-item-content {
-          border: 1px solid #A3C4E3;
+          //border: 1px solid #A3C4E3;
         }
       }
 
@@ -75,6 +75,7 @@
         .header-item-content {
           color: #4C8DC9;
           text-shadow: 0.5px 0 0 #4C8DC9;
+          text-decoration: underline;
         }
       }
 
@@ -89,10 +90,10 @@
         transition: background 0.2s ease-in-out;
         border: 1px solid transparent;
         border-bottom-color: transparent;
-        color: #5F6468;
+        color: #2F3437; // #5F6468;
 
         &:hover {
-          background: #C8DFF5;
+          background: #E1E1EB;
           color: #2774B0;
           text-shadow: 0.5px 0 0 #2774B0;
         }
