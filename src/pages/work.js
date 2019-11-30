@@ -81,6 +81,8 @@ class WorkIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const tableOfContents = get(this, 'props.data.allMarkdownRemark.node.tableOfContents');
+    console.log(tableOfContents);
 
     var filteredPosts = [], filtered;
 
@@ -134,6 +136,7 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          tableOfContents
           fields {
             slug
           }

@@ -9,8 +9,9 @@
   box-sizing: border-box;
   justify-content: space-between;
   border-radius: 6px;
-  border: 1px solid rgb(222, 222, 222);
+  border: 1.5px solid #D4D2D0;
   transition: 0.3s ease-in-out;
+  background: #F7F4ED;
 
   @media (max-width: 440px) {
     width: calc(100% - 40px);
@@ -26,8 +27,8 @@
   }
 
   &:hover {
-    box-shadow: 0 2px 12px 2px #EFEFEF;
-    background: rgba(239, 239, 239, 0.3);
+    box-shadow: 0 3px 30px rgba(0,0,0,0.15);
+    background: #F7F4ED;
     transform: translateY(-4px);
   }
 }
