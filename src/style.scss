@@ -341,11 +341,13 @@ html {
     .left-column {
       width: 41%;
       float: left;
+      @media (max-width: 750px) { width: 100% }
     }
 
     .right-column {
       width: 57%;
       float: right;
+      @media (max-width: 750px) { width: 100% }
     }
   }
 

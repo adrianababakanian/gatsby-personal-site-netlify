@@ -61,6 +61,8 @@ class CityNew extends React.Component {
       this.images = importAll(require.context('./images/osaka', false, /\.(png|jpe?g|svg)$/));
     } else if (props.city == 'Takayama') {
       this.images = importAll(require.context('./images/takayama', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Kyoto') {
+      this.images = importAll(require.context('./images/kyoto', false, /\.(png|jpe?g|svg)$/));
     } else {
       this.image = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
     }
@@ -70,16 +72,8 @@ class CityNew extends React.Component {
   render() {
 
     const images = this.images ? Object.values(this.images).map((image) =>
-      // <CSSTransitionGroup
-      //   transitionName="tile"
-      //   transitionAppear={true}
-      //   transitionAppearTimeout={700}
-      //   transitionEnter={false}
-      //   transitionLeave={false}>
         <img src={image} key={image} />
-      // </CSSTransitionGroup>
     ) : null
-
 
     return (
       <CSSTransitionGroup
@@ -93,7 +87,6 @@ class CityNew extends React.Component {
 
         {/* Display all the images in /images/{ this.props.city }. */}
         {images}
-
 
         <div className='details-wrap'>
           <h1 className='city-name'> { this.props.city } </h1>

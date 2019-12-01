@@ -36,7 +36,7 @@ const AboutPage = () => {
               </div>
             </div>
 
-            <div className='divider' style={ { marginBottom: '40px' } }></div>
+            <div className='divider' style={ { marginBottom: '35px' } }></div>
 
             {/* <div className='wrap'>
               <div className='main column'>

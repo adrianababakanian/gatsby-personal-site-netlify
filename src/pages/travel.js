@@ -25,43 +25,48 @@ class TravelIndex extends React.Component {
               <CityNew city='Osaka' country='Japan' date='July 2019'/>
               <CityNew city='Himeji' description='An original feudal castle.' sub={ true } />
               <CityNew city='Takayama' country='Japan' date='July 2019' vertical={ true } />
-              <CityNew city='Bergamo' description='Funiculars, frescos, & more.' sub={ true } />
+              <CityNew city='Bergamo' country='Italy' date='January 2019' />
               <CityNew city='Amsterdam' country='The Netherlands' date='December 2018 - January 2019' />
-              <CityNew city='Paris' description='Wandering through Parisian wintertime.' sub={ true } />
+              <CityNew city='Paris' country='France' date='December 2018' />
               <CityNew city='London' country='United Kingdom' date='December 2018'/>
-              <CityNew city='Tahoe' country='California' date='December 2018' />
-              <CityNew city='Venice' description='An original feudal castle.' sub={ true } />
+              <CityNew city='Pučišća' country='Croatia' date='August 2018' />
               <CityNew city='New York' country='New York' date='July 2018' />
             </div>
 
             <div className='right-column'>
-              <PhotoSet city='Kyoto'
+            <CityNew city='Kyoto' country='Japan' date='July 2019' square={ true } />
+              {/* <PhotoSet city='Kyoto'
                         country='Japan'
                         date='June 2019'
                         square={ true }
                         entries={ [{ name: 'Nara', snippet: 'Meeting free-roaming deer.' },
                                    { name: 'Wazuka', snippet: 'A day on a tea plantation!' },
                                    { name: 'Uji', snippet: 'Enjoying everything matcha.' },
-                                   { name: 'Arashiyama', snippet: 'Bamboo-filled temple trek.'}] } />
+                                   { name: 'Arashiyama', snippet: 'Bamboo-filled temple trek.'}] } /> */}
               <CityNew city='Shirakawago' country='Japan' date='July 2019' square={ true } />
-              <PhotoSet city='Tokyo'
+              <CityNew city='Tokyo' country='Japan' date='July 2019' square={ true } />
+              {/* <PhotoSet city='Tokyo'
                         country='Japan'
                         date='June 2019'
                         square={ true }
                         entries={ [{ name: 'Asakusa', snippet: 'A taste of traditional Tokyo.' },
                                    { name: 'Kappabashi-dori', snippet: 'Playing restaurant for the day.' },
-                                   { name: 'Mito', snippet: 'Exploring Kairakuen Garden.' }] } />
+                                   { name: 'Mito', snippet: 'Exploring Kairakuen Garden.' }] } /> */}
               <CityNew city='Milan' country='Italy' date='January 2019' square={ true } />
               <CityNew city='Rotterdam' country='The Netherlands' date='January 2019' />
               <CityNew city='Utrecht' country='The Netherlands' date='January 2019' square={ true } />
               <CityNew city='Barcelona' country='Spain' date='December 2018' />
-              <PhotoSet city='Croatia'
+              <CityNew city='Dubrovnik' country='Croatia' date='August 2018' square={ true } />
+              <CityNew city='Split' country='Croatia' date='August 2018' />
+              {/* <PhotoSet city='Croatia'
                         country='Croatia'
                         date='August 2018'
                         square={ true }
                         entries={ [{ name: 'Split', snippet: 'Getting to know the motherland.' },
                                    { name: 'Dubrovnik', snippet: 'Wandering the walls.' },
-                                   { name: 'Pučišća', snippet: 'Visiting family.' }] } />
+                                   { name: 'Pučišća', snippet: 'Visiting family.' }] } /> */}
+              <CityNew city='Venice' country='Italy' date='August 2018' square={ true } />
+              <CityNew city='Tahoe' country='California' date='December 2018' />
             </div>
 
             {/* Asia Summer 2019. */}

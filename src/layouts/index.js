@@ -15,7 +15,10 @@ const links = [
 ]
 
 const Layout = props => {
-console.log('Layout props', props)
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
 return (
   <div>
     <Helmet

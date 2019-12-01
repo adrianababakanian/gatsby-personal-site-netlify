@@ -41,12 +41,14 @@ class City extends React.Component {
       this.images = importAll(require.context('./images/tahoe', false, /\.(png|jpe?g|svg)$/));
     } else if (props.city == 'New York') {
       this.images = importAll(require.context('./images/new york', false, /\.(png|jpe?g|svg)$/));
-    } else if (props.city == 'Split') {
+    } else if (props.city == 'Croatia') {
       this.images = importAll(require.context('./images/split', false, /\.(png|jpe?g|svg)$/));
     } else if (props.city == 'Pučišća') {
       this.images = importAll(require.context('./images/pucisca', false, /\.(png|jpe?g|svg)$/));
     } else if (props.city == 'Seoul') {
       this.images = importAll(require.context('./images/seoul', false, /\.(png|jpe?g|svg)$/));
+    } else if (props.city == 'Kyoto') {
+      this.images = importAll(require.context('./images/kyoto', false, /\.(png|jpe?g|svg)$/));
     } else {
       this.image = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
     }
