@@ -8,6 +8,9 @@ blurb: |
   Engaged in the entire design cycle that culminated in implementing an Android application.  
 ---
 
+```toc
+```
+
 #### <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank" class="cycle">CS 160</a> is UC Berkeley’s course in User Interface Design & Development. My passion for interaction-driven engineering led me to take the course in Spring 2018. The class is divided into teams which each develop an Android application from the ground up, starting with brainstorming and then moving through the iterative design process of sketching, prototyping, UER development, user testing, and production. I enjoyed CS 160 so much that I am now a GSI on the course staff for Fall 2018!
 
 My team developed Dinestination, an Android application that determines the best place for a user to eat based on time constraints and target destination. Take a look at our

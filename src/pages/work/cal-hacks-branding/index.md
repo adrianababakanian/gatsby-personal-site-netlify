@@ -8,11 +8,14 @@ blurb: |
   Took full ownership of designing visual campaigns enabling initiatives in diversity, entrepreneurship, and sustainability.
 ---
 
+```toc
+```
+
 #### <a href="https://calhacks.io" >Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. I created a cohesive visual identity for Cal Hacks motivated by iterative experience & user research.
 
 <div class="flex-grid">
   <div class="col" style="flex: 1 0 54.6%"><img src="./assets/ch-large.png"></div>
-    <div class="col"><img src="./assets/shirts.png"></div>
+  <div class="col"><img src="./assets/shirts.png"></div>
 </div>
 
 <div class="flex-grid">
@@ -24,9 +27,6 @@ blurb: |
   <div class="col" style="flex: 1 0 64%"><img src="./assets/totes.png"></div>
   <div class="col"><img src="./assets/title-small.png"></div>
 </div>
-
-```toc
-```
 
 ## The Problem
 A cohesive visual identity defines the voice of an organization. The Cal Hacks brand was previously defined by annual designs corresponding to each hackathon iteration. As we’ve matured from a startup-like environment into an established organization, our influence in the realm of technology extends beyond the space of hackathons into <a href="https://calhacks.io#initiatives" >entrepreneurship</a>, <a href="https://calhacks.io#initiatives"  >diversity</a>, <a href="https://calhacks.io#initiatives"  >inclusivity</a>, <a href="https://calhacks.io#initiatives"  >and beyond</a> — thus rendering a cohesive branding identity crucial.

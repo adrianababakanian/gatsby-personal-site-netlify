@@ -10,20 +10,20 @@ import Layout from '../layouts'
 import Preview from './../components/preview/Preview'
 import FilterBar from './../components/filter-bar/FilterBar'
 
-import ch from './design/cal-hacks-branding/assets/hackanile.png'
-import dinestination from './design/dinestination/assets/dinestination.png'
-import cal_hacks_4 from './design/cal-hacks-4/assets/cal_hacks_4.png'
-import doodles from './design/doodles/assets/doodles.png'
-import feaster from './design/feaster/assets/feaster.png'
-import innod from './design/innovative-design/assets/innod.png'
+import ch from './work/cal-hacks-branding/assets/hackanile.png'
+import dinestination from './work/dinestination/assets/dinestination.png'
+import cal_hacks_4 from './work/cal-hacks-4/assets/cal_hacks_4.png'
+import doodles from './work/doodles/assets/doodles.png'
+import feaster from './work/feaster/assets/feaster.png'
+import innod from './work/innovative-design/assets/innod.png'
 
 const mapper = {
-  "/design/cal-hacks-branding/": ch,
-  "/design/dinestination/": dinestination,
-  "/design/cal-hacks-4/": cal_hacks_4,
-  "/design/doodles/": doodles,
-  "/design/feaster/": feaster,
-  "/design/innovative-design/": innod
+  "/work/cal-hacks-branding/": ch,
+  "/work/dinestination/": dinestination,
+  "/work/cal-hacks-4/": cal_hacks_4,
+  "/work/doodles/": doodles,
+  "/work/feaster/": feaster,
+  "/work/innovative-design/": innod
 }
 
 const tags = ["Visual", "UI", "Branding", "UX", "Web", "Mobile", "Prototyping"];
