@@ -25,6 +25,13 @@
 }
 
 html {
+  // Offset anchor links to compensate for header
+  :target:before {
+    content:"";
+    display:block;
+    height:62px; 
+    margin:-62px 0 0; 
+    }
   background: #F4F1EB;
   .content {
     position: absolute;
@@ -42,14 +49,17 @@ html {
       text-decoration: underline;
       text-decoration-color: #4C8DC9;
       &.preview { color: #2F3437; text-decoration: none; }
+      &.anchor { 
+        margin-top: -4px; 
+       }
       &:hover {
-        // color: #6394ff;
         background: #E1E1EB;
         &.gatsby-resp-image-link { background: none; }
         &.preview {
           color: #2F3437;
           background: rgba(#EFEFEF, 0.3);
         }
+        &.anchor { background: none; }
       }
       a {
         &:link, &:visited, &:active  {
@@ -137,6 +147,42 @@ html {
     }
     .title {
       > * { float: left; }
+    }
+
+    .toc {
+      position: fixed;
+      z-index: 10;
+      top: 50%;
+      margin-top: -200px;
+      left: -220px;
+      background: #F4F1EB;
+      border-radius: 0 6px 6px 0;
+      border: 1.5px solid #D4D2D0;
+      width: 200px;
+      padding: 0 20px;
+      transition: 0.5s;
+      &:hover {
+        left: 0;
+        box-shadow: 0 3px 30px rgba(0,0,0,0.15);
+      }
+      ul {
+        li {
+          text-align: left;
+          a {
+            text-align: left;
+            color: #2F3437;
+            text-decoration: none;
+            border-radius: 0;
+            width: 100%;
+            border-left: 1.5px solid #D4D2D0;
+            &:hover, &:active {
+              background: none;
+              border-left: 1.5px solid #2F3437;
+              text-shadow: 0.5px 0 0 #2F3437;
+            }
+          }
+        }
+      }
     }
 
     h1 {

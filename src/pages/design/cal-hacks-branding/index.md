@@ -25,6 +25,9 @@ blurb: |
   <div class="col"><img src="./assets/title-small.png"></div>
 </div>
 
+```toc
+```
+
 ## The Problem
 A cohesive visual identity defines the voice of an organization. The Cal Hacks brand was previously defined by annual designs corresponding to each hackathon iteration. As we’ve matured from a startup-like environment into an established organization, our influence in the realm of technology extends beyond the space of hackathons into <a href="https://calhacks.io#initiatives" >entrepreneurship</a>, <a href="https://calhacks.io#initiatives"  >diversity</a>, <a href="https://calhacks.io#initiatives"  >inclusivity</a>, <a href="https://calhacks.io#initiatives"  >and beyond</a> — thus rendering a cohesive branding identity crucial.
 
