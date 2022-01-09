@@ -10,6 +10,7 @@ import Layout from '../layouts'
 import Preview from './../components/preview/Preview'
 import FilterBar from './../components/filter-bar/FilterBar'
 
+import studio from './design/studio/assets/studio.png'
 import ch from './design/cal-hacks-branding/assets/hackanile.png'
 import dinestination from './design/dinestination/assets/dinestination.png'
 import cal_hacks_4 from './design/cal-hacks-4/assets/cal_hacks_4.png'
@@ -18,6 +19,7 @@ import feaster from './design/feaster/assets/feaster.png'
 import innod from './design/innovative-design/assets/innod.png'
 
 const mapper = {
+  "/design/studio/": studio,
   "/design/cal-hacks-branding/": ch,
   "/design/dinestination/": dinestination,
   "/design/cal-hacks-4/": cal_hacks_4,
@@ -96,20 +98,19 @@ class WorkIndex extends React.Component {
             <Helmet title={`Work | ${siteTitle}`} />
             <div className="top">
               <h1 style={{"display": "inline"}}> Work </h1>
-              <FilterBar filters={ this.state.filters }
+              {/* <FilterBar filters={ this.state.filters }
                          tags={ tags }
                          handleFilterAdd={ this.handleFilterAdd }
                          handleFilterRemove={ this.handleFilterRemove }
-                         light={ true } />
+                         light={ true } /> */}
             </div>
-            <div className="divider" />
             <CSSTransitionGroup
               transitionName="tile"
               transitionAppear={true}
               transitionAppearTimeout={500}
               transitionEnter={false}
               transitionLeave={false}>
-              { filteredPosts }
+                { filteredPosts }
             </CSSTransitionGroup>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
 import Emphasis from './../components/emphasis/Emphasis'
+import { ShapesComponent } from './../components/shapes';
 import Layout from '../layouts'
 
 import './../style.scss';
@@ -15,14 +16,15 @@ const IndexPage = () => {
       <div className='intro-wrapper'>
 
             <div className='intro'>
-              <h1>Hi, I'm Adriana.</h1>
+              <h1 style={{fontSize: 40}}>Hi! I'm Adriana.</h1>
               <CSSTransitionGroup
                 transitionName="example"
                 transitionEnter={false}
                 transitionLeave={false}
                 transitionAppear={true}
                 transitionAppearTimeout={400}>
-              <h4>I’m a designer and software engineer currently based in San Francisco, California.
+              <h4 style={{maxWidth: 600}}>I'm a software engineer interested in exploring problem spaces related to mathematics and design, preferably simultaneously.</h4>
+              {/* <h4>I’m a designer and software engineer currently based in San Francisco, California.
                   My approach to life and work is inspired by the power of cross-disciplinary knowledge.
                   I’m a fan of visually-informed engineering, <a>art history</a>, Gothic literature, real analysis, Barcelona, and Uji matcha.
               </h4>
@@ -36,10 +38,13 @@ const IndexPage = () => {
                  , passion for <a>travel</a>
                  , alternative R&B, and a love for learning things by
                 meeting new people. Let’s get in touch!
-              </h4>
+              </h4> */}
+              <h2>More about me →</h2>
+              <div className="shapes">
+                <ShapesComponent />
+              </div>
               </CSSTransitionGroup>
             </div>
-
 
           {/* <div className="bottom"></div> */}
 

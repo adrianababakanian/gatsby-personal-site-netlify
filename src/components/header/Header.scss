@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:300,400,600,800');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 .header-appear {
   opacity: 0.01;
@@ -21,7 +21,7 @@
   overflow: hidden;
   top: 0;
   left: 0;
-  font-family: -apple-system, system-ui, Lato, Helvetica;
+  font-family: 'Inter', -apple-system, system-ui;
 
   .header-center {
     width: 1000px;
@@ -67,14 +67,15 @@
 
       &:hover {
         .header-item-content {
-          border: 1px solid #A3C4E3;
+          // border: 1px solid #A3C4E3;
         }
       }
 
       &.active {
         .header-item-content {
-          color: #4C8DC9;
-          text-shadow: 0.5px 0 0 #4C8DC9;
+          // color: #D05F4D;
+          border-bottom: 2px solid #D05F4D
+          //text-shadow: 0.5px 0 0 #D05F4D;
         }
       }
 
@@ -83,18 +84,18 @@
       }
 
       .header-item-content {
-        border-radius: 4px;
+        // border-radius: 4px;
         background: transparent;
-        padding: 4px 7px;
+        padding: 2px 2px;
         transition: background 0.2s ease-in-out;
         border: 1px solid transparent;
         border-bottom-color: transparent;
         color: #5F6468;
 
         &:hover {
-          background: #C8DFF5;
-          color: #2774B0;
-          text-shadow: 0.5px 0 0 #2774B0;
+          background: #D05F4D33;
+          // color: #2774B0;
+          // text-shadow: 0.5px 0 0 #2774B0;
         }
       }
 

@@ -10,8 +10,7 @@ import favicon from './../assets/images/favicon.png'
 
 const links = [
   ["About", "active"],
-  ["Writing", "active"],
-  ["Travel", "active"],
+  // ["Travel", "active"],
   ["Work", "active"]
 ]
 
@@ -22,8 +21,8 @@ return (
     <Helmet
       title={props.data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Adriana\'s personal site and portfolio' },
+        { name: 'keywords', content: 'adriana, babakanian, software engineer, designer' },
       ]}
       link={[
       { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }

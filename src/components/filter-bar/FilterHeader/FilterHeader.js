@@ -25,7 +25,7 @@ class FilterHeader extends React.Component {
     return (
       <div className="FilterHeader" onClick={ this.handleOpen }>
 
-        <div className="label"> { label } </div>
+        {/* <div className="label"> { label } </div> */}
 
         { this.props.filters.map((filter) => (
           <Tag name={ filter }

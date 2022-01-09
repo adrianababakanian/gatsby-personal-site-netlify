@@ -1,5 +1,5 @@
 import React from 'react'
-import me from './../assets/images/me-nara-2.png'
+import me from './../assets/images/me-uji.png'
 import Elsewhere from './../components/elsewhere/Elsewhere'
 import Fact from './../components/fact/Fact'
 import Stat from './../components/stat/Stat'
@@ -15,42 +15,55 @@ const AboutPage = () => {
 
         <div className="container">
           <div className='about'>
+            <h1> Hi there! </h1>
+            <CSSTransitionGroup
+              transitionName="tile"
+              transitionAppear={true}
+              transitionAppearTimeout={500}
+              transitionEnter={false}
+              transitionLeave={false}>
             <div className='wrap'>
-              <div className='main column'>
-                <div className='title'><h1 className='about'> Hi there, I'm Adriana! </h1> <img style={ { width: '38px' } } src={ matcha } /></div>
-                <h4>
-                  I’m a whimsical creative at heart informed by a deep passion for technical logic.
-                  Happiest reasoning at the intersection of engineering and design, I love working with people
-                  from different backgrounds and skillsets. It always inspires me to expand my own perspectives.
-                </h4>
-                <h4>
-                  I recently graduated from <a>UC Berkeley</a> with a double major in Computer Science & Applied Mathematics,
-                  and a certificate in <a>Human-Centered Design</a>. I also <a>taught</a> an HCI course.
-                </h4>
-              </div>
-              <div className='secondary column'>
+              <div className='main'>
+                <h2>
+                  I’m Adriana. I am a creative at heart, inspired by a fascination with technical logic. I'm particularly 
+                  interested in the implications of mathematics in user interfaces, both visually and computationally.
+                </h2>
                 <div className="me-wrapper">
                   <img src={me} className="me"/>
-                  <div className="overlay"/>
-                </div>
+                </div> 
+              </div>
+              <div className='secondary'>
+                <h4>
+                  I'm currently having fun during my work days building <a /*href="https://www.mapbox.com/mapbox-studio"*/>Mapbox Studio</a>, a broswer-based design tool that
+                  empowers anyone to create beautiful, radically custom maps.
+                </h4>
+                <h4>
+                  Before that, I graduated cum laude from <a /*href="https://www.berkeley.edu/"*/>UC Berkeley</a> with a double major in <a /*href="https://cs.berkeley.edu/"*/>Computer Science</a> and
+                  <a /*href="https://math.berkeley.edu/"*/>Applied Mathematics</a>, as well as a certificate in <a>Human-Centered Design</a>. During my time at Berkeley,
+                  I taught an <a /*href="https://www2.eecs.berkeley.edu/Courses/CS160/"*/>HCI course</a> at the <a /*href="https://jacobsinstitute.berkeley.edu/"*/>Jacobs Institute for Design Innovation</a> and designed more things that I
+                  can even remember for <a /*href="https://calhacks.io/"*/>Cal Hacks</a>.
+                </h4>
+                <h4>
+                  Most of the time you're likely to find me riding one of my (always Reynolds steel-framed) bikes, studying Japanese,
+                  sketching for hours in the corner of a museum, or being a geek about art history (particularly anything Danish).
+                  I'm also really into public tranist systems, and am trying to dabble more in the field of urban design!
+                </h4>
               </div>
             </div>
 
-            <div className='divider' style={ { marginBottom: '40px' } }></div>
+            <div>
+              <h4>LinkedIn <span className="bold">/adriana-babakanian ↗</span></h4>
+              <h4>GitHub <span className="bold">/adrianababakanian</span></h4>
+              <h4>Twitter <span className="bold">@adrianabaklava</span></h4>
+              <h4>Pinterest <span className="bold">/ababakanian</span></h4>
+              <h4>Dribble <span className="bold">/adrianababakanian</span></h4>
+              <h4>Email <span className="bold">ababakanian@gmail.com</span></h4>
+            </div>
+            </CSSTransitionGroup>
 
-            <div className='wrap'>
-              <div className='main column'>
-                <h4 style={ { marginTop: '-10px' } }>
-                  I’m full to the brim of <a target="_blank"> book recommendations
-                   </a>
-                   , passion for <a>travel</a>
-                   , alternative R&B, and a love for learning things by
-                  meeting new people. Let’s get in touch!
-                </h4>
-              </div>
+            {/* <div className='wrap'>
               <div className='secondary column'>
                 <h2 className='title'>Stats</h2>
-                <div className='hr'/>
                 <div className='stats'>
                   <Stat name={ "age" } value={ "21" } />
                   <Stat name={ "heritage" } value={ "Croatian + Armenian" } />
@@ -58,9 +71,9 @@ const AboutPage = () => {
                   <Stat name={ "Myers-Briggs" } value={ "INTJ" } tag={ true } />
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className='wrap'>
+            {/* <div className='wrap'>
               <h2 className='about'>Miscellaneous trivia</h2>
               <div className='facts-grid'>
                 <Fact number="N° 1" fact="Cycling is always my preferred method of transportation." />
@@ -72,10 +85,9 @@ const AboutPage = () => {
                 <Fact number="N° 7" fact="I'm a huge math geek. Don't get me started on complex analysis!" />
                 <Fact number="N° 8" fact="The layered complexity of mapping interfaces fascinates me." />
               </div>
-            </div>
+            </div> */}
 
         </div>
-
       </div>
 
     </Layout>

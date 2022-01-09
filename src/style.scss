@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=-apple-system, system-ui, Lato, Helvetica:100,300,400');
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk&display=swap');
 
 .example-appear {
   opacity: 0.01;
@@ -25,8 +26,9 @@
 }
 
 html {
-  background: white;
+  background: #FFFFFB;
   .content {
+    color: #3C3838;
     position: absolute;
     left: 0;
     top: 0;
@@ -35,10 +37,9 @@ html {
       color: #4C8DC9;
       padding: 1px 4px;
       cursor: pointer;
-      border-radius: 4px;
       transition: 0.3s ease-in-out;
       text-decoration: underline;
-      text-decoration-color: #C8DFF5;
+      // text-decoration-color: #C8DFF5;
       &:hover {
         color: #2774B0;
         background: #C8DFF5;
@@ -64,7 +65,6 @@ html {
         justify-content: flex-start;
         margin-left: -5px;
       }
-      .top { height: 50px; }
       @media (max-width: 1040px) {
         width: calc(100vw - 40px);
       }
@@ -80,19 +80,20 @@ html {
         color: #2F3437;
         font-weight: 400;
         margin: 10px 0 30px 0;
+        font-size: 18px;
       }
       a {
-        color: #598EAD;
+        color: #4F8FC8;
         padding: 1px 4px;
         cursor: pointer;
-        border-radius: 2px;
         transition: 0.3s ease-in-out;
         &.preview { color: #2F3437 }
         &.cycle { background: white }
         &.gatsby-resp-image-link { .gastby-resp-image-image { width: 1000px;} }
         &:hover {
-          color: #426980;
-          background: rgba(#BCD2DE, 0.8);
+          text-decoration: none;
+          color: #4F8FC8;
+          background: rgba(#66B2F6, 0.4);
           &.gatsby-resp-image-link { background: none; }
           &.preview {
             color: #2F3437;
@@ -115,9 +116,17 @@ html {
       .intro {
         height: auto;
         width: 1000px;
-        margin: 100px auto 30px;
+        margin: 200px auto 30px;
         @media (max-width: 1040px) {
           width: calc(100vw - 40px);
+        }
+        .shapes {
+          margin-left: 360px;
+          margin-top: -64px;
+          @media (max-width: 800px) {
+            margin-left: 0;
+            margin-top: 0;
+          }
         }
       }
       .bottom {
@@ -131,7 +140,7 @@ html {
       > * {float: left;  }
     }
     h1 {
-      font: 700 32px -apple-system, system-ui, Lato, Helvetica;
+      font: 800 48px 'Inter', -apple-system, system-ui;
       color: #2F3437;
       letter-spacing: initial;
       margin-top: 0;
@@ -145,30 +154,41 @@ html {
         width: 100%;
       }
     }
+    .arrow {
+      font: 'Space Grotesk', sans-serif;
+      color: red;
+    }
     h2 {
-      font-size: 16px;
-      font-weight: 700;
-      color: #2f3437;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      margin: 10px 0;
-      width: auto;
-      &.title {
-        color: #4C8DC9;
-        margin-bottom: 8px;
-      }
+      font-family: 'Inter', -apple-system, system-ui;
+      font-size: 28px;
+      color: #3C3838;
+      font-weight: 500;
+      line-height: 36px;
     }
-    .h2 {
-      font-size: 16px;
-      font-weight: 700;
-      color: #2f3437;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      margin: 10px 0;
-      width: auto;
-      margin-right: 8px;
-      line-height: 10px;
-    }
+    // h2 {
+    //   font-size: 16px;
+    //   font-weight: 700;
+    //   color: #2f3437;
+    //   text-transform: uppercase;
+    //   letter-spacing: .5px;
+    //   margin: 10px 0;
+    //   width: auto;
+    //   &.title {
+    //     color: #4C8DC9;
+    //     margin-bottom: 8px;
+    //   }
+    // }
+    // .h2 {
+    //   font-size: 16px;
+    //   font-weight: 700;
+    //   color: #2f3437;
+    //   text-transform: uppercase;
+    //   letter-spacing: .5px;
+    //   margin: 10px 0;
+    //   width: auto;
+    //   margin-right: 8px;
+    //   line-height: 10px;
+    // }
     h3 {
       font-size: 22px;
       color: #96a1ad;
@@ -176,14 +196,16 @@ html {
       margin: 5px 0;
     }
     h4 {
-      font: 300 22px -apple-system, system-ui, Lato, Helvetica;
+      font: 300 22px 'Inter', -apple-system, system-ui;
       color: #2F3437;
       letter-spacing: initial;
-      line-height: 36px;
       margin: 15px 0;
+      .bold {
+        font-weight: 500;
+      }
     }
     h5 {
-      font: 300 16px -apple-system, system-ui, Lato, Helvetica;
+      font: 300 16px 'Inter', -apple-system, system-ui;
       color: #2F3437;
       letter-spacing: initial;
       line-height: 28px;
@@ -197,27 +219,24 @@ html {
     }
 
     .me-wrapper {
+      margin-top: 30px;
       box-shadow: none;
-      border-radius: 6px;
+      //border-radius: 6px;
     }
 
     .about {
       .wrap {
-        width: 100%;
-        overflow: auto;
-        :first-child {
-          margin-top: 0;
-        }
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -56px;
       }
-      .column {
-        float: left;
-        &.main {
-          width: calc(60% - 45px);
-          margin-right: 45px;
-        }
-        &.secondary {
-          width: calc(40%);
-        }
+      .wrap :first-child {
+        margin-top: 0;
+      }
+      .wrap > * {
+        flex: 1 1 160px;
+        margin-right: 56px;
       }
     }
 
@@ -264,6 +283,46 @@ html {
     margin: 6px 0 6px -4px;
     .col {
       flex: 1 100%;
+    }
+  }
+
+  .rotating {
+    animation: rotation 2s infinite linear alternate;
+  }
+
+  .rotatingNeg {
+    animation: rotationNeg 2s infinite linear alternate;
+  }
+
+  .up {
+    animation: up 1.5s infinite linear alternate;
+  }
+
+  .left {
+    animation: left 2s infinite linear alternate;
+  }
+  
+  @keyframes rotation {
+    to {
+      transform: rotate(1.5deg);
+    }
+  }
+
+  @keyframes rotationNeg {
+    to {
+      transform: rotate(-3deg);
+    }
+  }
+
+  @keyframes up {
+    to {
+      transform: translateY(-4px);
+    }
+  }
+
+  @keyframes left {
+    to {
+      transform: translateX(-8px);
     }
   }
 

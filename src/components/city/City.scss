@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 .city-image-appear {
   opacity: 0.01;
@@ -95,7 +96,7 @@
     padding: 160px 30px 30px 30px;
   }
   .city-name {
-    font: 800 38px -apple-system, system-ui, Lato, Helvetica;
+    font: 800 38px 'Inter', -apple-system, system-ui;
     color: white;
     margin-bottom: 4px;
     letter-spacing: 1px;

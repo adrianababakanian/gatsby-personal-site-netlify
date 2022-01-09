@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
 import './Header.scss'
-import logo from './../../assets/images/logo.svg';
+import logo from './../../assets/images/logo-2.svg';
 
 class Header extends React.Component {
 

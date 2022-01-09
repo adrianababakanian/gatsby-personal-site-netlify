@@ -3,9 +3,9 @@
 $darks: (
   pink: unquote('#8A466C'),
   purple: unquote('#655186'),
-  blue: unquote('#426980'),
+  blue: unquote('#4F8FC8'),
   teal: unquote('#87B4BD'),
-  green: unquote('#406F68'),
+  green: unquote('#477C30'),
   mint: unquote('#6BB092'),
   orange: unquote('#DE856F'),
   white: unquote('#FFFFFF')
@@ -14,9 +14,9 @@ $darks: (
 $lights: (
   pink: unquote('#DCC8D3'),
   purple: unquote('#D1CCDB'),
-  blue: unquote('#C7D2D9'),
+  blue: unquote('#4F8FC8'),
   teal: unquote('#D9ECE6'),
-  green: unquote('#C3D3CF'),
+  green: unquote('#477C30'),
   mint: unquote('#CBECDA'),
   orange: unquote('#EBD4CD'),
   white: unquote('#FFFFFF')
@@ -25,11 +25,13 @@ $lights: (
 $highlights: (
   pink: unquote('#C6659B66'),
   purple: unquote('#8369AE66'),
-  blue: unquote('#598EAD66'),
+  blue: unquote('#4F8FC8CC'),
   teal: unquote('#9CCFDA66'),
-  green: unquote('#5A9D9366'),
+  green: unquote('#477C30CC'),
   mint: unquote('#84D7B266'),
-  orange: unquote('#F5957E66')
+  orange: unquote('#F5957E66'),
+  yellow: unquote('#D6C344CC'),
+  red: unquote('#D05F4DCC')
 );
 
 @mixin color-tag($color) {
@@ -48,7 +50,7 @@ $highlights: (
   display: inline-flex;
   padding: 1px 8px;
   margin: 2px 4px 2px 0;
-  border-radius: 4px;
+  // border-radius: 4px;
   font: 400 14px -apple-system, system-ui, Lato, Helvetica;
   transition: 0.3s ease-in-out;
   background: #C8DFF5;
@@ -68,8 +70,8 @@ $highlights: (
     color: #2774B0;
   }
 
-  &.Visual { @include color-tag(pink) }
-  &.UI { @include color-tag(purple) }
+  &.Visual { @include color-tag(green) }
+  &.UI { @include color-tag(blue) }
   &.Branding { @include color-tag(blue) }
   &.UX { @include color-tag(teal) }
   &.Web { @include color-tag(green) }
@@ -79,11 +81,11 @@ $highlights: (
   &.light {
     background: #{map-get($highlights, blue)};
     color: #2F3437;
-    &.Visual { @include highlight-color-tag(pink) }
-    &.UI { @include highlight-color-tag(purple) }
-    &.Branding { @include highlight-color-tag(blue) }
+    &.Visual { @include highlight-color-tag(green) }
+    &.UI { @include highlight-color-tag(blue) }
+    &.Branding { @include highlight-color-tag(yellow) }
     &.UX { @include highlight-color-tag(teal) }
-    &.Web { @include highlight-color-tag(green) }
+    &.Web { @include highlight-color-tag(red) }
     &.Mobile { @include highlight-color-tag(mint) }
     &.Prototyping { @include highlight-color-tag(orange) }
 

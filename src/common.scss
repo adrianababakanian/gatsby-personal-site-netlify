@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,800');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 html {
   // background: #2F3437;
@@ -73,7 +73,7 @@ video {
   width: 1000px;
   height: auto;
   margin: 180px auto;
-  font-family: -apple-system, system-ui, Lato, Helvetica;
+  font-family: 'Inter', -apple-system, system-ui, Helvetica;
   color: get(dust);
 
   @media (max-width: 700px) {

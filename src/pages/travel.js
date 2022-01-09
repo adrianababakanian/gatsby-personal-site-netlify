@@ -23,11 +23,11 @@ class TravelIndex extends React.Component {
               <CityNew city='Okayama' description='Exploring Korakuen Garden.' sub={ true } />
               <CityNew city='Kamikochi' country='Japan' date='July 2019' vertical={ true } />
               <CityNew city='Osaka' country='Japan' date='July 2019'/>
-              <CityNew city='Himeji' description='An original feudal castle.' sub={ true } />
+              <CityNew city='Himeji' sub={ true } />
               <CityNew city='Takayama' country='Japan' date='July 2019' vertical={ true } />
-              <CityNew city='Bergamo' description='Funiculars, frescos, & more.' sub={ true } />
+              <CityNew city='Bergamo' sub={ true } />
               <CityNew city='Amsterdam' country='The Netherlands' date='December 2018 - January 2019' />
-              <CityNew city='Paris' description='Wandering through Parisian wintertime.' sub={ true } />
+              <CityNew city='Paris' sub={ true } />
               <CityNew city='London' country='United Kingdom' date='December 2018'/>
               <CityNew city='Tahoe' country='California' date='December 2018' />
               <CityNew city='Venice' description='An original feudal castle.' sub={ true } />
@@ -35,14 +35,15 @@ class TravelIndex extends React.Component {
             </div>
 
             <div className='right-column'>
-              <PhotoSet city='Kyoto'
+              <CityNew city='Kyoto'
                         country='Japan'
                         date='June 2019'
                         square={ true }
-                        entries={ [{ name: 'Nara', snippet: 'Meeting free-roaming deer.' },
-                                   { name: 'Wazuka', snippet: 'A day on a tea plantation!' },
-                                   { name: 'Uji', snippet: 'Enjoying everything matcha.' },
-                                   { name: 'Arashiyama', snippet: 'Bamboo-filled temple trek.'}] } />
+                        // entries={ [{ name: 'Nara', snippet: 'Meeting free-roaming deer.' },
+                        //            { name: 'Wazuka', snippet: 'A day on a tea plantation!' },
+                        //            { name: 'Uji', snippet: 'Enjoying everything matcha.' },
+                        //            { name: 'Arashiyama', snippet: 'Bamboo-filled temple trek.'}] } 
+              />
               <CityNew city='Shirakawago' country='Japan' date='July 2019' square={ true } />
               <PhotoSet city='Tokyo'
                         country='Japan'
