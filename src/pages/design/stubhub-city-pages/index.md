@@ -1,11 +1,13 @@
 ---
 title: "StubHub City Pages"
-date: "2018-08-12T17:12:33.962Z"
+date: "2018-02-12T17:12:33.962Z"
 featuredImage: ./assets/map.png
-tags: ["code"]
+tags: ["code", "Web", "UI"]
+blurb: |
+    Engineered a new experience for StubHub’s city pages focused on enabling location-specific event discovery.
 ---
 
-<a href="https://www.stubhub.com/" target="_blank" class="matcha">StubHub</a>
+<a href="https://www.stubhub.com/" target="_blank">StubHub</a>
 is the world's largest secondary ticketing marketplace &mdash; but most people only visit the site to buy a ticket they already know they want. Experiences that enable event discovery are lacking in the industry. Since event-going is often an end-to-end experience that entails more than just the event itself, I and a small team of interns in design, user research, product management, and SEO took on the task of creating a single page for event and venue discovery richly enhanced by external data and filtering functionalities.
 
 Our team framed our design, research, and development around the following question: How might we enable users to discover inspiring event experiences in a particular city?
@@ -15,8 +17,8 @@ Our team framed our design, research, and development around the following quest
 ## Technologies
 
 I implemented the city page in React. I also made extensive use of external APIs, primarily
-<a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank" class="matcha">Google Maps</a> and
-<a href="https://developers.google.com/places/web-service/intro" target="_blank" class="matcha">Google Places</a>.
+<a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Google Maps</a> and
+<a href="https://developers.google.com/places/web-service/intro" target="_blank">Google Places</a>.
 
 ## User Research
 Several rounds of user testing were performed throughout the summer, including guerilla testing, formalized research in a usability lab, targeted testing, and more. Most notably, we constructed testing to understand the user needs and desired interface layout by creating components, cutting them out, and giving the interviewees complete freedom to construct an interface that would allow them to optimally explore a city in which they'd like to attend an event.

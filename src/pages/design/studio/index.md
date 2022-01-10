@@ -5,8 +5,9 @@ featuredImage: ./assets/studio.png
 tags: ["design", "Web", "UI"]
 blurb: |
   Develop and design Mapbox Studio, a browser-based design tool that enables anyone to create beautiful, radically custom maps.
-  I’ve had the opportunity to help out with a little bit of everything, from building interfaces for easily using complex geospatial data pipelines, to architecting sustainable, maintainable design systems for a highly interactive and powerful editor.
+  Work on a rich range of projects, from intuitive interfaces for geospatial data pipelines to design systems for a highly interactive editor.
 ---
 
-#### <a href="https://calhacks.io" class="cycle">Cal Hacks</a> is a nonprofit organization of students passionate about fostering a culture of hacking, entrepreneurship, and social good via the empowerment of technology. Our claim to fame is throwing the world’s largest collegiate hackathon every fall. I created a cohesive visual identity for Cal Hacks motivated by iterative experience & user research.
+#### <a href="https://mapbox.com/mapbox-studio" class="cycle">Mapbox Studio</a> is a browser-based design tool that empowers anyone to create beautiful, radically custom maps. Feel free to get in touch if you're interested to hear about the projects I've worked on!
 
+![](./assets/studio.png)

@@ -1,15 +1,17 @@
 ---
 title: "StubHub Community"
-date: "2018-05-12T17:12:33.962Z"
+date: "2018-03-12T17:12:33.962Z"
 featuredImage: ./assets/stubhub.png
-tags: ["code"]
+tags: ["code", "UI", "Web"]
+blurb: |
+    Developed a community product that increased engagement and retention by providing the functionality to comment on event pages.
 ---
 
-As an <a href="https://www.ebay.com/" class="matcha" target="_blank">eBay</a> intern during Summer 2017, I worked as a part
+As an <a href="https://www.ebay.com/" target="_blank">eBay</a> intern during Summer 2017, I worked as a part
 of StubHub's Search Infrastructure engineering team. In addition to contributing towards
-the SI team by developing for UI engineering stories using the <a href="https://www.scrum.org/resources/what-is-scrum" class="matcha" target="_blank">Scrum</a> framework, I also
+the SI team by developing for UI engineering stories using the <a href="https://www.scrum.org/resources/what-is-scrum" target="_blank">Scrum</a> framework, I also
 created and then developed a community platform for StubHub users. The platform aims to
-increase engagement on <a href="https://www.stubhub.com/" class="matcha" target="_blank">StubHub</a> through a data-oriented approach with impact in customer
+increase engagement on <a href="https://www.stubhub.com/" target="_blank">StubHub</a> through a data-oriented approach with impact in customer
 service efficiency, partnerships, and search engine optimization.
 
 ![StubHub community page on mobile](./assets/stubhub.png)
@@ -17,9 +19,9 @@ service efficiency, partnerships, and search engine optimization.
 ## Technologies
 
 I used technologies such as internal JavaScript libraries,
-<a href="http://www.dustjs.com/" class="matcha" target="_blank">Dust</a>,
-<a href="http://requirejs.org/" class="matcha" target="_blank">RequireJS</a>,
-<a href="http://sass-lang.com/" class="matcha" target="blank">Sass</a>, HTML,
+<a href="http://www.dustjs.com/" target="_blank">Dust</a>,
+<a href="http://requirejs.org/" target="_blank">RequireJS</a>,
+<a href="http://sass-lang.com/" target="blank">Sass</a>, HTML,
 and JavaScript, as well as analytics tracking & A/B testing implementation, performance
 testing, cross-browser quality assurance, localization, and several external SDKs in both
 Web and mobile Web.

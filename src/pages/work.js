@@ -17,6 +17,8 @@ import cal_hacks_4 from './design/cal-hacks-4/assets/cal_hacks_4.png'
 import doodles from './design/doodles/assets/doodles.png'
 import feaster from './design/feaster/assets/feaster.png'
 import innod from './design/innovative-design/assets/innod.png'
+import stubhubCommunity from './design/stubhub-community/assets/stubhub.png'
+import stubHubCity from './design/stubhub-city-pages/assets/map.png'
 
 const mapper = {
   "/design/studio/": studio,
@@ -25,7 +27,9 @@ const mapper = {
   "/design/cal-hacks-4/": cal_hacks_4,
   "/design/doodles/": doodles,
   "/design/feaster/": feaster,
-  "/design/innovative-design/": innod
+  "/design/innovative-design/": innod,
+  "/design/stubhub-community": stubhubCommunity,
+  "/design/stubhub-city-pages": stubHubCity
 }
 
 const tags = ["Visual", "UI", "Branding", "UX", "Web", "Mobile", "Prototyping"];

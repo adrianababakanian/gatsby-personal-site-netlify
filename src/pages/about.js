@@ -24,7 +24,7 @@ const AboutPage = () => {
               transitionLeave={false}>
             <div className='wrap'>
               <div className='main'>
-                <h2>
+                <h2 className="mild">
                   I’m Adriana. I am a creative at heart, inspired by a fascination with technical logic. I'm particularly 
                   interested in the implications of mathematics in user interfaces, both visually and computationally.
                 </h2>
@@ -38,15 +38,15 @@ const AboutPage = () => {
                   empowers anyone to create beautiful, radically custom maps.
                 </h4>
                 <h4>
-                  Before that, I graduated cum laude from <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a> with a double 
-                  major in <a href="https://cs.berkeley.edu/" target="_blank">Computer Science</a> and <a href="https://math.berkeley.edu/" target="_blank">Applied Mathematics</a>, as well as a certificate in <a>Human-Centered Design</a>. During my time at Berkeley,
+                  Before that, I graduated with honors from <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a> with a double 
+                  major in <a href="https://cs.berkeley.edu/" target="_blank">Computer Science</a> and <a href="https://math.berkeley.edu/" target="_blank">Applied Mathematics</a>, and a certificate in <a>Human-Centered Design</a>. During my time at Berkeley,
                   I taught an <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank">HCI course</a> at the <a href="https://jacobsinstitute.berkeley.edu/" target="_blank">Jacobs Institute for Design Innovation</a> and designed more things that I
                   can even remember for <a href="https://calhacks.io/" target="_blank">Cal Hacks</a>.
                 </h4>
                 <h4>
                   Most of the time you're likely to find me riding one of my (always Reynolds steel-framed) bikes, studying Japanese,
                   sketching in a museum, shooting urban photography, or being a geek about art history (particularly anything Danish).
-                  I'm also really into public tranist systems, and am trying to dabble more in the field of urban design!
+                  I'm also really into public transit systems & urban design!
                 </h4>
                 <div className="divider" />
                 <div>
