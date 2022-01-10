@@ -2,11 +2,13 @@
 title: "Dinestination"
 date: "2018-08-12T17:12:33.962Z"
 featuredImage: ./assets/dinestination.png
-tags: ["design"]
+tags: ["design", "Mobile", "UI"]
+blurb: |
+  Designed, evaluated, and implemented a mobile user interface for on-the-go users who need to discover route-optimal places to eat.
+  Engaged in the entire design cycle that culminated in implementing an Android application.  
 ---
 
-<a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank" class="cycle">CS 160</a>
-is UC Berkeley’s course in User Interface Design & Development. My passion for interaction-driven engineering led me to take the course in Spring 2018. The class is divided into teams which each develop an Android application from the ground up, starting with brainstorming and then moving through the iterative design process of sketching, prototyping, UER development, user testing, and production. I enjoyed CS 160 so much that I am now a GSI on the course staff for Fall 2018!
+#### <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank" class="cycle">CS 160</a> is UC Berkeley’s course in User Interface Design & Development. My passion for interaction-driven engineering led me to take the course in Spring 2018. The class is divided into teams which each develop an Android application from the ground up, starting with brainstorming and then moving through the iterative design process of sketching, prototyping, UER development, user testing, and production. I enjoyed CS 160 so much that I am now a GSI on the course staff for Fall 2018!
 
 My team developed Dinestination, an Android application that determines the best place for a user to eat based on time constraints and target destination. Take a look at our
 <a href="https://github.com/adrianababakanian/busybears/" target="_blank" class="cycle">source code</a>

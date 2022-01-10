@@ -1,0 +1,96 @@
+//@import "./../../common.scss";
+
+$darks: (
+  pink: unquote('#8A466C'),
+  purple: unquote('#655186'),
+  blue: unquote('#4F8FC8'),
+  teal: unquote('#87B4BD'),
+  green: unquote('#477C30'),
+  mint: unquote('#6BB092'),
+  orange: unquote('#DE856F'),
+  white: unquote('#FFFFFF')
+);
+
+$lights: (
+  pink: unquote('#DCC8D3'),
+  purple: unquote('#D1CCDB'),
+  blue: unquote('#4F8FC8'),
+  teal: unquote('#D9ECE6'),
+  green: unquote('#477C30'),
+  mint: unquote('#CBECDA'),
+  orange: unquote('#EBD4CD'),
+  white: unquote('#FFFFFF')
+);
+
+$highlights: (
+  pink: unquote('#C6659B66'),
+  purple: unquote('#8369AE66'),
+  blue: unquote('#4F8FC8CC'),
+  teal: unquote('#9CCFDA66'),
+  green: unquote('#477C30CC'),
+  mint: unquote('#ABD5D4CC'),
+  orange: unquote('#F5957E66'),
+  yellow: unquote('#D6C344CC'),
+  red: unquote('#D05F4DCC')
+);
+
+@mixin color-tag($color) {
+  background: #{map-get($darks, $color)};
+  color: #{map-get($lights, $color)};
+}
+
+@mixin highlight-color-tag($color) {
+  background: #{map-get($highlights, $color)};
+  color: #2F3437;
+}
+
+
+.tag {
+  height: 20px;
+  display: inline-flex;
+  padding: 1px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 1px;
+  font: 400 14px -apple-system, system-ui, Lato, Helvetica;
+  transition: 0.3s ease-in-out;
+  background: #C8DFF5;
+  color: #2774B0;
+
+  .x {
+    font: 300 9px -apple-system, system-ui, Lato, Helvetica;
+    padding: 0 0 0 6px;
+    color: rgba(white, 0.4);
+    line-height: 20px;
+  }
+
+  &.outline {
+    font-weight: bold;
+    border: 1px solid #A3C4E3;
+    background: #C8DFF5;
+    color: #2774B0;
+  }
+
+  &.Visual { @include color-tag(green) }
+  &.UI { @include color-tag(blue) }
+  &.Branding { @include color-tag(blue) }
+  &.UX { @include color-tag(teal) }
+  &.Web { @include color-tag(green) }
+  &.Mobile { @include color-tag(mint) }
+  &.Prototyping { @include color-tag(orange) }
+
+  &.light {
+    background: #{map-get($highlights, blue)};
+    color: #2F3437;
+    &.Visual { @include highlight-color-tag(green) }
+    &.UI { @include highlight-color-tag(blue) }
+    &.Branding { @include highlight-color-tag(yellow) }
+    &.UX { @include highlight-color-tag(teal) }
+    &.Web { @include highlight-color-tag(red) }
+    &.Mobile { @include highlight-color-tag(mint) }
+    &.Prototyping { @include highlight-color-tag(orange) }
+
+    &.photo { color: white }
+
+    .x { color: #2F3437 }
+  }
+}

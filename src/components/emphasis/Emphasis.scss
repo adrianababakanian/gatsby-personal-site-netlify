@@ -17,9 +17,13 @@ a {
   cursor: pointer;
   border-bottom-color: transparent;
 
-  &.cycle { @include colorize(x_trans_cycle) }
-  &.matcha { @include colorize(x_trans_matcha) }
-  &.atomic { @include colorize(x_trans_atomic) }
+  &.blue { @include colorize(deep_blue); @include font-colorize(light_blue) }
+  &.orange { @include colorize(deep_orange); @include font-colorize(light_orange) }
+  &.green { @include colorize(deep_green); @include font-colorize(light_green) }
+
+  &.cycle { @include colorize(x_trans_cycle); color: #C7D2D9 }
+  &.matcha { @include colorize(x_trans_matcha); color: get(matcha) }
+  &.atomic { @include colorize(x_trans_atomic); color: get(atomic) }
   &.sakura { @include colorize(x_trans_sakura) }
 
   &:hover {
@@ -61,10 +65,6 @@ a {
   }
 
   &:hover {
-    // &.cycle { @include bottom-colorize(cycle) }
-    // &.matcha { @include bottom-colorize(matcha) }
-    // &.atomic { @include bottom-colorize(atomic) }
-    // &.sakura { @include bottom-colorize(sakura) }
 
     .highlight {
       height: 118%;

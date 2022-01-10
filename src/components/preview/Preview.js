@@ -1,15 +1,44 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby'
+import Tag from './../tag/Tag';
 
-import './Preview.css'
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
-const Preview = ({ project, color, children }) => (
-  <Link to={project.fields.slug} className={`preview ${color}`}>
-    <div className="preview-image"> { children } </div>
-    <div className="preview-hover">
-      { project.frontmatter.title }
+import './Preview.scss'
+
+/* Hardcode preview border radius. */
+const borderStyle = { borderRadius: '6px', borderBottom: '1px solid #DEDEDE' };
+
+const Preview = ({ project, children }) => {
+
+const blurbs = project.frontmatter.blurb ? project.frontmatter.blurb.split('\n') : ['']
+
+return (
+
+  <Link to={project.fields.slug} className="preview" style={ borderStyle }>
+
+    <div className="description">
+
+      <div className="title"> { project.frontmatter.title } </div>
+
+      <div className="tags">
+        {project.frontmatter.tags.map((tag) => (
+          (tag != "design" && tag != "code") ? <Tag name={tag} key={tag} light={true} /> : null
+        ))}
+      </div>
+
+      <div className="blurb">
+        {blurbs.map((blurb, i) => (
+          <p key={i}>{blurb}</p>
+        ))}
+      </div>
+
     </div>
+
+    <div className="image"> { children } </div>
   </Link>
+
 )
+}
 
 export default Preview;

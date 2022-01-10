@@ -23,7 +23,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 800
             },
           },
           {
@@ -50,7 +50,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        //postCssPlugins: [somePostCssPlugin()],
         precision: 5,
       },
     },

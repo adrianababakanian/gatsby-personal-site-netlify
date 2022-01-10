@@ -1,0 +1,45 @@
+.photo-entry {
+  //border-top: 1px solid rgb(222, 222, 222);
+  border-bottom: 1px solid rgb(222, 222, 222);
+  height: 140px;
+  padding: 10px 20px;
+  margin: 0;
+  display: flex;
+
+  &:first-child {
+    padding-top: 20px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+
+  .image {
+    flex: 40% 1;
+    background: gray;
+    border-radius: 4px;
+  }
+
+  .description {
+    flex: 60% 1;
+    color: #2F3437;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-weight: 700;
+      font-size: 26px;
+      transform: translateX(40px);
+      padding: 8px 0 4px 0;
+    }
+
+    .snippet {
+      font-size: 22px;
+      transform: translateX(40px);
+      color: #5F6468;
+    }
+
+  }
+
+}

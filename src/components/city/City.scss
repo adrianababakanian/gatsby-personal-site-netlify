@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.city-image-appear {
+  opacity: 0.01;
+  &.city-image-appear-active {
+    opacity: 1;
+    transition: opacity .7s ease-in;
+  }
+}
+
+.city {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  margin-left: -10px;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+
+  &.square {
+    height: 500px;
+  }
+
+  &.set {
+    border-radius: 8px 8px 0 0;
+  }
+
+  &.vertical {
+    height: 620px;
+  }
+
+  &.sub {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      top: initial;
+      left: initial;
+      transform: none;
+      position: relative;
+      &:hover {
+        width: 100%;
+        max-height: initial;
+      }
+    }
+    .city-name, .description {
+      color: #2F3437;
+    }
+    .description {
+      font-size: 20px;
+    }
+    .city-details {
+      display: none;
+    }
+  }
+
+  // Turn off text hover effect for subbed layout.
+  &.normal, &.square {
+    &:hover {
+      background: rgba(#EFEFEF, 0.3);
+      @media (max-width: 900px) { background: initial }
+      img {
+        max-height: 105%;
+        width: auto;
+      }
+      .city-name {
+        opacity: 0.8;
+        transform: translateY(30px);
+      }
+      .city-details {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+  }
+
+  &.sub {
+    height: 360px;
+    .details-wrap {
+      background: none;
+      padding: 0;
+      position: relative;
+    }
+  }
+
+  .details-wrap {
+    width: calc(100% - 60px);
+    background: linear-gradient(to bottom, rgba(33,36,37,0) 0%,rgba(33,36,37,0.7) 50%,rgba(33,36,37,0.84) 100%);
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    padding: 160px 30px 30px 30px;
+  }
+  .city-name {
+    font: 800 38px 'Inter', -apple-system, system-ui;
+    color: white;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+  }
+  .city-details {
+    transition: 0.3s ease-in-out;
+  }
+  .city-name-old {
+    font: 400 28px Playfair Display;
+    color: #598EAD;
+    margin-bottom: 4px;
+  }
+  .details-wrap {
+    .date {
+      font: 400 14px Lato;
+      display: inline-block;
+      color: white;
+    }
+  }
+  img {
+    max-height: 100%;
+    object-fit: fill;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.8s ease-in-out;
+  }
+
+  @media (max-width: 900px) {
+    width: calc(100% - 20px);
+    margin-left: initial;
+    padding: 0;
+  }
+
+}
+
+.city > * {
+  transition: 0.3s ease-in-out;
+}

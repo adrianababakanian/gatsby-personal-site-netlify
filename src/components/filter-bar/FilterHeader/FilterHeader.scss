@@ -1,0 +1,31 @@
+//@import "./../../../common.scss";
+
+.FilterHeader {
+  font: 400 14px Lato;
+  color: #2F3437;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 2px 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  min-height: 30px;
+  float: right;
+  margin-top: 8px;
+
+  .label { padding: 4px 8px; margin-top: -4px;}
+
+  &:hover {
+    background: #EFEFEF;
+  }
+
+  input {
+    background: #3f4447;
+    border: 0 solid #3f4447;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}

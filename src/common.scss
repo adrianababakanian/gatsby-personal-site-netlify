@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,600,800');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 html {
-  font-family: Lato;
+  // background: #2F3437;
+  background: white;
+  color: get(dust);
 }
 
 $colors: (
-  cycle: unquote('#93D9FF'),
+  cycle: unquote('#426980'), //unquote('#4264fb'),
   matcha: unquote('#B0E695'),
   atomic: unquote('#F9886C'),
   sakura: unquote('#EAD2DC'),
@@ -13,15 +15,26 @@ $colors: (
   shadow: rgba(0, 0, 0, 0.14),
   deep-shadow: rgba(0, 0, 0, 0.18),
 
-  trans_cycle: unquote('#93D9FFCC'),
+  dust: unquote('#EBEBEB'),
+
+  trans_cycle: unquote('#426980'), //unquote('#4264fb64'),
   trans_matcha: unquote('#B0E695CC'),
   trans_atomic: unquote('#F9886CCC'),
   trans_sakura: unquote('#EAD2DCCC'),
 
-  x_trans_cycle: unquote('#93D9FF99'),
+  x_trans_cycle: unquote('#426980'), //unquote('#4264fb48'),
   x_trans_matcha: unquote('#B0E69599'),
   x_trans_atomic: unquote('#F9886C99'),
-  x_trans_sakura: unquote('#EAD2DC99')
+  x_trans_sakura: unquote('#EAD2DC99'),
+
+  deep_blue: unquote('#426980'),
+  light_blue: unquote('#C7D2D9'),
+  deep_green: unquote('#9ECC87'),
+  light_green: unquote('#CEDCD9'),
+  deep_orange: unquote('#DE856F'),
+  light_orange: unquote('#E0D4C7')
+
+
 );
 
 $shadow: 0 2px 12px 2px get(shadow);
@@ -32,11 +45,6 @@ $deep-shadow: 0 4px 12px 4px get(deep-shadow);
 }
 
 @mixin colorize($color) {
-  background: get($color);
-}
-
-@mixin colorize($color) {
-  background: get($color);
   background-color: get($color);
 }
 
@@ -49,24 +57,24 @@ $deep-shadow: 0 4px 12px 4px get(deep-shadow);
 }
 
 .gatsby-resp-image-image {
-  border-radius: 8px;
+  //border-radius: 8px;
 }
 
 .gatsby-resp-image-background-image {
-  border-radius: 8px;
+  //border-radius: 8px;
   background-image: none;
 }
 
 video {
-  border-radius: 8px;
+  //border-radius: 8px;
 }
 
 .container {
-  width: 600px;
+  width: 1000px;
   height: auto;
-  margin: 220px auto;
-  font-family: Lato;
-  color: get(atom);
+  margin: 180px auto;
+  font-family: 'Inter', -apple-system, system-ui, Helvetica;
+  color: get(dust);
 
   @media (max-width: 700px) {
     margin: 220px 40px;
@@ -79,7 +87,7 @@ video {
 
   .language-java {
     padding: 40px 20px;
-    border-radius: 8px;
+    // border-radius: 8px;
     position: relative;
     overflow: scroll;
   }
@@ -107,19 +115,15 @@ video {
   a {
     &:link, &:visited, &:active  {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      color: get(atom);
+      color: get(dust);
       text-decoration: none;
       transition: background-color 0.2s ease-in-out;
-      border-radius: 4px;
+      // border-radius: 4px;
       border-bottom: none;
 
-      &.preview {
-        border-radius: 8px;
-      }
 
-      &:hover {
-        font-weight: 600;
-      }
+
+      &:hover { font-weight: 600; }
     }
   }
 
@@ -140,63 +144,92 @@ video {
     }
   }
 
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: #4c5153;
+  }
+
   h1 {
-    font: 700 38px Lato;
+    font-size: 38px;
+    font-weight: 700;
     letter-spacing: 1px;
     max-width: 400px;
+    color: get(dust);
     @media(max-width: 500px) {
-      font: 700 30px Lato;
+      font-size: 30px;
     }
   }
 
   h2 {
-    font: 600 24px Lato;
+    font-size: 24px;
+    font-weight: 600;
     width: 476px;
     margin: 50px 0 20px 0;
-
+    color: get(dust);
     @media (max-width: 500px) {
       width: 100%;
-      font: 600 18px Lato;
+      font-size: 18px;
     }
   }
 
   h3 {
-    font: 400 24px Lato;
+    font-size: 24px;
+    font-weight: 400;
     line-height: 46px;
     width: 500px;
-
+    color: get(dust);
     @media (max-width: 700px) {
       width: 100%;
-      font: 400 20px Lato;
+      font-size: 20px;
       line-height: 42px;
     }
   }
 
   h4 {
-    font: 400 22px Lato;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 48px;
     width: 100%;
     margin: 20px 0;
+    color: get(dust);
   }
 
   p, ul, li {
-    font: 400 16px Lato;
-    width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    //width: 600px;
     line-height: 30px;
-    margin: 25px 0;
+    //margin: 25px 0;
+    color: get(dust);
     @media (max-width: 700px) {
       width: 100%;
     }
   }
 
-  .me-wrap {
-    width: 250px;
-    height: 250px;
+  .me-wrapper {
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 8px;
+    margin: 0 0 40px 0;
+    position: relative;
+    box-shadow: 0 2px 12px 2px get(shadow);
+    border-radius: 2px;
+    .me {
+      width: 100%;
+    }
+  }
+
+  .me-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     margin: 0 0 40px 0;
     position: relative;
     box-shadow: 0 2px 12px 2px get(shadow);
