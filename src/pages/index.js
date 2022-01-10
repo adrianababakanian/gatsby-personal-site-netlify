@@ -39,7 +39,11 @@ const IndexPage = () => {
                  , alternative R&B, and a love for learning things by
                 meeting new people. Let’s get in touch!
               </h4> */}
-              <h2>More about me →</h2>
+              <h2 className="bold">
+              <Link exact to="about" className="intro-link">
+                More about me →
+              </Link>
+              </h2>
               <div className="shapes">
                 <ShapesComponent />
               </div>

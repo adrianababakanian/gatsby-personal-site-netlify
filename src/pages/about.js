@@ -34,31 +34,56 @@ const AboutPage = () => {
               </div>
               <div className='secondary'>
                 <h4>
-                  I'm currently having fun during my work days building <a /*href="https://www.mapbox.com/mapbox-studio"*/>Mapbox Studio</a>, a broswer-based design tool that
+                  I'm currently having fun during my work days building <a href="https://www.mapbox.com/mapbox-studio" target="_blank">Mapbox Studio</a>, a broswer-based design tool that
                   empowers anyone to create beautiful, radically custom maps.
                 </h4>
                 <h4>
-                  Before that, I graduated cum laude from <a /*href="https://www.berkeley.edu/"*/>UC Berkeley</a> with a double major in <a /*href="https://cs.berkeley.edu/"*/>Computer Science</a> and
-                  <a /*href="https://math.berkeley.edu/"*/>Applied Mathematics</a>, as well as a certificate in <a>Human-Centered Design</a>. During my time at Berkeley,
-                  I taught an <a /*href="https://www2.eecs.berkeley.edu/Courses/CS160/"*/>HCI course</a> at the <a /*href="https://jacobsinstitute.berkeley.edu/"*/>Jacobs Institute for Design Innovation</a> and designed more things that I
-                  can even remember for <a /*href="https://calhacks.io/"*/>Cal Hacks</a>.
+                  Before that, I graduated cum laude from <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a> with a double 
+                  major in <a href="https://cs.berkeley.edu/" target="_blank">Computer Science</a> and <a href="https://math.berkeley.edu/" target="_blank">Applied Mathematics</a>, as well as a certificate in <a>Human-Centered Design</a>. During my time at Berkeley,
+                  I taught an <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank">HCI course</a> at the <a href="https://jacobsinstitute.berkeley.edu/" target="_blank">Jacobs Institute for Design Innovation</a> and designed more things that I
+                  can even remember for <a href="https://calhacks.io/" target="_blank">Cal Hacks</a>.
                 </h4>
                 <h4>
                   Most of the time you're likely to find me riding one of my (always Reynolds steel-framed) bikes, studying Japanese,
-                  sketching for hours in the corner of a museum, or being a geek about art history (particularly anything Danish).
+                  sketching in a museum, shooting urban photography, or being a geek about art history (particularly anything Danish).
                   I'm also really into public tranist systems, and am trying to dabble more in the field of urban design!
                 </h4>
+                <div className="divider" />
+                <div>
+                  <h4>
+                    <a className="social" href="https://www.linkedin.com/in/adriana-babakanian-60b597112/" target="_blank">
+                      LinkedIn <span className="bold">/adriana-babakanian</span>
+                    </a>
+                  </h4>
+                  <h4>
+                    <a className="social" href="https://github.com/adrianababakanian" target="_blank">
+                      GitHub <span className="bold">/adrianababakanian</span>
+                    </a>
+                  </h4>
+                  <h4>
+                    <a className="social" href="https://twitter.com/adrianabaklava" target="_blank">
+                      Twitter <span className="bold">@adrianabaklava</span>
+                    </a>
+                  </h4>
+                  <h4>
+                    <a className="social" href="https://www.pinterest.com/ababakanian/" target="_blank">
+                      Pinterest <span className="bold">/ababakanian</span>
+                    </a>
+                  </h4>
+                  <h4>
+                    <a className="social" href="https://dribbble.com/adrianababakanian" target="_blank">
+                      Dribble <span className="bold">/adrianababakanian</span>
+                    </a>
+                  </h4>
+                  <h4>
+                    <a className="social" href="mailto:ababakanian@gmail.com" target="_blank">
+                      Email <span className="bold">ababakanian@gmail.com</span>
+                    </a>
+                  </h4>
+                </div>
               </div>
             </div>
 
-            <div>
-              <h4>LinkedIn <span className="bold">/adriana-babakanian ↗</span></h4>
-              <h4>GitHub <span className="bold">/adrianababakanian</span></h4>
-              <h4>Twitter <span className="bold">@adrianabaklava</span></h4>
-              <h4>Pinterest <span className="bold">/ababakanian</span></h4>
-              <h4>Dribble <span className="bold">/adrianababakanian</span></h4>
-              <h4>Email <span className="bold">ababakanian@gmail.com</span></h4>
-            </div>
             </CSSTransitionGroup>
 
             {/* <div className='wrap'>

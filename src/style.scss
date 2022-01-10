@@ -34,21 +34,32 @@ html {
     top: 0;
     width: 100%;
     a {
-      color: #4C8DC9;
+      //color: #4C8DC9;
       padding: 1px 4px;
       cursor: pointer;
       transition: 0.3s ease-in-out;
       text-decoration: underline;
       // text-decoration-color: #C8DFF5;
-      &:hover {
-        color: #2774B0;
-        background: #C8DFF5;
-      }
+      // &:hover {
+      //   color: #2774B0;
+      //   background: #C8DFF5;
+      // }
       &.gatsby-resp-image-link {
         .gatsby-resp-image-wrapper {
           width: 100%;
           display: initial;
           margin: 0;
+        }
+      }
+      &.intro-link {
+        color: #3C3838;
+        font-weight: 500;
+        text-decoration: underline;
+        display: inline-block;
+        padding: 0;
+        &:hover {
+          background: #D05F4D33;
+          text-decoration-color: #D05F4D;
         }
       }
     }
@@ -84,19 +95,32 @@ html {
       }
       a {
         color: #4F8FC8;
-        padding: 1px 4px;
+        padding: 0;
         cursor: pointer;
         transition: 0.3s ease-in-out;
-        &.preview { color: #2F3437 }
+        text-decoration: underline;
+        &.preview { 
+          color: #3C3838;
+          text-decoration: none;
+        }
         &.cycle { background: white }
         &.gatsby-resp-image-link { .gastby-resp-image-image { width: 1000px;} }
-        &:hover {
+        &.social {
+          color: #3C3838;
           text-decoration: none;
+          &:hover {
+            color: #3C3838;
+            text-decoration: underline;
+            background: none;
+          }
+        }
+        &:hover {
+          font-weight: 400;
           color: #4F8FC8;
-          background: rgba(#66B2F6, 0.4);
+          background: #4F8FC833;
           &.gatsby-resp-image-link { background: none; }
           &.preview {
-            color: #2F3437;
+            color: #3C3838;
             background: rgba(#EFEFEF, 0.3);
           }
           &.cycle {
@@ -162,8 +186,17 @@ html {
       font-family: 'Inter', -apple-system, system-ui;
       font-size: 28px;
       color: #3C3838;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 36px;
+      &.bold {
+        font-weight: 500;
+        text-decoration: underline;
+        display: inline-block;
+        &:hover {
+          background: #D05F4D33;
+          text-decoration-color: #D05F4D;
+        }
+      }
     }
     // h2 {
     //   font-size: 16px;
@@ -247,8 +280,9 @@ html {
       background: #BCD2DE;
     }
     .divider {
-      background: #DFDFDE;
-      margin-bottom: 10px;
+      background: #D6C344;
+      margin: 32px 0;
+      height: 2px;
       &.blue { background: #598EAD; }
     }
 
@@ -310,7 +344,7 @@ html {
 
   @keyframes rotationNeg {
     to {
-      transform: rotate(-3deg);
+      transform: rotate(-1.5deg);
     }
   }
 
