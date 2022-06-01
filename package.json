@@ -43,7 +43,7 @@
     "react-lazy-load": "^3.0.13",
     "react-transition-group": "^1.2.1",
     "react-window-size": "^1.2.2",
-    "sharp": "^0.29.3"
+    "sharp": "^0.30.5"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.4",
