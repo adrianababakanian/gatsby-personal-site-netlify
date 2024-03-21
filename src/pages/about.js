@@ -34,11 +34,10 @@ const AboutPage = () => {
               </div>
               <div className='secondary'>
                 <h4>
-                  I'm currently having fun during my work days building <a href="https://www.mapbox.com/mapbox-studio" target="_blank">Mapbox Studio</a>, a broswer-based design tool that
-                  empowers anyone to create beautiful, radically custom maps.
+                  I currently work on Repositories at <a href="https://github.com/" target="_blank">GitHub</a>. Before that, I worked on <a href="https://www.mapbox.com/mapbox-studio" target="_blank">Mapbox Studio</a>, a browser-based design tool for creating beautiful, radically custom maps.
                 </h4>
                 <h4>
-                  Before that, I graduated with honors from <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a> with a double 
+                  I graduated with honors from <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a> with a double 
                   major in <a href="https://cs.berkeley.edu/" target="_blank">Computer Science</a> and <a href="https://math.berkeley.edu/" target="_blank">Applied Mathematics</a>, and a certificate in <a>Human-Centered Design</a>. During my time at Berkeley,
                   I taught an <a href="https://www2.eecs.berkeley.edu/Courses/CS160/" target="_blank">HCI course</a> at the <a href="https://jacobsinstitute.berkeley.edu/" target="_blank">Jacobs Institute for Design Innovation</a> and designed more things that I
                   can even remember for <a href="https://calhacks.io/" target="_blank">Cal Hacks</a>.
